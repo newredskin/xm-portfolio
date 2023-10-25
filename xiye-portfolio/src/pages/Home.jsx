@@ -1,5 +1,5 @@
 import DynamicIntroText from "../features/home/DynamicIntroText";
-import TextBackground from "../ui/TextBackground";
+import TextBackground from "../features/home/TextBackground";
 
 function Home() {
   return (
