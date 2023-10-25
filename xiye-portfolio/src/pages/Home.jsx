@@ -1,5 +1,13 @@
+import DynamicIntroText from "../features/home/DynamicIntroText";
+import TextBackground from "../ui/TextBackground";
+
 function Home() {
-  return <div>Hello, I am Xiye</div>;
+  return (
+    <div>
+      <TextBackground />
+      <DynamicIntroText />
+    </div>
+  );
 }
 
 export default Home;

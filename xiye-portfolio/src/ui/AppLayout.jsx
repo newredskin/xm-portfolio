@@ -5,7 +5,7 @@ function AppLayout() {
   return (
     <div>
       <NavBar />
-      <main>
+      <main className="pt-18">
         <Outlet />
       </main>
     </div>
