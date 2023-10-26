@@ -9,8 +9,8 @@ function DynamicIntroText() {
     const intros = {
       strings: [
         `{ "I am a ^1000 Landscape Architect." }`,
-        `{ "I am a ^1000 full stack developer in training", ...landscape architect }`,
-        `{ "I am deeply passionate about ^1000 crafting excitement in both physical and digital world", ...full stack developer, ...landscape architect }`,
+        `{ "I am a ^1000 full stack developer in training." }`,
+        `{ "I am deeply ^1000 passionate about crafting excitement in both physical and digital world", ...full stack developer, ...landscape architect }`,
       ],
       smartBackspace: true,
       typeSpeed: 50,

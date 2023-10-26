@@ -17,7 +17,7 @@ function NavBar() {
   }
 
   return (
-    <nav>
+    <nav className="fixed z-50">
       <div className="relative z-20 bg-teal-950 ">
         <div className="px-3 md:px-10 lg:w-screen lg:px-6 lg:py-4 w-screen">
           <div className="flex items-center justify-between">
@@ -50,9 +50,9 @@ function NavBar() {
               <div
                 className={`${
                   isNavExpanded
-                    ? "peer-checked:translate-x-0"
-                    : "translate-x-[-100%]"
-                } fixed inset-0 w-screen  bg-teal-950/50 transition duration-300  md:static md:w-auto md:translate-x-0 `}
+                    ? "peer-checked:translate-x-0 backdrop-blur-sm"
+                    : "translate-x-[-100%] backdrop-blur-0"
+                } fixed inset-0 w-screen  bg-teal-950/50 transition duration-300  md:static md:w-auto md:translate-x-0`}
               >
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
