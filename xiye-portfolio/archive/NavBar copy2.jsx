@@ -16,6 +16,16 @@ function NavBar() {
     setIsNavExpanded((e) => !e);
   }
 
+  /*
+  .hamburger div:first-child {
+    @apply rotate-45 translate-y-1;
+  }
+  .hamburger div:last-child {
+    @apply -rotate-45 -translate-y-1.5;
+  }
+
+  */
+
   return (
     <nav>
       <div className="relative z-20 bg-teal-950 ">
@@ -28,23 +38,27 @@ function NavBar() {
               <span className="text-stone-200">XIYE MOU</span>
             </div>
             <div className="flex items-center justify-end mr-3">
-              <button
-                className="relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
+              <input
+                type="checkbox"
+                name="hamburger"
+                id="hamburger"
+                className="peer"
+                hidden
+              />
+              <label
+                htmlFor="hamburger"
+                className="peer-checked:hamburger relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
                 onClick={toggleNav}
               >
                 <div
                   aria-hidden="true"
-                  className={`m-auto h-0.5 w-6 rounded bg-stone-300 transition duration-300 ${
-                    isNavExpanded ? "rotate-45 translate-y-1" : ""
-                  }`}
+                  className="m-auto h-0.5 w-6 rounded bg-stone-300 transition duration-300"
                 ></div>
                 <div
                   aria-hidden="true"
-                  className={`m-auto mt-2 h-0.5 w-6 rounded bg-stone-300 transition duration-300 ${
-                    isNavExpanded ? "-rotate-45 -translate-y-1.5" : ""
-                  }`}
+                  className="m-auto mt-2 h-0.5 w-6 rounded bg-stone-300 transition duration-300"
                 ></div>
-              </button>
+              </label>
 
               {/* Side menu bar */}
               <div

@@ -13,7 +13,7 @@ function RandomText() {
       setTexts((preTexts) => [...preTexts, newText]);
     }
 
-    setInterval(generateRandomText, 500);
+    setInterval(generateRandomText, 50);
 
     return () => clearInterval(generateRandomText);
   }, []);
