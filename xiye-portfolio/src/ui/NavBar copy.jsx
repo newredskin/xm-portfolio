@@ -12,10 +12,6 @@ function NavBar() {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  function toggleNav() {
-    setIsNavExpanded((e) => !e);
-  }
-
   return (
     <nav>
       <div className="relative z-20 bg-teal-950 ">
@@ -38,7 +34,7 @@ function NavBar() {
               <label
                 htmlFor="hamburger"
                 className="peer-checked:hamburger relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
-                onClick={toggleNav}
+                onClick={() => setIsNavExpanded((e) => !e)}
               >
                 <div
                   aria-hidden="true"
@@ -52,11 +48,7 @@ function NavBar() {
 
               {/* Side menu bar */}
               <div
-                className={`${
-                  isNavExpanded
-                    ? "peer-checked:translate-x-0"
-                    : "translate-x-[-100%]"
-                } fixed inset-0 w-[calc(100%-4.5rem)]  bg-teal-950/50 transition duration-300  md:static md:w-auto md:translate-x-0 `}
+                className={`fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-teal-950/50 transition duration-300 peer-checked:translate-x-0 md:static md:w-auto md:translate-x-0 `}
               >
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
@@ -71,7 +63,6 @@ function NavBar() {
                             isActive
                               ? "active"
                               : "non-active"}} group relative before:absolute before:inset-x-0 before:bottom-0 before:h-1 before:origin-right before:scale-x-0 before:bg-red-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100`}
-                          onClick={toggleNav}
                         >
                           {link.name}
                         </NavLink>
