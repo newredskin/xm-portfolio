@@ -63,7 +63,7 @@ export default function SkillChart() {
     <ResponsiveContainer
       aspect={1}
       width="80%"
-      className="flex flex-col items-center justify-center"
+      className="md:flex md:flex-col items-center justify-center hidden"
     >
       <PieChart width={400} height={400}>
         <Pie
