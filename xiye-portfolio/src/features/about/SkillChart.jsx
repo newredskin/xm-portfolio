@@ -72,7 +72,7 @@ export default function SkillChart() {
           cx="50%"
           cy="50%"
           outerRadius={90}
-          fill="rgb(15 118 110)"
+          fill="rgb(4 47 46 / 0.8)"
           labelLine={false}
           label={renderCustomizedLabel}
         />
@@ -85,7 +85,7 @@ export default function SkillChart() {
           outerRadius={120}
           fill="rgb(185 28 28)"
           label={(entry) => entry.name}
-          className="text-[10px] md:text-base"
+          className="text-[10px] md:text-[12px]"
         />
       </PieChart>
     </ResponsiveContainer>

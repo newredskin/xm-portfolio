@@ -7,6 +7,7 @@ import CareerPath from "../ui/CareerPath";
 import Footer from "../ui/Footer";
 import SkillTag from "../ui/SkillTag";
 import { useEffect } from "react";
+import EducationList from "../features/about/EducationList";
 
 function About() {
   useEffect(function () {
@@ -48,19 +49,22 @@ function About() {
                     <SkillTag color="bg-red-700">MySQL</SkillTag>
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-2">
-                    <SkillTag color="bg-teal-700">Adobe</SkillTag>
-                    <SkillTag color="bg-teal-700">AutoCAD</SkillTag>
-                    <SkillTag color="bg-teal-700">SketchUp</SkillTag>
-                    <SkillTag color="bg-teal-700">Rhino</SkillTag>
-                    <SkillTag color="bg-teal-700">Lumion</SkillTag>
-                    <SkillTag color="bg-teal-700">Sketch</SkillTag>
-                    <SkillTag color="bg-teal-700">Processing</SkillTag>
+                    <SkillTag color="bg-teal-950/80">Adobe</SkillTag>
+                    <SkillTag color="bg-teal-950/80">AutoCAD</SkillTag>
+                    <SkillTag color="bg-teal-950/80">SketchUp</SkillTag>
+                    <SkillTag color="bg-teal-950/80">Rhino</SkillTag>
+                    <SkillTag color="bg-teal-950/80">Lumion</SkillTag>
+                    <SkillTag color="bg-teal-950/80">Sketch</SkillTag>
+                    <SkillTag color="bg-teal-950/80">Processing</SkillTag>
                   </div>
                 </div>
               </div>
               <div className="md:col-start-3 md:col-span-3 flex justify-center items-center">
                 <SkillChart />
               </div>
+            </div>
+            <div data-aos="fade-right">
+              <EducationList />
             </div>
           </div>
         </div>
