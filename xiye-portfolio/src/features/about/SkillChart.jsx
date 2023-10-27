@@ -23,6 +23,7 @@ const codingSkills = [
   { name: "TypeScript", value: 30 },
   { name: "Node.js", value: 30 },
   { name: "Java", value: 40 },
+  { name: "Python", value: 20 },
   { name: "HTML&CSS", value: 50 },
   { name: "React", value: 70 },
   { name: "Git", value: 20 },
@@ -85,7 +86,7 @@ export default function SkillChart() {
           outerRadius={120}
           fill="rgb(185 28 28)"
           label={(entry) => entry.name}
-          className="text-[10px] md:text-[12px]"
+          className="text-[9px] md:text-[11px] lg:text-[14px]"
         />
       </PieChart>
     </ResponsiveContainer>

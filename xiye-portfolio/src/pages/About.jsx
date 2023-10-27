@@ -41,10 +41,11 @@ function About() {
                     <SkillTag color="bg-red-700">TypeScript</SkillTag>
                     <SkillTag color="bg-red-700">Node.js</SkillTag>
                     <SkillTag color="bg-red-700">Java</SkillTag>
+                    <SkillTag color="bg-red-700">Python</SkillTag>
                     <SkillTag color="bg-red-700">HTML&CSS</SkillTag>
                     <SkillTag color="bg-red-700">React</SkillTag>
                     <SkillTag color="bg-red-700">Git</SkillTag>
-                    <SkillTag color="bg-red-700">Express Basics</SkillTag>
+                    <SkillTag color="bg-red-700">Express</SkillTag>
                     <SkillTag color="bg-red-700">MangoDB</SkillTag>
                     <SkillTag color="bg-red-700">MySQL</SkillTag>
                   </div>
