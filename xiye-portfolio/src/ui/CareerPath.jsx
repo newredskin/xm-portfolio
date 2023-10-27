@@ -4,6 +4,7 @@ import WorkItemFL from "../features/about/WorkItemFL";
 import WorkItemAM from "../features/about/WorkItemAM";
 import WorkItemHGA from "../features/about/WorkItemHGA";
 import WorkItemMDH from "../features/about/WorkItemMDH";
+import { XCircleIcon } from "@heroicons/react/24/outline";
 
 function CareerPath() {
   const [isHSOpen, setIsHSOpen] = useState(false);
@@ -35,9 +36,15 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isHSOpen ? "block" : "hidden"}`}>
-        <div className="rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+      <div className={`col-span-8  ${isHSOpen ? "block" : "hidden"}`}>
+        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemHS />
+          <XCircleIcon
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            onClick={() => {
+              setIsHSOpen((o) => !o);
+            }}
+          />
         </div>
       </div>
 
@@ -63,8 +70,14 @@ function CareerPath() {
       </li>
 
       <div className={`col-span-8 ${isFLOpen ? "block" : "hidden"}`}>
-        <div className="rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemFL />
+          <XCircleIcon
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            onClick={() => {
+              setIsFLOpen((o) => !o);
+            }}
+          />
         </div>
       </div>
 
@@ -90,8 +103,14 @@ function CareerPath() {
       </li>
 
       <div className={`col-span-8 ${isAMOpen ? "block" : "hidden"}`}>
-        <div className="rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemAM />
+          <XCircleIcon
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            onClick={() => {
+              setIsAMOpen((o) => !o);
+            }}
+          />
         </div>
       </div>
 
@@ -117,8 +136,14 @@ function CareerPath() {
       </li>
 
       <div className={`col-span-8 ${isHGAOpen ? "block" : "hidden"}`}>
-        <div className="rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemHGA />
+          <XCircleIcon
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            onClick={() => {
+              setIsHGAOpen((o) => !o);
+            }}
+          />
         </div>
       </div>
 
@@ -144,8 +169,14 @@ function CareerPath() {
       </li>
 
       <div className={`col-span-8 ${isMDHOpen ? "block" : "hidden"}`}>
-        <div className="rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemMDH />
+          <XCircleIcon
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            onClick={() => {
+              setIsMDHOpen((o) => !o);
+            }}
+          />
         </div>
       </div>
     </ul>

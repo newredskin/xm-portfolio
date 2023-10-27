@@ -34,7 +34,7 @@ function WorkItemFL() {
             <p className="text-sm text-stone-500">Multiple firms</p>
           </div>
           <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
-            React/JavaScript/HTML/CSS/MangoDB/Supabase
+            React/JavaScript/MangoDB/etc
           </p>
           <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
           <p
