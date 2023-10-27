@@ -1,10 +1,19 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Introduction from "../features/about/Introduction";
 import SkillChart from "../features/about/SkillChart";
 import CareerPath from "../ui/CareerPath";
 import Footer from "../ui/Footer";
 import SkillTag from "../ui/SkillTag";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(function () {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <div className="w-screen min-h-screen bg-orange-50/80">
@@ -14,10 +23,13 @@ function About() {
           </h1>
           <div className=" pb-20 lg:max-w-[1280px]">
             <Introduction />
-            <div className="mx-3 mb-20">
+            <div data-aos="fade-right" className="mx-3 mb-20">
               <CareerPath />
             </div>
-            <div className="mt-10 grid md:grid-cols-5 bg-orange-50/50 rounded-3xl">
+            <div
+              data-aos="fade-up"
+              className="mt-10 grid md:grid-cols-5 bg-orange-50/30 rounded-3xl"
+            >
               <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   My Skill Set
