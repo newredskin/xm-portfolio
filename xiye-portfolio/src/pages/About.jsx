@@ -33,7 +33,7 @@ function About() {
                     <SkillTag color="bg-red-700">Git</SkillTag>
                     <SkillTag color="bg-red-700">Express Basics</SkillTag>
                     <SkillTag color="bg-red-700">MangoDB</SkillTag>
-                    <SkillTag color="bg-red-700">My SQL</SkillTag>
+                    <SkillTag color="bg-red-700">MySQL</SkillTag>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <SkillTag color="bg-teal-700">Adobe</SkillTag>

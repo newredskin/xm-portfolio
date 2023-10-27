@@ -8,13 +8,13 @@ function Home() {
 
   return (
     <div>
-      <div>
+      <TextBackground />
+      <div className="flex flex-col justify-center items-center h-screen gap-8 mx-16">
         <DynamicIntroText />
-        <div className="absolute top-[60%] left-[45%] ">
+        <div>
           <Button handleClick={() => navigate("/about")}>About</Button>
         </div>
       </div>
-      <TextBackground />
     </div>
   );
 }

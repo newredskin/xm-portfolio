@@ -25,10 +25,22 @@ function DynamicIntroText() {
   }, []);
 
   return (
-    <div className="container absolute rounded-xl p-10 text-sm text-center bg-teal-950/70 w-1/2 text-stone-400 top-1/3 left-1/4 shadow-xl">
+    <div className="container bg-teal-950/70 text-center rounded-3xl text-sm text-stone-400 shadow-xl px-5 py-10">
       <span ref={el} />
     </div>
   );
 }
 
 export default DynamicIntroText;
+
+/*
+    <div className="">
+      <div className="container absolute rounded-xl p-10 text-sm text-center bg-teal-950/70 w-1/2 text-stone-400 top-1/3 left-1/4 shadow-xl">
+        <span ref={el} />
+      </div>
+      <div className="inline-block">
+        <Button handleClick={() => navigate("/about")}>About</Button>
+      </div>
+    </div>
+
+*/
