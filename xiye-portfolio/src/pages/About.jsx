@@ -1,6 +1,8 @@
+import Introduction from "../features/about/Introduction";
+import SkillChart from "../features/about/SkillChart";
 import CareerPath from "../ui/CareerPath";
-import DynamicText from "../ui/DynamicText";
 import Footer from "../ui/Footer";
+import SkillTag from "../ui/SkillTag";
 
 function About() {
   return (
@@ -11,40 +13,42 @@ function About() {
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>
           <div className=" pb-20 lg:max-w-[1280px]">
-            <div
-              className="text-left mb-10"
-              style={{ fontFamily: "Cutive Mono" }}
-            >
-              <p className="mb-10">
-                I&apos;ve spent years shaping beautiful outdoor spaces as a
-                landscape architect, working on diverse projects that range from
-                impressive public ventures to luxurious residential designs.
-                This journey has not only ignited my passion for{" "}
-                <DynamicText
-                  content={["artistry", "creativity", "craftsmanship"]}
-                  style="text-red-700 bg-teal-800/20 underline decoration-2 underline-offset-4"
-                />
-                but also nurtured my knack for research, analytical thinking and
-                problem-solving. Alongside my landscape architecture work,
-                I&apos;ve also delved into the digital world of freelancing,
-                specializing in branding and logo design.
-              </p>
-              <p>
-                Now, I&apos;m on a new path to become a full-stack developer,
-                and I&apos;m bringing with me a wealth of design and{" "}
-                <span className="text-red-700 bg-teal-800/20 underline decoration-2 underline-offset-4">
-                  problem-solving
-                </span>{" "}
-                skills. My goal is to create not only user-friendly websites but
-                also versatile applications across multiple platforms, bridging
-                my past experiences with my exciting new career.
-              </p>
-            </div>
-            <div className="mx-3 mb-24">
+            <Introduction />
+            <div className="mx-3 mb-20">
               <CareerPath />
             </div>
-            <div className="mt-10">
-              <h2 className="font-bold">My Skill Set</h2>
+            <div className="mt-10 grid md:grid-cols-5 bg-orange-50/50 rounded-3xl">
+              <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
+                <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
+                  My Skill Set
+                </h2>
+                <div className="flex flex-col justify-center items-start md:items-center mt-3 mb-6 gap-6 md:mx-10 mx-6">
+                  <div className="flex flex-wrap gap-2">
+                    <SkillTag color="bg-red-700">JavaScript</SkillTag>
+                    <SkillTag color="bg-red-700">TypeScript</SkillTag>
+                    <SkillTag color="bg-red-700">Node.js</SkillTag>
+                    <SkillTag color="bg-red-700">Java</SkillTag>
+                    <SkillTag color="bg-red-700">HTML&CSS</SkillTag>
+                    <SkillTag color="bg-red-700">React</SkillTag>
+                    <SkillTag color="bg-red-700">Git</SkillTag>
+                    <SkillTag color="bg-red-700">Express Basics</SkillTag>
+                    <SkillTag color="bg-red-700">MangoDB</SkillTag>
+                    <SkillTag color="bg-red-700">My SQL</SkillTag>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <SkillTag color="bg-teal-700">Adobe</SkillTag>
+                    <SkillTag color="bg-teal-700">AutoCAD</SkillTag>
+                    <SkillTag color="bg-teal-700">SketchUp</SkillTag>
+                    <SkillTag color="bg-teal-700">Rhino</SkillTag>
+                    <SkillTag color="bg-teal-700">Lumion</SkillTag>
+                    <SkillTag color="bg-teal-700">Sketch</SkillTag>
+                    <SkillTag color="bg-teal-700">Processing</SkillTag>
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-start-3 md:col-span-3 flex justify-center items-center">
+                <SkillChart />
+              </div>
             </div>
           </div>
         </div>
