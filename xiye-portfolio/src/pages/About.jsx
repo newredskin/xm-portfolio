@@ -34,8 +34,8 @@ function About() {
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   My Skill Set
                 </h2>
-                <div className="flex flex-col justify-center items-start md:items-center mt-3 mb-6 gap-6 md:mx-10 mx-6">
-                  <div className="flex flex-wrap gap-2">
+                <div className="flex flex-col justify-center items-center mt-3 mb-6 gap-6 md:mx-10 mx-6">
+                  <div className="flex flex-wrap items-center justify-center gap-2">
                     <SkillTag color="bg-red-700">JavaScript</SkillTag>
                     <SkillTag color="bg-red-700">TypeScript</SkillTag>
                     <SkillTag color="bg-red-700">Node.js</SkillTag>
@@ -47,7 +47,7 @@ function About() {
                     <SkillTag color="bg-red-700">MangoDB</SkillTag>
                     <SkillTag color="bg-red-700">MySQL</SkillTag>
                   </div>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap items-center justify-center gap-2">
                     <SkillTag color="bg-teal-700">Adobe</SkillTag>
                     <SkillTag color="bg-teal-700">AutoCAD</SkillTag>
                     <SkillTag color="bg-teal-700">SketchUp</SkillTag>

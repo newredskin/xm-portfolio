@@ -4,10 +4,10 @@ function Introduction() {
   return (
     <div className="text-left mb-10" style={{ fontFamily: "Cutive Mono" }}>
       <div className="mb-10">
-        I&apos;ve spent years shaping beautiful outdoor spaces as a landscape
-        architect, working on diverse projects that range from impressive public
-        ventures to luxurious residential designs. This journey has not only
-        ignited my passion for{" "}
+        As a licensed landscape architect, I&apos;ve spent years shaping
+        beautiful outdoor spaces, working on diverse projects that range from
+        impressive public ventures to luxurious residential designs. This
+        journey has not only ignited my passion for{" "}
         <DynamicText
           content={["artistry", "creativity", "craftsmanship"]}
           style="text-red-700 bg-orange-50/50 underline decoration-2 underline-offset-4"

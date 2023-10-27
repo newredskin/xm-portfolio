@@ -60,7 +60,11 @@ const renderCustomizedLabel = ({
 
 export default function SkillChart() {
   return (
-    <ResponsiveContainer aspect={1} width="80%" className="hidden md:block">
+    <ResponsiveContainer
+      aspect={1}
+      width="80%"
+      className="flex flex-col items-center justify-center"
+    >
       <PieChart width={400} height={400}>
         <Pie
           data={laSkills}
