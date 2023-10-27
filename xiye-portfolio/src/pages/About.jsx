@@ -28,7 +28,7 @@ function About() {
               <CareerPath />
             </div>
             <div
-              data-aos="fade-up"
+              // data-aos="fade-up"
               className="mt-10 grid md:grid-cols-5 bg-orange-50/30 rounded-3xl"
             >
               <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
