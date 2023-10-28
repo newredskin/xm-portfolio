@@ -5,7 +5,7 @@ function WorkItemAM() {
     <ul className="m-6 md:mx-10 flex flex-col gap-6">
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
-          <CheckCircleIcon className="w-[100%] h-[100%] md:w-[60%] md:h-[60%] justify-self-center" />
+          <CheckCircleIcon className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] justify-self-center" />
           <div className="col-start-2 col-span-8 md:col-span-6 justify-self-start text-start">
             <h3 className="font-bold">Large-scale Urban Design</h3>
             <p className="text-sm text-stone-500">Chicago, IL</p>
@@ -31,7 +31,7 @@ function WorkItemAM() {
 
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
-          <CheckCircleIcon className="w-[100%] h-[100%] md:w-[60%] md:h-[60%] justify-self-center" />
+          <CheckCircleIcon className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] justify-self-center" />
           <div className="col-start-2 col-span-8 md:col-span-6 justify-self-start text-start">
             <h3 className="font-bold">Community Parks & Playgrounds</h3>
             <p className="text-sm text-stone-500">Multiple Locations</p>
@@ -55,7 +55,7 @@ function WorkItemAM() {
 
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
-          <CheckCircleIcon className="w-[100%] h-[100%] md:w-[60%] md:h-[60%] justify-self-center" />
+          <CheckCircleIcon className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] justify-self-center" />
           <div className="col-start-2 col-span-8 md:col-span-6 justify-self-start text-start">
             <h3 className="font-bold">Neighborhood Sculptural Identifiers</h3>
             <p className="text-sm text-stone-500">Multiple Locations</p>
