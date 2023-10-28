@@ -15,10 +15,15 @@ function CareerPath() {
 
   const ref = useRef(null);
 
+  function handleXclick(setter) {
+    setter(false);
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <ul className="grid lg:grid-cols-8 gap-y-4 md:gap-y-6">
       {/* HS */}
-      <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
+      <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
         <button
           ref={ref}
           onClick={() => {
@@ -39,15 +44,12 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8  ${isHSOpen ? "block" : "hidden"}`}>
+      <div className={`col-span-8  ${isHSOpen ? "" : "hidden"}`}>
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemHS />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => {
-              setIsHSOpen(false);
-              ref.current?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => handleXclick(setIsHSOpen)}
           />
         </div>
       </div>
@@ -78,10 +80,7 @@ function CareerPath() {
           <WorkItemFL />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => {
-              setIsFLOpen(false);
-              ref.current?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => handleXclick(setIsFLOpen)}
           />
         </div>
       </div>
@@ -112,10 +111,7 @@ function CareerPath() {
           <WorkItemAM />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => {
-              setIsAMOpen(false);
-              ref.current?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => handleXclick(setIsAMOpen)}
           />
         </div>
       </div>
@@ -146,10 +142,7 @@ function CareerPath() {
           <WorkItemHGA />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => {
-              setIsHGAOpen(false);
-              ref.current?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => () => handleXclick(setIsHGAOpen)}
           />
         </div>
       </div>
@@ -180,10 +173,7 @@ function CareerPath() {
           <WorkItemMDH />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => {
-              setIsMDHOpen(false);
-              ref.current?.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => handleXclick(setIsMDHOpen)}
           />
         </div>
       </div>
