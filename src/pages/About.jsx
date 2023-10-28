@@ -62,7 +62,7 @@ function About() {
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   My Skill Set
                 </h2>
-                <div className="flex flex-col justify-center items-center mt-3 mb-6 gap-6 md:mx-10 mx-6">
+                <div className="flex flex-col justify-center items-center mt-3 mb-8 gap-6 md:mx-10 mx-6">
                   <div className="flex flex-wrap items-center justify-center gap-2">
                     {codingSkills.map((coding) => (
                       <SkillTag color={coding.color} key={coding.name}>

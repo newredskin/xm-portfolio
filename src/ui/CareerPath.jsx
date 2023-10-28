@@ -21,7 +21,7 @@ function CareerPath() {
   }
 
   return (
-    <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 md:gap-y-6">
+    <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2">
       {/* HS */}
       <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
         <button
