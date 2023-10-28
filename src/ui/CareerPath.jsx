@@ -21,9 +21,8 @@ function CareerPath() {
   const refHGA = useRef(null);
   const refMDH = useRef(null);
 
-  function refDetect(ref) {
-    if (!ref) return;
-
+  function handleXclick(setter, ref) {
+    setter(false);
     ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const viewportHeight = window.innerHeight;
@@ -33,16 +32,6 @@ function CareerPath() {
 
     window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
     console.log(ref);
-  }
-
-  function handleXclick(setter) {
-    setter(false);
-    if (refHS.current) refDetect(refHS);
-    else if (refFL.current) refDetect(refFL);
-    else if (refAM.current) refDetect(refAM);
-    else if (refHGA.current) refDetect(refHGA);
-    else if (refMDH.current) refDetect(refMDH);
-    else return;
   }
 
   return (
@@ -79,7 +68,7 @@ function CareerPath() {
           <WorkItemHS />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
-            onClick={() => handleXclick(setIsHSOpen)}
+            onClick={() => handleXclick(setIsHSOpen, refHS)}
           />
         </div>
       </div>
@@ -121,7 +110,7 @@ function CareerPath() {
           <WorkItemFL />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => handleXclick(setIsFLOpen)}
+            onClick={() => handleXclick(setIsFLOpen, refFL)}
           />
         </div>
       </div>
@@ -158,7 +147,7 @@ function CareerPath() {
           <WorkItemAM />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => handleXclick(setIsAMOpen)}
+            onClick={() => handleXclick(setIsAMOpen, refAM)}
           />
         </div>
       </div>
@@ -195,7 +184,7 @@ function CareerPath() {
           <WorkItemHGA />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => handleXclick(setIsHGAOpen)}
+            onClick={() => handleXclick(setIsHGAOpen, refHGA)}
           />
         </div>
       </div>
@@ -232,7 +221,7 @@ function CareerPath() {
           <WorkItemMDH />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => handleXclick(setIsMDHOpen)}
+            onClick={() => handleXclick(setIsMDHOpen, refMDH)}
           />
         </div>
       </div>
