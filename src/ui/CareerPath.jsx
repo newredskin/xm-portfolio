@@ -15,10 +15,15 @@ function CareerPath() {
   const [isHGAOpen, setIsHGAOpen] = useState(false);
   const [isMDHOpen, setIsMDHOpen] = useState(false);
 
-  const ref = useRef(null);
+  const refHS = useRef(null);
+  const refFL = useRef(null);
+  const refAM = useRef(null);
+  const refHGA = useRef(null);
+  const refMDH = useRef(null);
 
-  function handleXclick(setter) {
-    setter(false);
+  function refDetect(ref) {
+    if (!ref) return;
+
     ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const viewportHeight = window.innerHeight;
@@ -26,9 +31,18 @@ function CareerPath() {
     const offset = (viewportHeight - ref?.current.clientHeight) / 2;
     const scrollToCenter = refTop + window.scrollY - offset;
 
-    console.log(ref);
-
     window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
+    console.log(ref);
+  }
+
+  function handleXclick(setter) {
+    setter(false);
+    if (refHS.current) refDetect(refHS);
+    else if (refFL.current) refDetect(refFL);
+    else if (refAM.current) refDetect(refAM);
+    else if (refHGA.current) refDetect(refHGA);
+    else if (refMDH.current) refDetect(refMDH);
+    else return;
   }
 
   return (
@@ -36,7 +50,7 @@ function CareerPath() {
       {/* HS */}
       <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
         <button
-          ref={ref}
+          ref={refHS}
           onClick={() => {
             setIsHSOpen((o) => !o);
           }}
@@ -73,6 +87,7 @@ function CareerPath() {
       {/* Freelance */}
       <li className="col-span-8 lg:col-start-6 lg:col-span-3 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
         <button
+          ref={refFL}
           onClick={() => {
             setIsFLOpen((o) => !o);
           }}
@@ -114,6 +129,7 @@ function CareerPath() {
       {/* Altamanu */}
       <li className="col-span-8 lg:col-start-3 lg:col-span-2 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
         <button
+          ref={refAM}
           onClick={() => {
             setIsAMOpen((o) => !o);
           }}
@@ -150,6 +166,7 @@ function CareerPath() {
       {/* HGA */}
       <li className="col-span-8 lg:col-start-2 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
         <button
+          ref={refHGA}
           onClick={() => {
             setIsHGAOpen((o) => !o);
           }}
@@ -186,6 +203,7 @@ function CareerPath() {
       {/* MDH */}
       <li className="col-span-8 lg:col-start-1 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
         <button
+          ref={refMDH}
           onClick={() => {
             setIsMDHOpen((o) => !o);
           }}
