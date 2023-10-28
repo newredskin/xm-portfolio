@@ -9,6 +9,7 @@ import Footer from "../ui/Footer";
 import SkillTag from "../ui/SkillTag";
 import EducationList from "../features/about/EducationList";
 import Paragraph from "../features/about/Paragraph";
+import BackToTopButton from "../ui/BackToTopButton";
 
 const codingSkills = [
   { name: "JavaScript", color: "bg-red-700" },
@@ -86,6 +87,7 @@ function About() {
             <div data-aos="fade-left">
               <EducationList />
             </div>
+            <BackToTopButton />
           </div>
         </div>
       </div>

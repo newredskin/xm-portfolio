@@ -1,10 +1,12 @@
 import { useRef, useState } from "react";
+import { XCircleIcon } from "@heroicons/react/24/outline";
+
 import WorkItemHS from "../features/about/WorkItemHS";
 import WorkItemFL from "../features/about/WorkItemFL";
 import WorkItemAM from "../features/about/WorkItemAM";
 import WorkItemHGA from "../features/about/WorkItemHGA";
 import WorkItemMDH from "../features/about/WorkItemMDH";
-import { XCircleIcon } from "@heroicons/react/24/outline";
+import ExternalSiteLink from "./ExternalSiteLink";
 
 function CareerPath() {
   const [isHSOpen, setIsHSOpen] = useState(false);
@@ -17,17 +19,24 @@ function CareerPath() {
 
   function handleXclick(setter) {
     setter(false);
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    const viewportHeight = window.innerHeight;
+    const refTop = ref?.current.getBoundingClientRect().top;
+    const offset = (viewportHeight - ref?.current.clientHeight) / 2;
+    const scrollToCenter = refTop + window.scrollY - offset;
+
+    console.log(ref);
+
+    window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
   }
 
   return (
-    <ul
-      className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 pt-16"
-      ref={ref}
-    >
+    <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 pt-16">
       {/* HS */}
       <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
         <button
+          ref={ref}
           onClick={() => {
             setIsHSOpen((o) => !o);
           }}
@@ -51,10 +60,11 @@ function CareerPath() {
           isHSOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+          <ExternalSiteLink link="https://hoerrschaudt.com/" />
           <WorkItemHS />
           <XCircleIcon
-            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
             onClick={() => handleXclick(setIsHSOpen)}
           />
         </div>
@@ -86,7 +96,13 @@ function CareerPath() {
           isFLOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+          <div
+            className="mt-5"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <ExternalSiteLink link="#" />
+          </div>
           <WorkItemFL />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
@@ -121,7 +137,8 @@ function CareerPath() {
           isAMOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+          <ExternalSiteLink link="https://www.facebook.com/AltamanuInc/" />
           <WorkItemAM />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
@@ -156,11 +173,12 @@ function CareerPath() {
           isHGAOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+          <ExternalSiteLink link="https://hga.com/" />
           <WorkItemHGA />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
-            onClick={() => () => handleXclick(setIsHGAOpen)}
+            onClick={() => handleXclick(setIsHGAOpen)}
           />
         </div>
       </div>
@@ -191,7 +209,8 @@ function CareerPath() {
           isMDHOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
         }`}
       >
-        <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+        <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
+          <ExternalSiteLink link="https://www.health.state.mn.us/" />
           <WorkItemMDH />
           <XCircleIcon
             className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
