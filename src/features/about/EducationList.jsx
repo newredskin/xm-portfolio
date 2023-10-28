@@ -2,7 +2,7 @@ import { AtSymbolIcon } from "@heroicons/react/24/outline";
 
 function EducationList() {
   return (
-    <ul className="mt-24 md:mx-10 flex flex-col gap-6">
+    <ul className="mt-24 md:mx-10 flex flex-col gap-6 mb-16">
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
           <AtSymbolIcon className="w-[24px] h-[24px] md:w-[36px] md:h-[36px]  justify-self-center" />
