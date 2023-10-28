@@ -5,7 +5,7 @@ function EducationList() {
     <ul className="mt-24 md:mx-10 flex flex-col gap-6">
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
-          <AtSymbolIcon className="w-[60%] h-[60%] justify-self-center" />
+          <AtSymbolIcon className="w-full h-full md:w-[50%] md:h-[50%] justify-self-center" />
           <div className="hidden md:block md:col-start-2 md:col-span-1">
             <img
               src="UMN-logo.webp"
@@ -36,7 +36,7 @@ function EducationList() {
       </li>
       <li>
         <div className="grid grid-cols-12 gap-5 items-center">
-          <AtSymbolIcon className="w-[42%] h-[42%] justify-self-center" />
+          <AtSymbolIcon className="lg:w-[36%] lg-[36%] md:w-[50%] md:h-[50%] justify-self-center" />
           <div className="hidden md:block md:col-start-2 md:col-span-1">
             <img
               src="Tongji-logo.webp"
