@@ -8,8 +8,6 @@ function Home() {
   const navigate = useNavigate();
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
-  let buttonVisible;
-
   useEffect(function () {
     setTimeout(() => setIsButtonVisible(true), 1500);
   }, []);

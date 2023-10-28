@@ -21,7 +21,7 @@ function CareerPath() {
   }
 
   return (
-    <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-4 md:gap-y-6">
+    <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 md:gap-y-6">
       {/* HS */}
       <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
         <button
@@ -44,7 +44,11 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isHSOpen ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-8 transition-opacity duration-500 ${
+          isHSOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+        }`}
+      >
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemHS />
           <XCircleIcon
@@ -75,7 +79,11 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isFLOpen ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-8 ${
+          isFLOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+        }`}
+      >
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemFL />
           <XCircleIcon
@@ -106,7 +114,11 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isAMOpen ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-8 ${
+          isAMOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+        }`}
+      >
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemAM />
           <XCircleIcon
@@ -137,7 +149,11 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isHGAOpen ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-8 ${
+          isHGAOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+        }`}
+      >
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemHGA />
           <XCircleIcon
@@ -168,7 +184,11 @@ function CareerPath() {
         </button>
       </li>
 
-      <div className={`col-span-8 ${isMDHOpen ? "block" : "hidden"}`}>
+      <div
+        className={`col-span-8 ${
+          isMDHOpen ? "opacity-100" : "opacity-0 h-0 overflow-hidden"
+        }`}
+      >
         <div className="flex flex-col rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <WorkItemMDH />
           <XCircleIcon
