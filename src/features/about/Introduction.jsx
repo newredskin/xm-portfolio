@@ -2,8 +2,8 @@ import DynamicText from "../../ui/DynamicText";
 
 function Introduction() {
   return (
-    <div className="text-left mb-10" style={{ fontFamily: "Cutive Mono" }}>
-      <div className="mb-10">
+    <div className="text-left" style={{ fontFamily: "Cutive Mono" }}>
+      <div>
         As a licensed landscape architect, I&apos;ve spent years shaping
         beautiful outdoor spaces, working on diverse projects that range from
         impressive public ventures to luxurious residential designs. This
