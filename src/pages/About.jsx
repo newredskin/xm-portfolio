@@ -10,6 +10,7 @@ import SkillTag from "../ui/SkillTag";
 import EducationList from "../features/about/EducationList";
 import Paragraph from "../features/about/Paragraph";
 import BackToTopButton from "../ui/BackToTopButton";
+import { Cog6ToothIcon, PencilSquareIcon } from "@heroicons/react/24/outline";
 
 const codingSkills = [
   { name: "JavaScript", color: "bg-red-700" },
@@ -26,12 +27,16 @@ const codingSkills = [
 ];
 
 const laSkills = [
-  { name: "Adobe", color: "bg-teal-950/80" },
+  { name: "Photoshop", color: "bg-teal-950/80" },
+  { name: "Illustrator", color: "bg-teal-950/80" },
+  { name: "InDesign", color: "bg-teal-950/80" },
+  { name: "Premiere Pro", color: "bg-teal-950/80" },
+  { name: "After Effects", color: "bg-teal-950/80" },
   { name: "AutoCAD", color: "bg-teal-950/80" },
   { name: "SketchUp", color: "bg-teal-950/80" },
   { name: "Rhino", color: "bg-teal-950/80" },
-  { name: "Lumion", color: "bg-teal-950/80" },
   { name: "Processing", color: "bg-teal-950/80" },
+  { name: "Figma", color: "bg-teal-950/80" },
   { name: "Sketch", color: "bg-teal-950/80" },
 ];
 
@@ -61,22 +66,34 @@ function About() {
             >
               <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
-                  My Skill Set
+                  Core Skills
                 </h2>
-                <div className="flex flex-col justify-center items-center mt-3 mb-8 gap-6 md:mx-10 mx-6">
-                  <div className="flex flex-wrap items-center justify-center gap-2">
-                    {codingSkills.map((coding) => (
-                      <SkillTag color={coding.color} key={coding.name}>
-                        {coding.name}
-                      </SkillTag>
-                    ))}
+                <div className="flex flex-col mt-3 mb-10 gap-6 md:mx-10 mx-6">
+                  <div className="text-red-700 flex-cols ml-5">
+                    <div className="flex items-center gap-1 mb-3">
+                      <Cog6ToothIcon className="h-6 w-6" />
+                      <h4 className="font-bold">Development</h4>
+                    </div>
+                    <div className="flex flex-wrap items-start justify-start gap-2">
+                      {codingSkills.map((coding) => (
+                        <SkillTag color={coding.color} key={coding.name}>
+                          {coding.name}
+                        </SkillTag>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap items-center justify-center gap-2">
-                    {laSkills.map((la) => (
-                      <SkillTag color={la.color} key={la.name}>
-                        {la.name}
-                      </SkillTag>
-                    ))}
+                  <div className="flex-cols ml-5">
+                    <div className="flex items-center gap-1 mb-3">
+                      <PencilSquareIcon className="h-6 w-6" />
+                      <h4 className="font-bold">Design</h4>
+                    </div>
+                    <div className="flex flex-wrap items-start justify-start gap-2">
+                      {laSkills.map((la) => (
+                        <SkillTag color={la.color} key={la.name}>
+                          {la.name}
+                        </SkillTag>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

@@ -200,7 +200,7 @@ function CareerPath() {
         >
           <div className="flex justify-between items-center">
             <h3 className="font-bold text-start">MDH</h3>
-            <div className="text-end inline-block text-sm">2016-2017</div>
+            <div className="text-end inline-block text-sm">2015-2016</div>
           </div>
           <p
             className="text-start text-stone-400 text-sm"

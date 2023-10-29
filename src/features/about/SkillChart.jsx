@@ -10,13 +10,14 @@ const skillData = [
 */
 
 const laSkills = [
-  { name: "Adobe", value: 70 },
+  { name: "Adobe Suite", value: 80 },
   { name: "AutoCAD", value: 50 },
   { name: "SketchUp", value: 30 },
   { name: "Lumion", value: 30 },
   { name: "Rhino", value: 10 },
   { name: "Processing", value: 10 },
-  { name: "Sketch", value: 10 },
+  { name: "Figma", value: 10 },
+  { name: "Sketch", value: 20 },
 ];
 const codingSkills = [
   { name: "JavaScript", value: 60 },
