@@ -4,7 +4,7 @@ const buttonStyle =
 function SortingMenu({ activeSort, handleSort }) {
   return (
     <ul
-      className="flex gap-2 md:justify-center items-center my-10 md:text-sm text-xs"
+      className="flex gap-2 lg:justify-center items-center my-10 md:text-sm text-xs"
       style={{ fontFamily: "Cutive Mono" }}
     >
       <li>
