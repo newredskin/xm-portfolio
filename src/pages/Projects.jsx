@@ -25,7 +25,7 @@ function Projects() {
             <div className="columns-1 sm:columns-2">
               {activeProjectList.map((project) => {
                 return (
-                  <div className="rounded-2xl cursor-pointer relative group">
+                  <div className="rounded-2xl cursor-pointer relative group bg-red-400">
                     <img
                       key={project.name}
                       src={project.images[0]}
