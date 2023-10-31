@@ -16,13 +16,13 @@ function Projects() {
   return (
     <>
       <div className="w-screen h-screen bg-orange-50/90 overflow-auto">
-        <div className="text-teal-900 mx-16 md:mx-28 lg:mx-64 p-1 flex flex-col justify-center items-center">
+        <div className="text-teal-900 mx-16 md:mx-28 lg:mx-56 xl:mx-64 p-1 flex flex-col justify-center items-center">
           <div className="pb-6 lg:max-w-[1280px] max-w-full">
             <h1 className="font-bold text-4xl mb-10 pt-28">Projects.</h1>
             <div className="overflow-auto">
               <SortingMenu activeSort={activeSort} handleSort={handleSort} />
             </div>
-            <div className="columns-1 md:columns-2">
+            <div className="columns-1 sm:columns-2">
               {activeProjectList.map((project) => {
                 return (
                   <div className="rounded-2xl cursor-pointer relative group">
