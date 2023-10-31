@@ -25,7 +25,7 @@ function DynamicIntroText() {
   }, []);
 
   return (
-    <div className="container bg-teal-950/70 text-center rounded-3xl text-sm text-stone-400 shadow-xl px-5 py-10">
+    <div className="container bg-teal-950/70 text-center rounded-3xl text-sm text-stone-400 shadow-xl px-5 py-10 md:max-w-[50%]">
       <span ref={el} />
     </div>
   );

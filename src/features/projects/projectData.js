@@ -58,7 +58,25 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [supabaseURL + "identifiers/" + "identifiers.gif"],
-    tools: ["rhino", "photoshop", "construction documentation"],
+    tools: ["rhino", "construction documentation"],
+  },
+  {
+    name: "residential",
+    category: "landscape",
+    title: "High-end Residential in Midwest",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "residential/" + "rankin_rendering_meadow.webp"],
+    tools: ["procreate", "sketchup", "lumion"],
+  },
+  {
+    name: "xm-portfolio",
+    category: "web-dev",
+    title: "Xiye's Portfolio Website",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "xm-portfolio/" + "xm-portfolio.mp4"],
+    tools: ["react", "javascript", "tailwindcss", "supabase"],
   },
 ];
 
