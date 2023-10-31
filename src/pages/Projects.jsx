@@ -44,7 +44,7 @@ function Projects() {
                       className="mb-4 rounded-2xl shadow-md object-cover group-hover:opacity-100"
                     />
                     <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 to-transparent opacity-0 group-hover:opacity-50  transition-all duration-500"></div>
-                    <div className="absolute inset-6 md:inset-8 lg:inset-6 flex flex-col justify-end">
+                    <div className="absolute inset-4 md:inset-8 lg:inset-6 flex flex-col justify-end">
                       <h3 className="text-stone-100 mb-3 text-md sm:text-2xl md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-500 font-bold">
                         {project.title}
                       </h3>
