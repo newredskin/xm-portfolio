@@ -7,6 +7,13 @@ export default {
         height: "height",
       },
     },
+    screens: {
+      sm: "576px",
+      md: "960px",
+      lg: "1280px",
+      xl: "1536px",
+      "2xl": "1920px",
+    },
   },
   plugins: [],
 };
