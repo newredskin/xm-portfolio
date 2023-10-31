@@ -52,15 +52,6 @@ const projectData = [
     tools: ["landscape design", "sketch", "photoshop"],
   },
   {
-    name: "identifiers",
-    category: "landscape",
-    title: "Neighborhood Identifiers",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "identifiers/" + "identifiers.gif"],
-    tools: ["rhino", "construction documentation"],
-  },
-  {
     name: "residential",
     category: "landscape",
     title: "High-end Residential in Midwest",
@@ -76,7 +67,34 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [supabaseURL + "xm-portfolio/" + "xm-portfolio.mp4"],
-    tools: ["react", "javascript", "tailwindcss", "supabase"],
+    tools: ["react", "javascript", "html", "tailwindcss", "supabase"],
+  },
+  {
+    name: "identifiers",
+    category: "landscape",
+    title: "Neighborhood Identifiers",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "identifiers/" + "identifiers.gif"],
+    tools: ["rhino", "construction documentation"],
+  },
+  {
+    name: "food-delivery",
+    category: "web-dev",
+    title: "Practice - Food Delivery App",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "food-delivery/" + "food_cover.webp"],
+    tools: ["react-router", "redux", "tailwindcss"],
+  },
+  {
+    name: "photography",
+    category: "photography",
+    title: "Photography 2016-2023",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "photography/" + "dji_colorado.jpg"],
+    tools: ["iphone", "dji", "gopro", "insta360"],
   },
 ];
 
