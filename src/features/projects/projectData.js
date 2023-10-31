@@ -121,8 +121,47 @@ const projectData = [
       "cloudinary",
     ],
   },
+  {
+    name: "graphic-design",
+    category: "graphic-product",
+    title: "Graphic Design",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "graphic-product/" + "adp-poster.webp"],
+    tools: ["sketch", "photoshop", "illustrator"],
+  },
+  {
+    name: "la-built",
+    category: "landscape",
+    title: "Built Landscape Projects",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "la-built/" + "promenade_1.webp"],
+    tools: [
+      "landscape design",
+      "photoshop",
+      "indesign",
+      "construction documentation",
+    ],
+  },
+  {
+    name: "logo-design",
+    category: "graphic-product",
+    title: "Logo Design",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "logo-design/" + "mn_health_program_logo.webp"],
+    tools: ["graphic design", "sketch", "illustrator"],
+  },
+  {
+    name: "art",
+    category: "graphic-product",
+    title: "Art Collection",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "art/" + "oil_painting_1.webp"],
+    tools: ["oil-painting", "sketch", "watercolor"],
+  },
 ];
 
 export default projectData;
-
-// https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/styling-lib/styling_lib_v1_cover.mp4
