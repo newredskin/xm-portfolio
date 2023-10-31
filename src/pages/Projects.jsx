@@ -48,8 +48,6 @@ function Projects() {
                         webkitPlaysinline
                         disablePictureInPicture
                         playsInline
-                        controls
-                        controlsList="nofullscreen"
                       >
                         <source src={project.images[0]} type="video/mp4" />
                       </video>
