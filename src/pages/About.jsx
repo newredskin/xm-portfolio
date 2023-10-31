@@ -119,10 +119,10 @@ function About() {
             >
               {" "}
               <button
-                className="hover:bg-red-700 hover:text-stone-100 text-red-700 my-12 p-3 animate-bounce outline outline-1 outline-red-700 transition-all duration-300 rounded-xl"
+                className="hover:bg-red-700 hover:text-stone-100 text-red-700 my-12 p-3 animate-bounce outline outline-1 outline-red-700 transition-all duration-300 rounded-xl flex items-center justify-center"
                 onClick={handleProjectClick}
               >
-                Check Projects <span className="text-2xl">&#x2192;</span>
+                Check Projects <span className="text-2xl ml-1">&#x2192;</span>
               </button>
             </div>
             <BackToTopButton />
