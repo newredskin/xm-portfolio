@@ -102,8 +102,8 @@ function CareerPath() {
       >
         <div className="flex flex-col items-center rounded-xl py-1 px-3 bg-orange-50/30 shadow-xl">
           <div
-            className="mt-5"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="self-end"
           >
             <ExternalSiteLink link="#" />
           </div>

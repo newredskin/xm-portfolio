@@ -18,8 +18,8 @@ function Home() {
       <div className="flex flex-col justify-center items-center h-screen gap-8 mx-16">
         <DynamicIntroText />
         <div
-          className={`transition-opacity duration-1000 ${
-            isButtonVisible ? "opacity-80" : "opacity-0"
+          className={`my-6 transition-opacity duration-1000 ${
+            isButtonVisible ? "opacity-100" : "opacity-0"
           }`}
         >
           <Button handleClick={() => navigate("/about")}>About</Button>

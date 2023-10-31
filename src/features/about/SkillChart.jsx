@@ -17,7 +17,7 @@ const laSkills = [
   { name: "Rhino", value: 10 },
   { name: "Processing", value: 10 },
   { name: "Figma", value: 10 },
-  { name: "Sketch", value: 20 },
+  { name: "Procreate", value: 20 },
 ];
 const codingSkills = [
   { name: "JavaScript", value: 60 },
