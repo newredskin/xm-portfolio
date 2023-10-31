@@ -45,6 +45,8 @@ function Projects() {
                         autoPlay
                         loop
                         muted
+                        webkit-playsinline
+                        playsinline
                       >
                         <source src={project.images[0]} type="video/mp4" />
                       </video>
