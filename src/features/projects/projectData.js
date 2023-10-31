@@ -79,12 +79,12 @@ const projectData = [
     tools: ["rhino", "construction documentation"],
   },
   {
-    name: "food-delivery",
+    name: "spas",
     category: "web-dev",
-    title: "Practice - Food Delivery App",
+    title: "Practice - SPA (single-page apps)",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "food-delivery/" + "food_cover.webp"],
+    images: [supabaseURL + "spas/" + "spas_video.mp4"],
     tools: ["react-router", "redux", "tailwindcss"],
   },
   {
@@ -96,6 +96,33 @@ const projectData = [
     images: [supabaseURL + "photography/" + "dji_colorado.jpg"],
     tools: ["iphone", "dji", "gopro", "insta360"],
   },
+  {
+    name: "designcamp",
+    category: "web-dev",
+    title: "Design Camp",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "designcamp/" + "designcamp_cover.webp"],
+    tools: ["javascript", "html&css", "express", "mongodb", "cloudinary"],
+  },
+  {
+    name: "stylinglib",
+    category: "web-dev",
+    title: "Styling Management App",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [supabaseURL + "styling-lib/" + "styling_lib_v1_cover.mp4"],
+    tools: [
+      "react",
+      "javascript",
+      "html&css",
+      "express",
+      "mongodb",
+      "cloudinary",
+    ],
+  },
 ];
 
 export default projectData;
+
+// https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/styling-lib/styling_lib_v1_cover.mp4
