@@ -45,9 +45,9 @@ function Projects() {
                         autoPlay
                         loop
                         muted
-                        webkit-playsinline
+                        webkitPlaysinline
                         disablePictureInPicture
-                        playsinline
+                        playsInline
                         controls
                         controlsList="nofullscreen"
                       >
