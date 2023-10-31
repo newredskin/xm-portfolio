@@ -4,7 +4,7 @@ const buttonStyle =
 function SortingMenu({ activeSort, handleSort }) {
   return (
     <ul
-      className="flex gap-2 lg:justify-center items-center my-10 md:text-sm text-xs"
+      className="flex gap-1 lg:justify-center items-center md:text-sm text-xs rounded-xl"
       style={{ fontFamily: "Cutive Mono" }}
     >
       <li>
@@ -12,7 +12,7 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("all")}
           className={`${buttonStyle} ${
             activeSort === "all"
-              ? "bg-red-700 text-stone-200 px-5"
+              ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
               : "bg-opacity-0 text-teal-900"
           }`}
         >
@@ -72,7 +72,7 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("photography")}
           className={`${buttonStyle} ${
             activeSort === "photography"
-              ? "bg-red-700 text-stone-200 px-5"
+              ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
               : "bg-opacity-0 text-teal-900"
           }`}
         >

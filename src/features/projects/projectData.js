@@ -9,8 +9,8 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      supabaseURL + "aavs-workshop/" + "aavs_built" + ".webp",
-      supabaseURL + "aavs-workshop/" + "aavs_photo-1" + ".webp",
+      supabaseURL + "aavs-workshop/" + "aavs_built.webp",
+      supabaseURL + "aavs-workshop/" + "aavs_photo-1.webp",
     ],
     tools: ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
   },
@@ -21,39 +21,36 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      supabaseURL + "nlsd/" + "nlsd_chicago_a" + ".webp",
-      supabaseURL + "nlsd/" + "nlsd_chicago_b" + ".webp",
+      supabaseURL + "nlsd/" + "nlsd_chicago.gif",
+      supabaseURL + "nlsd/" + "nlsd_chicago_b.webp",
     ],
-    tools: ["urban design", "photoshop", "rhino", "sketch"],
+    tools: ["urban design", "sketch", "photoshop"],
   },
   {
-    name: "test",
-    title: "TEST",
+    name: "lv",
     category: "landscape",
+    title: "Learning from Las Vegas",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "nlsd/" + "nlsd_chicago_b" + ".webp"],
-    tools: ["urban design", "photoshop", "rhino", "sketch"],
+    images: [supabaseURL + "lv/" + "lv_model_3.webp"],
+    tools: [
+      "urban research",
+      "landscape design",
+      "sketchup",
+      "photoshop",
+      "illustrator",
+      "indesign",
+    ],
   },
   {
-    name: "test2",
-    title: "TEST2",
+    name: "playgrounds",
     category: "landscape",
+    title: "Playgrounds in Glencoe",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "aavs-workshop/" + "aavs_photo-2" + ".webp"],
-    tools: ["urban design", "photoshop", "rhino", "sketch"],
+    images: [supabaseURL + "playgrounds/" + "woodlawn.gif"],
+    tools: ["landscape design", "sketch", "photoshop"],
   },
 ];
 
 export default projectData;
-
-/* 
-"aavs"
-https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/aavs-workshop/aavs-attractors.webp
-https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/aavs-workshop/aavs-basic-settings.webp?t=2023-10-30T16%3A38%3A05.327Z
-https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/aavs-workshop/aavs-basic-settings.webp?t=2023-10-30T16%3A38%3A05.327Z
-
-
-
-*/

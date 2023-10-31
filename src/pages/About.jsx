@@ -69,7 +69,7 @@ function About() {
 
             <div
               data-aos="fade-up"
-              className="mt-10 grid md:grid-cols-5 bg-orange-100/50 shadow-md rounded-3xl"
+              className="mt-10 grid md:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
             >
               <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
