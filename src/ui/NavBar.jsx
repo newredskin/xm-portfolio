@@ -17,8 +17,6 @@ function NavBar({
 
   const navigate = useNavigate();
 
-  const first = null;
-
   function toggleNav() {
     setIsNavExpanded((e) => !e);
   }
@@ -40,9 +38,9 @@ function NavBar({
                 className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300"
               >
                 {isDarkMode ? (
-                  <MoonIcon className="h-6 w-6" />
-                ) : (
                   <SunIcon className="h-6 w-6" />
+                ) : (
+                  <MoonIcon className="h-6 w-6" />
                 )}
               </div>
               <button
