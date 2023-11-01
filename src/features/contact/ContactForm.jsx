@@ -53,7 +53,7 @@ function ContactForm() {
       onSubmit={handleSubmit}
       className="flex flex-col gap-6 justify-center items-center"
     >
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-2/3">
+      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-full">
         <input
           placeholder="Name"
           type="text"
@@ -65,7 +65,7 @@ function ContactForm() {
           className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300"
         />
       </div>
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-2/3">
+      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-full">
         <input
           placeholder="Email"
           type="email"
@@ -77,7 +77,7 @@ function ContactForm() {
           className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300"
         />
       </div>
-      <div className="rounded-2xl shadow-sm p-[2px] bg-orange-50/70 w-2/3">
+      <div className="rounded-2xl shadow-sm p-[2px] bg-orange-50/70 w-full">
         <textarea
           placeholder="Message"
           id="message"

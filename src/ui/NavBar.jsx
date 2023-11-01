@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ function NavBar() {
   ];
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const navigate = useNavigate();
 
   function toggleNav() {
     setIsNavExpanded((e) => !e);
@@ -57,10 +58,17 @@ function NavBar() {
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
                     id="menuBar"
-                    className="space-y-8 px-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end"
+                    className="px-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end"
                   >
                     {links.map((link) => (
-                      <li className="" key={link.name}>
+                      <li
+                        className="hover:cursor-pointer py-3 hover:border-b-2 transition-all duration-300 border-stone-100/50 border-b-0"
+                        key={link.name}
+                        onClick={() => {
+                          navigate(link.path);
+                          toggleNav();
+                        }}
+                      >
                         <NavLink
                           to={link.path}
                           className={`${({ isActive }) =>
