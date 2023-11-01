@@ -5,7 +5,10 @@ import NavBar from "./NavBar";
 
 function AppLayout() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    return storedDarkMode === "true";
+  });
 
   useEffect(
     function () {
@@ -25,6 +28,13 @@ function AppLayout() {
       if (!isNavExpanded) document.body.style.overflow = "auto";
     },
     [isDarkMode, isNavExpanded]
+  );
+
+  useEffect(
+    function () {
+      localStorage.setItem("darkMode", isDarkMode);
+    },
+    [isDarkMode, toggleDarkMode]
   );
 
   function toggleDarkMode() {
