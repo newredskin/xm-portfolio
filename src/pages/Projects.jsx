@@ -40,10 +40,10 @@ function Projects() {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
                 return (
-                  <div className="rounded-2xl cursor-pointer relative group">
+                  <div className="cursor-pointer relative group shadow-md rounded-2xl ">
                     {isVideo ? (
                       <video
-                        className="rounded-2xl shadow-md mb-4"
+                        className="rounded-2xl mb-4 object-cover"
                         key={project.name}
                         autoPlay
                         loop
@@ -58,10 +58,10 @@ function Projects() {
                         key={project.name}
                         src={project.images[0]}
                         alt={`images of ${project.title}`}
-                        className="mb-4 rounded-2xl shadow-md object-cover group-hover:opacity-100 bg-gradient-to-t from-stone-100/70 to-transparent"
+                        className="mb-4 rounded-2xl object-cover bg-gradient-to-t from-stone-100/70 to-transparent"
                       />
                     )}
-                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50  transition-all duration-500"></div>
+                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500"></div>
                     <div className="absolute inset-4 md:inset-6 2xl:inset-12 flex flex-col justify-end">
                       <h3 className="text-stone-100 mb-3 text-md sm:text-2xl md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-500 font-bold">
                         {project.title}
