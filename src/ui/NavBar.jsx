@@ -62,7 +62,11 @@ function NavBar() {
                   >
                     {links.map((link) => (
                       <li
-                        className="hover:cursor-pointer py-3 hover:border-b-2 transition-all duration-300 border-stone-100/50 border-b-0"
+                        className={`${
+                          isNavExpanded
+                            ? "hover:cursor-pointer py-3 hover:bg-gradient-to-r hover:from-transparent hover:via-orange-50/20 hover:to-transparent transition-all duration-500 border-stone-100/50 "
+                            : ""
+                        }`}
                         key={link.name}
                         onClick={() => {
                           navigate(link.path);
