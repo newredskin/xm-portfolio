@@ -35,7 +35,7 @@ function Projects() {
             <div className="overflow-x-auto mb-5 mt-20">
               <SortingMenu activeSort={activeSort} handleSort={handleSort} />
             </div>
-            <div className="columns-1 xl:columns-2 space-y-4 mb-6 box-content">
+            <div className="columns-1 xl:columns-2 space-y-4 mb-6">
               {activeProjectList.map((project) => {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
