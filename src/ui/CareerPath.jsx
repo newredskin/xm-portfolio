@@ -37,7 +37,7 @@ function CareerPath() {
   return (
     <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 pt-16">
       {/* HS */}
-      <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 shadow-xl">
+      <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80    shadow-xl">
         <button
           ref={refHS}
           onClick={() => {
@@ -74,7 +74,7 @@ function CareerPath() {
       </div>
 
       {/* Freelance */}
-      <li className="col-span-8 lg:col-start-6 lg:col-span-3 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
+      <li className="col-span-8 lg:col-start-6 lg:col-span-3 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80 top-1/3 left-1/4 shadow-xl">
         <button
           ref={refFL}
           onClick={() => {
@@ -116,7 +116,7 @@ function CareerPath() {
       </div>
 
       {/* Altamanu */}
-      <li className="col-span-8 lg:col-start-3 lg:col-span-2 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
+      <li className="col-span-8 lg:col-start-3 lg:col-span-2 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80 top-1/3 left-1/4 shadow-xl">
         <button
           ref={refAM}
           onClick={() => {
@@ -153,7 +153,7 @@ function CareerPath() {
       </div>
 
       {/* HGA */}
-      <li className="col-span-8 lg:col-start-2 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
+      <li className="col-span-8 lg:col-start-2 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80  top-1/3 left-1/4 shadow-xl">
         <button
           ref={refHGA}
           onClick={() => {
@@ -190,7 +190,7 @@ function CareerPath() {
       </div>
 
       {/* MDH */}
-      <li className="col-span-8 lg:col-start-1 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 hover:bg-red-700 top-1/3 left-1/4 shadow-xl">
+      <li className="col-span-8 lg:col-start-1 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80  top-1/3 left-1/4 shadow-xl">
         <button
           ref={refMDH}
           onClick={() => {

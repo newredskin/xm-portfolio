@@ -28,17 +28,17 @@ const codingSkills = [
 ];
 
 const laSkills = [
-  { name: "Photoshop", color: "bg-teal-950/80" },
-  { name: "Illustrator", color: "bg-teal-950/80" },
-  { name: "InDesign", color: "bg-teal-950/80" },
-  { name: "Premiere Pro", color: "bg-teal-950/80" },
-  { name: "After Effects", color: "bg-teal-950/80" },
-  { name: "AutoCAD", color: "bg-teal-950/80" },
-  { name: "SketchUp", color: "bg-teal-950/80" },
-  { name: "Rhino", color: "bg-teal-950/80" },
-  { name: "Processing", color: "bg-teal-950/80" },
-  { name: "Figma", color: "bg-teal-950/80" },
-  { name: "Procreate", color: "bg-teal-950/80" },
+  { name: "Photoshop", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Illustrator", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "InDesign", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Premiere Pro", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "After Effects", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "AutoCAD", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "SketchUp", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Rhino", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Processing", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Figma", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Procreate", color: "bg-teal-950/80 dark:bg-gray-900/80" },
 ];
 
 function About() {
@@ -59,8 +59,8 @@ function About() {
 
   return (
     <>
-      <div className="w-screen min-h-screen bg-orange-50/90">
-        <div className="text-teal-900 mx-16 md:mx-24 lg:mx-36 flex flex-col justify-center items-center">
+      <div className="w-screen min-h-screen bg-orange-50/90 dark:bg-gray-800">
+        <div className="text-teal-900 dark:text-stone-300 mx-16 md:mx-24 lg:mx-36 flex flex-col justify-center items-center">
           <h1 className="font-bold text-4xl mb-10 pt-28">
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>
@@ -75,7 +75,7 @@ function About() {
               data-aos="fade-up"
               className="mt-10 grid lg:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
             >
-              <div className="md:col-start-1 lg:col-span-2 flex flex-col justify-center items-center lg:pl-10">
+              <div className="md:col-start-1 lg:col-span-2 flex flex-col justify-center items-center lg:pl-10 dark:text-stone-200">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   Toolset
                 </h2>
@@ -123,7 +123,7 @@ function About() {
             >
               {" "}
               <button
-                className="hover:bg-red-700 hover:text-stone-100 text-red-700 my-12 p-3 animate-bounce outline outline-1 outline-red-700 transition-all duration-300 rounded-xl flex items-center justify-center"
+                className="hover:bg-red-700 hover:text-stone-100 text-red-700 dark:text-stone-300 my-12 p-3 animate-bounce outline outline-1 outline-red-700 dark:outline-stone-200 transition-all duration-300 rounded-xl flex items-center justify-center"
                 onClick={handleProjectClick}
               >
                 Check Projects <span className="text-2xl ml-1">&#x2192;</span>

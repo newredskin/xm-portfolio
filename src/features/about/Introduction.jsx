@@ -10,7 +10,7 @@ function Introduction() {
         journey has not only ignited my passion for{" "}
         <DynamicText
           content={["artistry", "creativity", "craftsmanship"]}
-          style="text-red-700 bg-orange-50/50 underline decoration-2 underline-offset-4"
+          style="text-red-700 bg-orange-50/50 dark:bg-orange-50/80 underline decoration-2 underline-offset-4"
         />
         but also nurtured my knack for research, analytical thinking and
         problem-solving. Alongside my landscape architecture work, I&apos;ve

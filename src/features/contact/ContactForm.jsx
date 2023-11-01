@@ -53,7 +53,7 @@ function ContactForm() {
       onSubmit={handleSubmit}
       className="flex flex-col gap-6 justify-center items-center"
     >
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-full">
+      <div className="rounded-2xl shadow-sm bg-orange-50/70 dark:bg-gray-300/50 w-full">
         <input
           placeholder="Name"
           type="text"
@@ -62,10 +62,10 @@ function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300"
+          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300 placeholder:text-stone-300"
         />
       </div>
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 w-full">
+      <div className="rounded-2xl shadow-sm bg-orange-50/70 dark:bg-gray-300/50 w-full">
         <input
           placeholder="Email"
           type="email"
@@ -74,10 +74,10 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300"
+          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300 placeholder:text-stone-300"
         />
       </div>
-      <div className="rounded-2xl shadow-sm p-[2px] bg-orange-50/70 w-full">
+      <div className="rounded-2xl shadow-sm p-[2px] bg-orange-50/70 dark:bg-gray-300/50 w-full">
         <textarea
           placeholder="Message"
           id="message"
@@ -86,15 +86,15 @@ function ContactForm() {
           onChange={handleChange}
           required
           rows="8"
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 resize-y block rounded-xl transition-all duration-300"
+          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 resize-y block rounded-xl transition-all duration-300 placeholder:text-stone-300"
         />
       </div>
       <div className="flex flex-col gap-4 justify-between">
-        <button className="hover:bg-red-700 hover:text-stone-100 text-red-700 p-3 outline outline-1 outline-red-700 transition-all duration-300 bg-orange-50/50 rounded-xl py-3 px-5 focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none">
+        <button className="hover:bg-red-700 dark:hover:bg-red-700 hover:text-stone-100 text-red-700 p-3 outline outline-1 outline-red-700 transition-all duration-300 bg-orange-50/50 dark:bg-transparent rounded-xl py-3 px-5 focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none">
           Submit
         </button>
         <button
-          className="underline rounded-xl flex items-center justify-center text-sm"
+          className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400"
           onClick={handleBackToHome}
         >
           Back to Home

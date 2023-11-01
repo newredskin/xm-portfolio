@@ -14,7 +14,7 @@ function MouseFollow() {
 
   return (
     <div
-      className="bg-red-200/50 rounded-full w-[30rem] h-[30rem] blur-3xl -z-50"
+      className="bg-teal-400/5 rounded-full w-[30rem] h-[30rem] blur-3xl -z-50"
       style={{
         position: "fixed",
         top: position.y - 240 + "px",

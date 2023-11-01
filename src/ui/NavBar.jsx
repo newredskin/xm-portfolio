@@ -1,8 +1,13 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
-import { useState } from "react";
+import { CodeBracketSquareIcon, MoonIcon } from "@heroicons/react/24/solid";
+import { SunIcon } from "@heroicons/react/24/outline";
 
-function NavBar({ isNavExpanded, setIsNavExpanded }) {
+function NavBar({
+  isNavExpanded,
+  setIsNavExpanded,
+  toggleDarkMode,
+  isDarkMode,
+}) {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -10,7 +15,6 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
     { name: "Contact", path: "/contact" },
   ];
 
-  // const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navigate = useNavigate();
 
   function toggleNav() {
@@ -19,7 +23,7 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
 
   return (
     <nav className="fixed z-50">
-      <div className="relative z-20 bg-teal-950 ">
+      <div className="relative z-20 bg-teal-950 dark:bg-gray-900">
         <div className="px-3 md:px-10 lg:w-screen lg:px-6 lg:py-4 w-screen">
           <div className="flex items-center justify-between">
             <div className="flex relative z-20 items-center gap-2">
@@ -53,12 +57,12 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
                   isNavExpanded
                     ? "peer-checked:translate-x-0 backdrop-blur-sm"
                     : "translate-x-[-100%] backdrop-blur-0"
-                } fixed inset-0 w-screen  bg-teal-950/50 transition duration-300  md:static md:w-auto md:translate-x-0`}
+                } fixed inset-0 w-screen transition duration-300  md:static md:w-auto md:translate-x-0`}
               >
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
                     id="menuBar"
-                    className="px-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end"
+                    className="px-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end items-center"
                   >
                     {links.map((link) => (
                       <li
@@ -94,6 +98,16 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
                         </NavLink>
                       </li>
                     ))}
+                    <div
+                      onClick={toggleDarkMode}
+                      className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300 mt-5"
+                    >
+                      {isDarkMode ? (
+                        <MoonIcon className="h-6 w-6" />
+                      ) : (
+                        <SunIcon className="h-6 w-6" />
+                      )}
+                    </div>
                   </ul>
                 </div>
               </div>

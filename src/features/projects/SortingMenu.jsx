@@ -13,7 +13,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "all"
               ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           All
@@ -25,7 +25,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "web-dev"
               ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           Web Dev
@@ -37,7 +37,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "landscape"
               ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           Landscape Design
@@ -49,7 +49,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "research-visualization"
               ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           Research/ Visualization
@@ -61,7 +61,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "graphic-product"
               ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           Graphic/Product Design
@@ -73,7 +73,7 @@ function SortingMenu({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "photography"
               ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
-              : "bg-opacity-0 text-teal-900"
+              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
           Photography

@@ -61,6 +61,8 @@ const renderCustomizedLabel = ({
 };
 
 export default function SkillChart() {
+  const fillColor = true ? "rgb(4 47 46 / 0.8)" : "rgb(17 24 39 / 0.8)";
+
   return (
     <ResponsiveContainer
       aspect={1}
@@ -74,7 +76,7 @@ export default function SkillChart() {
           cx="50%"
           cy="50%"
           outerRadius={90}
-          fill="rgb(4 47 46 / 0.8)"
+          fill={fillColor}
           labelLine={false}
           label={renderCustomizedLabel}
         />
