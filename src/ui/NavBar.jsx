@@ -64,8 +64,8 @@ function NavBar() {
                       <li
                         className={`${
                           isNavExpanded
-                            ? "hover:cursor-pointer py-3 hover:bg-gradient-to-r hover:from-transparent hover:via-orange-50/20 hover:to-transparent transition-all duration-500 border-stone-100/50 "
-                            : ""
+                            ? "hover:cursor-pointer py-3 hover:bg-gradient-to-r hover:from-transparent hover:via-orange-50/20  hover:md:via-transparent hover:to-transparent transition-all duration-500 border-stone-100/50"
+                            : "sm:py-5 lg:py-1"
                         }`}
                         key={link.name}
                         onClick={() => {
@@ -79,7 +79,6 @@ function NavBar() {
                             isActive
                               ? "active"
                               : "non-active"}} group relative before:absolute before:inset-x-0 before:bottom-0 before:h-1 before:origin-right before:scale-x-0 before:bg-red-700 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100`}
-                          onClick={toggleNav}
                         >
                           {link.name}
                         </NavLink>

@@ -57,7 +57,7 @@ function About() {
   return (
     <>
       <div className="w-screen min-h-screen bg-orange-50/90">
-        <div className="text-teal-900 mx-16 flex flex-col justify-center items-center">
+        <div className="text-teal-900 mx-16 md:mx-24 lg:mx-36 flex flex-col justify-center items-center">
           <h1 className="font-bold text-4xl mb-10 pt-28">
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>
@@ -70,13 +70,13 @@ function About() {
 
             <div
               data-aos="fade-up"
-              className="mt-10 grid md:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
+              className="mt-10 grid lg:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
             >
-              <div className="md:col-start-1 md:col-span-2 flex flex-col justify-center items-center md:pl-10">
+              <div className="md:col-start-1 lg:col-span-2 flex flex-col justify-center items-center lg:pl-10">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   Toolset
                 </h2>
-                <div className="flex flex-col mt-3 mb-10 gap-6 md:mx-10 mx-6">
+                <div className="flex flex-col mt-3 mb-10 gap-6 lg:mx-10 mx-6">
                   <div className="text-red-700 flex-cols ml-5">
                     <div className="flex items-center gap-1 mb-3">
                       <Cog6ToothIcon className="h-6 w-6" />
