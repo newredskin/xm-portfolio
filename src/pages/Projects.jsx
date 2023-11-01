@@ -4,6 +4,7 @@ import projectData from "../features/projects/projectData";
 import Footer from "../ui/Footer";
 import SortingMenu from "../features/projects/SortingMenu";
 import Tag from "../ui/Tag";
+import BackToTopButton from "../ui/BackToTopButton";
 
 function Projects() {
   const [activeSort, setActiveSort] = useState("web-dev");
@@ -28,7 +29,7 @@ function Projects() {
 
   return (
     <>
-      <div className="w-screen h-screen bg-orange-50/90 overflow-auto">
+      <div className="w-screen min-h-screen bg-orange-50/90">
         <div className="text-teal-900 mx-16 md:mx-28 lg:mx-56 xl:mx-64 p-1 flex flex-col justify-center items-center">
           <div className="pb-6 lg:max-w-[1280px] max-w-full">
             <h1 className="font-bold text-4xl mb-10 pt-28">Projects.</h1>
@@ -79,6 +80,7 @@ function Projects() {
                 );
               })}
             </div>
+            <BackToTopButton />
           </div>
         </div>
       </div>

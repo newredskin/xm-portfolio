@@ -71,6 +71,7 @@ function NavBar() {
                         onClick={() => {
                           navigate(link.path);
                           toggleNav();
+                          window.scrollTo({ top: 0, behavior: "smooth" });
                         }}
                       >
                         <NavLink
