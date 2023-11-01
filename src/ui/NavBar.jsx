@@ -76,6 +76,15 @@ function NavBar() {
                       >
                         <NavLink
                           to={link.path}
+                          onClick={
+                            isNavExpanded
+                              ? null
+                              : () =>
+                                  window.scrollTo({
+                                    top: 0,
+                                    behavior: "smooth",
+                                  })
+                          }
                           className={`${({ isActive }) =>
                             isActive
                               ? "active"
