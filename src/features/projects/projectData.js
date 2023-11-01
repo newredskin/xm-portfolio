@@ -42,7 +42,7 @@ const projectData = [
     title: "Xiye's Portfolio Website",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "xm-portfolio/" + "xm-portfolio.mp4"],
+    images: [supabaseURL + "xm-portfolio/" + "xm-portfolio.webp"],
     tools: ["react", "javascript", "html", "tailwindcss", "supabase"],
   },
   {

@@ -35,15 +35,15 @@ function Projects() {
             <div className="overflow-x-auto mb-5 mt-20">
               <SortingMenu activeSort={activeSort} handleSort={handleSort} />
             </div>
-            <div className="columns-1 xl:columns-2">
+            <div className="columns-1 xl:columns-2 space-y-4">
               {activeProjectList.map((project) => {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
                 return (
-                  <div className="cursor-pointer bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl ">
+                  <div className="cursor-pointer bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full">
                     {isVideo ? (
                       <video
-                        className="rounded-2xl mb-4 object-cover"
+                        className="rounded-2xl object-cover"
                         key={project.name}
                         autoPlay
                         loop
@@ -58,7 +58,7 @@ function Projects() {
                         key={project.name}
                         src={project.images[0]}
                         alt={`images of ${project.title}`}
-                        className="mb-4 rounded-2xl object-cover"
+                        className="rounded-2xl object-cover"
                       />
                     )}
                     <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500"></div>
