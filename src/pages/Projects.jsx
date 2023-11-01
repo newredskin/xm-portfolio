@@ -6,7 +6,7 @@ import SortingMenu from "../features/projects/SortingMenu";
 import Tag from "../ui/Tag";
 
 function Projects() {
-  const [activeSort, setActiveSort] = useState("all");
+  const [activeSort, setActiveSort] = useState("web-dev");
   const [activeProjectList, setActiveProjectList] = useState(projectData);
 
   useEffect(
@@ -14,7 +14,9 @@ function Projects() {
       setActiveProjectList(
         activeSort === "all"
           ? projectData
-          : projectData.filter((project) => project.category === activeSort)
+          : projectData.filter((project) =>
+              project.category.includes(activeSort)
+            )
       );
     },
     [activeSort]

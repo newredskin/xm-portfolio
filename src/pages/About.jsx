@@ -12,6 +12,7 @@ import EducationList from "../features/about/EducationList";
 import Paragraph from "../features/about/Paragraph";
 import BackToTopButton from "../ui/BackToTopButton";
 import { useNavigate } from "react-router-dom";
+import ContactForm from "../features/contact/ContactForm";
 
 const codingSkills = [
   { name: "JavaScript", color: "bg-red-700" },

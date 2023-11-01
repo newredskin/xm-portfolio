@@ -4,7 +4,7 @@ const supabaseURL =
 const projectData = [
   {
     name: "designcamp",
-    category: "web-dev",
+    category: ["web-dev"],
     title: "Design Camp",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -13,7 +13,7 @@ const projectData = [
   },
   {
     name: "spas",
-    category: "web-dev",
+    category: ["web-dev"],
     title: "Practice - SPA (single-page apps)",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -22,7 +22,7 @@ const projectData = [
   },
   {
     name: "stylinglib",
-    category: "web-dev",
+    category: ["web-dev"],
     title: "Styling Management App",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -38,7 +38,7 @@ const projectData = [
   },
   {
     name: "xm-portfolio",
-    category: "web-dev",
+    category: ["web-dev"],
     title: "Xiye's Portfolio Website",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -47,7 +47,7 @@ const projectData = [
   },
   {
     name: "lv",
-    category: "landscape",
+    category: ["landscape", "research-visualization"],
     title: "Learning from Las Vegas",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -63,7 +63,7 @@ const projectData = [
   },
   {
     name: "aavs-workshop",
-    category: "research-visualization",
+    category: ["research-visualization"],
     title: "Growth",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -75,7 +75,7 @@ const projectData = [
   },
   {
     name: "graphic-design",
-    category: "graphic-product",
+    category: ["graphic-product"],
     title: "Graphic Design",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -84,7 +84,7 @@ const projectData = [
   },
   {
     name: "nlsd",
-    category: "landscape",
+    category: ["landscape"],
     title: "North Lake Shore Drive",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -96,7 +96,7 @@ const projectData = [
   },
   {
     name: "playgrounds",
-    category: "landscape",
+    category: ["landscape"],
     title: "Playgrounds in Glencoe",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -105,7 +105,7 @@ const projectData = [
   },
   {
     name: "residential",
-    category: "landscape",
+    category: ["landscape"],
     title: "High-end Residential in Midwest",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -114,7 +114,7 @@ const projectData = [
   },
   {
     name: "la-built",
-    category: "landscape",
+    category: ["landscape"],
     title: "Built Landscape Projects",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -128,7 +128,7 @@ const projectData = [
   },
   {
     name: "identifiers",
-    category: "landscape",
+    category: ["landscape"],
     title: "Neighborhood Identifiers",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -137,7 +137,7 @@ const projectData = [
   },
   {
     name: "logo-design",
-    category: "graphic-product",
+    category: ["graphic-product"],
     title: "Logo Design",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -146,7 +146,7 @@ const projectData = [
   },
   {
     name: "art",
-    category: "graphic-product",
+    category: ["graphic-product"],
     title: "Art Collection",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
@@ -155,7 +155,7 @@ const projectData = [
   },
   {
     name: "photography",
-    category: "photography",
+    category: ["photography"],
     title: "Photography 2016-2023",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
