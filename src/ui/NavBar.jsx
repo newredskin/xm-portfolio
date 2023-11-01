@@ -72,7 +72,7 @@ function NavBar({
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
                     id="menuBar"
-                    className="px-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end items-center"
+                    className="md:pl-8 pl-14 pr-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end items-center"
                   >
                     {links.map((link) => (
                       <li

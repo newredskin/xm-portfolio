@@ -46,26 +46,30 @@ function Projects() {
                 return (
                   <div className="bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full">
                     {isVideo ? (
-                      <video
-                        className="rounded-2xl object-cover"
-                        key={project.name}
-                        autoPlay
-                        loop
-                        muted
-                        disablePictureInPicture
-                        playsInline
-                      >
-                        <source src={project.images[0]} type="video/mp4" />
-                      </video>
+                      <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
+                        <video
+                          className="rounded-2xl object-cover"
+                          key={project.name}
+                          autoPlay
+                          loop
+                          muted
+                          disablePictureInPicture
+                          playsInline
+                        >
+                          <source src={project.images[0]} type="video/mp4" />
+                        </video>
+                      </div>
                     ) : (
-                      <img
-                        key={project.name}
-                        src={project.images[0]}
-                        alt={`images of ${project.title}`}
-                        className="rounded-2xl object-cover"
-                      />
+                      <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
+                        <img
+                          key={project.name}
+                          src={project.images[0]}
+                          alt={`images of ${project.title}`}
+                          className="rounded-2xl object-cover"
+                        />
+                      </div>
                     )}
-                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500"></div>
+                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500" />
                     <div className="absolute inset-4 md:inset-6 2xl:inset-12 flex flex-col justify-end">
                       <h3 className="text-stone-100 mb-3 text-md sm:text-2xl md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-500 font-bold">
                         {project.title}

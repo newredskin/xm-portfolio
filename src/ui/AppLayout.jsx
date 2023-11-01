@@ -13,6 +13,8 @@ function AppLayout() {
   useEffect(
     function () {
       const body = document.getElementById("full-content");
+      const screenWidth = window.innerWidth;
+      console.log(screenWidth);
 
       if (isDarkMode) {
         document.documentElement.classList.add("dark");
@@ -24,7 +26,8 @@ function AppLayout() {
         body.classList.remove("bg-dark");
       }
 
-      if (isNavExpanded) document.body.style.overflow = "hidden";
+      if (isNavExpanded && screenWidth < 768)
+        document.body.style.overflow = "hidden";
       if (!isNavExpanded) document.body.style.overflow = "auto";
     },
     [isDarkMode, isNavExpanded]
