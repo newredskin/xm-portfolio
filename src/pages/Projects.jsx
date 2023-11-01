@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 
-import projectData from "../features/projects/projectData";
+import projectData from "../data/projectData";
 import Footer from "../ui/Footer";
 import SortingMenu from "../features/projects/SortingMenu";
 import Tag from "../ui/Tag";
 import BackToTopButton from "../ui/BackToTopButton";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const [activeSort, setActiveSort] = useState("web-dev");
   const [activeProjectList, setActiveProjectList] = useState(projectData);
+  const navigate = useNavigate();
 
   useEffect(
     function () {
@@ -41,7 +44,7 @@ function Projects() {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
                 return (
-                  <div className="cursor-pointer bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full">
+                  <div className="bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full">
                     {isVideo ? (
                       <video
                         className="rounded-2xl object-cover"
@@ -75,6 +78,12 @@ function Projects() {
                           <Tag>{tool}</Tag>
                         ))}
                       </div>
+                    </div>
+                    <div className="absolute inset-0 flex justify-end text-stone-200">
+                      <ArrowUpRightIcon
+                        className="h-8 w-8 hover:cursor-pointer bg-red-700/90 hover:bg-red-600 rounded-tr-2xl p-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300"
+                        onClick={() => navigate(`/projects/${project.name}`)}
+                      />
                     </div>
                   </div>
                 );
