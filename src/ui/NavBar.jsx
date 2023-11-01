@@ -17,6 +17,8 @@ function NavBar({
 
   const navigate = useNavigate();
 
+  const first = null;
+
   function toggleNav() {
     setIsNavExpanded((e) => !e);
   }
@@ -33,6 +35,16 @@ function NavBar({
               <span className="text-stone-200">XIYE MOU</span>
             </div>
             <div className="flex items-center justify-end mr-3">
+              <div
+                onClick={toggleDarkMode}
+                className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300"
+              >
+                {isDarkMode ? (
+                  <MoonIcon className="h-6 w-6" />
+                ) : (
+                  <SunIcon className="h-6 w-6" />
+                )}
+              </div>
               <button
                 className="relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
                 onClick={toggleNav}
@@ -57,7 +69,7 @@ function NavBar({
                   isNavExpanded
                     ? "peer-checked:translate-x-0 backdrop-blur-sm"
                     : "translate-x-[-100%] backdrop-blur-0"
-                } fixed inset-0 w-screen transition duration-300  md:static md:w-auto md:translate-x-0`}
+                } fixed inset-0 w-screen transition duration-300 md:static md:w-auto md:translate-x-0 bg-teal-950/80 dark:bg-gray-900/80`}
               >
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
@@ -98,16 +110,6 @@ function NavBar({
                         </NavLink>
                       </li>
                     ))}
-                    <div
-                      onClick={toggleDarkMode}
-                      className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300 mt-5"
-                    >
-                      {isDarkMode ? (
-                        <MoonIcon className="h-6 w-6" />
-                      ) : (
-                        <SunIcon className="h-6 w-6" />
-                      )}
-                    </div>
                   </ul>
                 </div>
               </div>
