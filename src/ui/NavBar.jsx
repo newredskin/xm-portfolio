@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
-function NavBar() {
+function NavBar({ isNavExpanded, setIsNavExpanded }) {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -10,7 +10,7 @@ function NavBar() {
     { name: "Contact", path: "/contact" },
   ];
 
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  // const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navigate = useNavigate();
 
   function toggleNav() {
