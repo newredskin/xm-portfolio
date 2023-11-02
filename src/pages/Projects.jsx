@@ -9,7 +9,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  const [activeSort, setActiveSort] = useState("web-dev");
+  const [activeSort, setActiveSort] = useState("all");
   const [activeProjectList, setActiveProjectList] = useState(projectData);
   const navigate = useNavigate();
 

@@ -8,7 +8,10 @@ const projectData = [
     title: "Design Camp",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "designcamp/" + "designcamp_cover.webp"],
+    images: [
+      "https://drive.google.com/file/d/1T2nYkWFee8fdNI1fA5s36Mh-4HHX-oxc/view?usp=drive_link",
+    ],
+    // images: [supabaseURL + "designcamp/" + "designcamp_cover.webp"],
     tools: ["javascript", "html&css", "express", "mongodb", "cloudinary"],
   },
   {
