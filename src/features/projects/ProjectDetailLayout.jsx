@@ -1,39 +1,29 @@
+import ImageCarousel from "../../ui/ImageCarousel";
+
 // for dev only
 let mediaPrefix = "../";
 
 // for publish
 // mediaPrefix = "";
 
+/*
+   imageURL + "covers/" + "lv_cover.webp",
+      "../" + imageURL + "lv/" + "lv_existing_analysis.jpg",
+      imageURL + "lv/" + "lv_water_issue.webp",
+      imageURL + "lv/" + "lv_water_strategy_lg.webp",
+      imageURL + "lv/" + "lv_flipbook.mp4",
+*/
+
 function ProjectDetailLayout({ project }) {
-  const isVideo = project.images[1].slice(-3) === ("mp4" || "webm");
+  const imagesForCarousel = [project.images[1], project.images[4]];
 
   return (
     <>
-      <div className="flex flex-col gap-y-8">
-        <div className="w-full opacity-90">
-          {isVideo ? (
-            <video
-              className="rounded-2xl object-cover"
-              key={project.name}
-              autoPlay
-              loop
-              muted
-              disablePictureInPicture
-              playsInline
-            >
-              <source src={mediaPrefix + project.images[1]} type="video/mp4" />
-            </video>
-          ) : (
-            <img
-              src={mediaPrefix + project.images[1]}
-              alt=""
-              className="w-full dark:opacity-80"
-            />
-          )}
-        </div>
-        <div className="flex flex-col lg:flex-row gap-3">
+      <div className="flex flex-col gap-y-6 items-center overflow-hidden">
+        <ImageCarousel images={imagesForCarousel} height="h-[30rem]" />
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <p
-            className="text-[10px] text-stone-500 dark:text-stone-400 w-full lg:w-1/2"
+            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full lg:w-[40%]"
             style={{ ontFamily: "Cutive Mono" }}
           >
             Water scarcity in Las Vegas, a desert environment, has always been a
@@ -58,22 +48,22 @@ function ProjectDetailLayout({ project }) {
             issue of Wash degradation, a fresh approach to the spatial and
             environmental dynamics becomes pivotal.
           </p>
-          <div className="lg:w-1/2">
+          <div className="lg:w-[60%] mt-3 flex justify-center">
             <img
               src={mediaPrefix + project.images[2]}
               alt=""
-              className="object-contain w-full dark:invert"
+              className="object-contain w-[80%] lg:w-[90%] dark:invert justify-self-center"
             />
           </div>
         </div>
         <img
           src={mediaPrefix + project.images[3]}
           alt=""
-          className="dark:invert"
+          className="dark:invert w-[80%]"
         />
         <div className="flex flex-col">
           <p
-            className="text-[10px] text-stone-500 dark:text-stone-400 w-full lg:w-1/2"
+            className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full"
             style={{ ontFamily: "Cutive Mono" }}
           >
             Taking advantage of current conditions, regional water strategies
