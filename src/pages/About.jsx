@@ -60,7 +60,7 @@ function About() {
   return (
     <>
       <div className="w-screen min-h-screen bg-orange-50/90 dark:bg-gray-800">
-        <div className="text-teal-900 dark:text-stone-300 mx-16 md:mx-24 lg:mx-36 flex flex-col justify-center items-center">
+        <div className="text-teal-900 dark:text-stone-300 mx-8 sm:mx-14 md:mx-28 lg:mx-56 xl:mx-64 flex flex-col justify-center items-center">
           <h1 className="font-bold text-4xl mb-10 pt-28">
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>
