@@ -22,7 +22,7 @@ function ProjectDetails() {
             <ProjectDetailLayout project={project} />
 
             <button
-              className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400 mt-12 animate-bounce hover:text-red-700"
+              className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400 dark:hover:text-red-700 mt-12 animate-bounce hover:text-red-700"
               onClick={() => navigate(-1)}
             >
               <span className="decoration-0">&#x2190;</span>Back to Projects

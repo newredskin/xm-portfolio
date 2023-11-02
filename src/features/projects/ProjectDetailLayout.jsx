@@ -1,3 +1,9 @@
+// for dev only
+let mediaPrefix = "../";
+
+// for publish
+// mediaPrefix = "";
+
 function ProjectDetailLayout({ project }) {
   const isVideo = project.images[1].slice(-3) === ("mp4" || "webm");
 
@@ -15,11 +21,11 @@ function ProjectDetailLayout({ project }) {
               disablePictureInPicture
               playsInline
             >
-              <source src={project.images[1]} type="video/mp4" />
+              <source src={mediaPrefix + project.images[1]} type="video/mp4" />
             </video>
           ) : (
             <img
-              src={project.images[1]}
+              src={mediaPrefix + project.images[1]}
               alt=""
               className="w-full dark:opacity-80"
             />
@@ -54,13 +60,17 @@ function ProjectDetailLayout({ project }) {
           </p>
           <div className="lg:w-1/2">
             <img
-              src={project.images[2]}
+              src={mediaPrefix + project.images[2]}
               alt=""
               className="object-contain w-full dark:invert"
             />
           </div>
         </div>
-        <img src={project.images[3]} alt="" className="dark:invert" />
+        <img
+          src={mediaPrefix + project.images[3]}
+          alt=""
+          className="dark:invert"
+        />
         <div className="flex flex-col">
           <p
             className="text-[10px] text-stone-500 dark:text-stone-400 w-full lg:w-1/2"
