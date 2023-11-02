@@ -51,7 +51,13 @@ const projectData = [
     title: "Learning from Las Vegas",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "lv/" + "lv_model_3.webp"],
+    images: [
+      supabaseURL + "lv/" + "lv_model_3.webp",
+      supabaseURL + "lv/" + "lv_existing_analysis.jpg",
+      supabaseURL + "lv/" + "lv_water_issue.webp",
+      supabaseURL + "lv/" + "lv_water_strategy_lg.webp",
+      supabaseURL + "lv/" + "lv_flipbook.mp4",
+    ],
     tools: [
       "urban research",
       "landscape design",

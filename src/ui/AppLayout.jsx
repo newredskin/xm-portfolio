@@ -14,7 +14,6 @@ function AppLayout() {
     function () {
       const body = document.getElementById("full-content");
       const screenWidth = window.innerWidth;
-      console.log(screenWidth);
 
       if (isDarkMode) {
         document.documentElement.classList.add("dark");
