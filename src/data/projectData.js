@@ -1,5 +1,8 @@
-const supabaseURL =
-  "https://zxbbnoueosxqdkkigbmp.supabase.co/storage/v1/object/public/projects/";
+const awsURL = "https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/";
+
+//https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/covers/aavs_cover.webp
+
+// https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/covers/designcamp_cover.webp
 
 const projectData = [
   {
@@ -8,10 +11,7 @@ const projectData = [
     title: "Design Camp",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [
-      "https://drive.google.com/file/d/1T2nYkWFee8fdNI1fA5s36Mh-4HHX-oxc/view?usp=drive_link",
-    ],
-    // images: [supabaseURL + "designcamp/" + "designcamp_cover.webp"],
+    images: [awsURL + "covers/" + "designcamp_cover.webp"],
     tools: ["javascript", "html&css", "express", "mongodb", "cloudinary"],
   },
   {
@@ -20,7 +20,7 @@ const projectData = [
     title: "Practice - SPA (single-page apps)",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "spas/" + "spas_video.mp4"],
+    images: [awsURL + "covers/" + "spas_cover.mp4"],
     tools: ["react-router", "redux", "tailwindcss"],
   },
   {
@@ -29,7 +29,7 @@ const projectData = [
     title: "Styling Management App",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "styling-lib/" + "styling_lib_v1_cover.mp4"],
+    images: [awsURL + "covers/" + "styling-lib_v1_cover.mp4"],
     tools: [
       "react",
       "javascript",
@@ -45,7 +45,7 @@ const projectData = [
     title: "Xiye's Portfolio Website",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "xm-portfolio/" + "xm-portfolio.webp"],
+    images: [awsURL + "covers/" + "xm-portfolio_cover.webp"],
     tools: ["react", "javascript", "html", "tailwindcss", "supabase"],
   },
   {
@@ -55,11 +55,11 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      supabaseURL + "lv/" + "lv_model_3.webp",
-      supabaseURL + "lv/" + "lv_existing_analysis.jpg",
-      supabaseURL + "lv/" + "lv_water_issue.webp",
-      supabaseURL + "lv/" + "lv_water_strategy_lg.webp",
-      supabaseURL + "lv/" + "lv_flipbook.mp4",
+      awsURL + "covers/" + "lv_cover.webp",
+      awsURL + "lv/" + "lv_existing_analysis.jpg",
+      awsURL + "lv/" + "lv_water_issue.webp",
+      awsURL + "lv/" + "lv_water_strategy_lg.webp",
+      awsURL + "lv/" + "lv_flipbook.mp4",
     ],
     tools: [
       "urban research",
@@ -77,8 +77,8 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      supabaseURL + "aavs-workshop/" + "aavs_built.webp",
-      supabaseURL + "aavs-workshop/" + "aavs_photo-1.webp",
+      awsURL + "covers/" + "aavs_cover.webp",
+      awsURL + "aavs-workshop/" + "aavs_photo-1.webp",
     ],
     tools: ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
   },
@@ -88,7 +88,7 @@ const projectData = [
     title: "Graphic Design",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "graphic-product/" + "adp-poster.webp"],
+    images: [awsURL + "covers/" + "graphic-product_cover.webp"],
     tools: ["sketch", "photoshop", "illustrator"],
   },
   {
@@ -98,8 +98,8 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      supabaseURL + "nlsd/" + "nlsd_chicago.gif",
-      supabaseURL + "nlsd/" + "nlsd_chicago_b.webp",
+      awsURL + "covers/" + "nlsd_cover.gif",
+      awsURL + "nlsd/" + "nlsd_chicago_b.webp",
     ],
     tools: ["urban design", "sketch", "photoshop"],
   },
@@ -109,7 +109,7 @@ const projectData = [
     title: "Playgrounds in Glencoe",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "playgrounds/" + "woodlawn.gif"],
+    images: [awsURL + "covers/" + "playgrounds_cover.gif"],
     tools: ["landscape design", "sketch", "photoshop"],
   },
   {
@@ -118,7 +118,7 @@ const projectData = [
     title: "High-end Residential in Midwest",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "residential/" + "rankin_rendering_meadow.webp"],
+    images: [awsURL + "covers/" + "residential_cover.webp"],
     tools: ["procreate", "sketchup", "lumion"],
   },
   {
@@ -127,7 +127,7 @@ const projectData = [
     title: "Built Landscape Projects",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "la-built/" + "promenade_1.webp"],
+    images: [awsURL + "covers/" + "la-built_cover.webp"],
     tools: [
       "landscape design",
       "photoshop",
@@ -141,7 +141,7 @@ const projectData = [
     title: "Neighborhood Identifiers",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "identifiers/" + "identifiers.gif"],
+    images: [awsURL + "covers/" + "identifiers_cover.gif"],
     tools: ["rhino", "construction documentation"],
   },
   {
@@ -150,7 +150,7 @@ const projectData = [
     title: "Logo Design",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "logo-design/" + "mn_health_program_logo.webp"],
+    images: [awsURL + "covers/" + "logo-design_cover.webp"],
     tools: ["graphic design", "sketch", "illustrator"],
   },
   {
@@ -159,7 +159,7 @@ const projectData = [
     title: "Art Collection",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "art/" + "oil_painting_1.webp"],
+    images: [awsURL + "covers/" + "art_cover.webp"],
     tools: ["oil-painting", "sketch", "watercolor"],
   },
   {
@@ -168,7 +168,7 @@ const projectData = [
     title: "Photography 2016-2023",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [supabaseURL + "photography/" + "dji_colorado.jpg"],
+    images: [awsURL + "covers/" + "photography_cover.jpg"],
     tools: ["iphone", "dji", "gopro", "insta360"],
   },
 ];
