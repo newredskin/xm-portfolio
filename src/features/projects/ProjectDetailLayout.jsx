@@ -4,7 +4,7 @@ import ImageCarousel from "../../ui/ImageCarousel";
 // let mediaPrefix = "../";
 
 // for publish
-mediaPrefix = "";
+let mediaPrefix = "";
 
 /*
 
