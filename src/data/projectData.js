@@ -3,7 +3,7 @@ const awsURL = "https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/";
 
 // image url settings
 let imageURL;
-/* for publish mode */
+/* for dev mode */
 // imageURL = fileURL;
 
 // /* for publish mode */
@@ -182,7 +182,16 @@ const projectData = [
     title: "Photography 2016-2023",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "photography_cover.jpg"],
+    images: [
+      imageURL + "covers/" + "photography_cover.jpg", //0
+      imageURL + "photography/" + "bigbend_1.webp", //1
+      imageURL + "photography/" + "alaska_kayak_2.webp", //2
+      imageURL + "photography/" + "dji_colorado_2.webp", //3
+      imageURL + "photography/" + "white_sand_2.webp", //4
+      imageURL + "photography/" + "alaska_snow_mountain_3.jpg", //5
+      imageURL + "photography/" + "colorado_mountain_1.jpg", //6
+      imageURL + "photography/" + "maroon_bell_1.webp", //7
+    ],
     tools: ["iphone", "dji", "gopro", "insta360"],
   },
 ];

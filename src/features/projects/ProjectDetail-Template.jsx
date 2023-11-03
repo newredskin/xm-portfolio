@@ -1,16 +1,16 @@
 import ImageCarousel from "../../ui/ImageCarousel";
 
 // for dev only
-// let mediaPrefix = "../";
+let mediaPrefix = "../";
 
 // for publish
-let mediaPrefix = "";
+// let mediaPrefix = "";
 
 /*
 
 */
 
-function ProjectDetailLayout({ project }) {
+function ProjectDetailLv({ project }) {
   const imagesForCarouselTop = [project.images[1], project.images[4]];
   const imagesForCarouselSide = [
     project.images[5],
@@ -99,7 +99,7 @@ function ProjectDetailLayout({ project }) {
               autoRotate={false}
             />
             <p
-              className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full 2xl:self-end 2xl:mb-6"
+              className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full 2xl:self-center 2xl:mb-6"
               style={{ ontFamily: "Cutive Mono" }}
             >
               In this project, a regional water strategy called "River
@@ -134,7 +134,7 @@ function ProjectDetailLayout({ project }) {
           <img
             src={mediaPrefix + project.images[13]}
             alt=""
-            className="shadow-md rounded-2xl"
+            className="shadow-md rounded-2xl dark:opacity-90"
           />
           <ImageCarousel
             images={imagesForCarouselBottom}
@@ -147,4 +147,4 @@ function ProjectDetailLayout({ project }) {
   );
 }
 
-export default ProjectDetailLayout;
+export default ProjectDetailLv;

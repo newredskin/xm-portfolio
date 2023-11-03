@@ -73,7 +73,7 @@ function ImageCarousel({
                 <img
                   src={mediaPrefix + image}
                   alt=""
-                  className={`object-contain ${height} ${
+                  className={`object-contain dark:opacity-90 ${height} ${
                     isInvertInCarousel(image) && "dark:invert"
                   }`}
                 />
