@@ -9,7 +9,11 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  const [activeSort, setActiveSort] = useState("all");
+  const [activeSort, setActiveSort] = useState(() => {
+    const storeActiveSort = localStorage.getItem("projectActiveSort");
+    if (!storeActiveSort) return "all";
+    return storeActiveSort;
+  });
   const [activeProjectList, setActiveProjectList] = useState(projectData);
   const navigate = useNavigate();
 
@@ -22,12 +26,18 @@ function Projects() {
               project.category.includes(activeSort)
             )
       );
+      localStorage.setItem("projectActiveSort", activeSort);
     },
     [activeSort]
   );
 
   function handleSort(sortOption) {
     setActiveSort(sortOption);
+  }
+
+  function handleDirectToDetail(project) {
+    navigate(`/projects/${project.name}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
@@ -44,12 +54,14 @@ function Projects() {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
                 return (
-                  <div className="bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full">
+                  <div
+                    className="bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full"
+                    key={project.name}
+                  >
                     {isVideo ? (
                       <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
                         <video
                           className="rounded-2xl object-cover"
-                          key={project.name}
                           autoPlay
                           loop
                           muted
@@ -62,7 +74,6 @@ function Projects() {
                     ) : (
                       <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
                         <img
-                          key={project.name}
                           src={project.images[0]}
                           alt={`images of ${project.title}`}
                           className="rounded-2xl object-cover"
@@ -86,7 +97,7 @@ function Projects() {
                     <div className="absolute inset-0 flex justify-end text-stone-200">
                       <ArrowUpRightIcon
                         className="h-8 w-8 hover:cursor-pointer bg-red-700/90 hover:bg-red-600 rounded-tr-2xl p-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300"
-                        onClick={() => navigate(`/projects/${project.name}`)}
+                        onClick={() => handleDirectToDetail(project)}
                       />
                     </div>
                   </div>

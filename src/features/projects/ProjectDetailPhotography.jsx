@@ -1,10 +1,10 @@
 // import ImageCarousel from "../../ui/ImageCarousel";
 
 // for dev only
-// let mediaPrefix = "../";
+let mediaPrefix = "../";
 
 // for publish
-let mediaPrefix = "";
+// let mediaPrefix = "";
 
 /*
 
