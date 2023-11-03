@@ -61,7 +61,7 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
       imageURL + "covers/" + "lv_cover.webp", //0
-      "../" + imageURL + "lv/" + "lv_existing_analysis.jpg", //1
+      imageURL + "lv/" + "lv_existing_analysis.jpg", //1
       imageURL + "lv/" + "lv_water_issue.webp", //2
       imageURL + "lv/" + "lv_water_strategy_lg.webp", //3
       imageURL + "lv/" + "lv_flipbook.mp4", //4
