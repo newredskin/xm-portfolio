@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 // let mediaPrefix = "../";
 
 // for publish
-mediaPrefix = "";
+let mediaPrefix = "";
 
 function ImageCarousel({
   images,
