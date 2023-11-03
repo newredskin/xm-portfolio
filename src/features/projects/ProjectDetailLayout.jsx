@@ -7,20 +7,29 @@ let mediaPrefix = "../";
 // mediaPrefix = "";
 
 /*
-   imageURL + "covers/" + "lv_cover.webp",
-      "../" + imageURL + "lv/" + "lv_existing_analysis.jpg",
-      imageURL + "lv/" + "lv_water_issue.webp",
-      imageURL + "lv/" + "lv_water_strategy_lg.webp",
-      imageURL + "lv/" + "lv_flipbook.mp4",
+
 */
 
 function ProjectDetailLayout({ project }) {
-  const imagesForCarousel = [project.images[1], project.images[4]];
+  const imagesForCarouselTop = [project.images[1], project.images[4]];
+  const imagesForCarouselSide = [
+    project.images[5],
+    project.images[6],
+    project.images[7],
+    project.images[8],
+    project.images[9],
+  ];
+  const imagesForCarouselBottom = [
+    project.images[10],
+    project.images[11],
+    project.images[12],
+  ];
+  const invertImagesForCarousel = [project.images[8], project.images[9]];
 
   return (
     <>
       <div className="flex flex-col gap-y-6 items-center overflow-hidden">
-        <ImageCarousel images={imagesForCarousel} height="h-[30rem]" />
+        <ImageCarousel images={imagesForCarouselTop} height="30" />
         <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <p
             className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full lg:w-[40%]"
@@ -61,7 +70,7 @@ function ProjectDetailLayout({ project }) {
           alt=""
           className="dark:invert w-[80%]"
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-8">
           <p
             className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full"
             style={{ ontFamily: "Cutive Mono" }}
@@ -82,6 +91,56 @@ function ProjectDetailLayout({ project }) {
             infrastructure but also shapes the future of the anthropocentric
             landscape.
           </p>
+          <div className="flex flex-col justify-center items-center lg:flex-row gap-x-6">
+            <ImageCarousel
+              images={imagesForCarouselSide}
+              height="30"
+              invertImages={invertImagesForCarousel}
+              autoRotate={false}
+            />
+            <p
+              className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full 2xl:self-end 2xl:mb-6"
+              style={{ ontFamily: "Cutive Mono" }}
+            >
+              In this project, a regional water strategy called "River
+              Restoration" that repurposes a channel to redirect water
+              discharged from on-site centers has been implemented. We aim to
+              revitalize the channel as a valuable public asset instead of a
+              remote infrastructure. Recognizing our intrinsic connection to
+              water, even in deserts, Las Vegas residents now have unprecedented
+              water access in their city.
+              <br />
+              <br />
+              Following the 'River Restoration' approach, we've created a
+              network of on-site water centers. This allows us to extend the Las
+              Vegas Wash into the channel, transforming it into a precious
+              public space. This initiative promises significant water-saving
+              benefits, reducing household consumption by 60% and restoring over
+              300% of wetlands while providing new accessible water-based public
+              areas.
+              <br />
+              <br />
+              The design concept focuses on a 'Riverfront Experience.' This is
+              essential in arid cities where the flood control channel serves as
+              the only public waterfront. By exposing the hidden sewer system
+              and creating natural habitats, we offer both functional and
+              recreational benefits to wildlife and residents. In the
+              Anthropocene era, desert communities have embraced their local
+              river environment as part of daily life.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3">
+          <img
+            src={mediaPrefix + project.images[13]}
+            alt=""
+            className="shadow-md rounded-2xl"
+          />
+          <ImageCarousel
+            images={imagesForCarouselBottom}
+            height="30"
+            isHideControl={true}
+          />
         </div>
       </div>
     </>

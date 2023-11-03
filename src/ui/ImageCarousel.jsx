@@ -7,11 +7,22 @@ let mediaPrefix = "../";
 // for publish
 // mediaPrefix = "";
 
-function ImageCarousel({ images, height, width = "w-full" }) {
+function ImageCarousel({
+  images,
+  height,
+  width = "w-full",
+  invertImages = [],
+  autoRotate = true,
+  isHideControl = false,
+}) {
   const [currentImage, setCurrentImage] = useState(0);
 
   function isVideo(img) {
     return img.slice(-3) === ("mp4" || "webm");
+  }
+
+  function isInvertInCarousel(img) {
+    return invertImages.includes(img);
   }
 
   function nextImage() {
@@ -24,6 +35,7 @@ function ImageCarousel({ images, height, width = "w-full" }) {
 
   useEffect(
     function () {
+      if (!autoRotate) return;
       if (isVideo(images[currentImage])) return;
       const interval = setInterval(nextImage, 3000);
 
@@ -35,7 +47,7 @@ function ImageCarousel({ images, height, width = "w-full" }) {
   return (
     <div className={`relative group ${width} overflow-hidden`}>
       <div
-        className={`flex transition ease-out duration-500 ${height}`}
+        className={`flex transition ease-out duration-500 mb-2 xl:mb-6`}
         style={{
           transform: `translateX(-${currentImage * 100}%)`,
         }}
@@ -61,7 +73,9 @@ function ImageCarousel({ images, height, width = "w-full" }) {
                 <img
                   src={mediaPrefix + image}
                   alt=""
-                  className={`object-contain ${height}`}
+                  className={`object-contain ${height} ${
+                    isInvertInCarousel(image) && "dark:invert"
+                  }`}
                 />
               )}
             </div>
@@ -71,22 +85,30 @@ function ImageCarousel({ images, height, width = "w-full" }) {
       <div className="absolute inset-0 flex items-center justify-between">
         <div className="absolute left-0 p-2">
           <ChevronLeftIcon
-            className="h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700"
+            className={`${
+              isHideControl && "hidden"
+            } h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
             onClick={prevImage}
           />
         </div>
         <div className="absolute right-0 p-2">
           <ChevronRightIcon
-            className="h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700"
+            className={`${
+              isHideControl && "hidden"
+            } h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
             onClick={nextImage}
           />
         </div>
       </div>
-      <div className="absolute bottom-0 py-4 flex justify-center gap-2 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <div
+        className={`${
+          isHideControl && "hidden"
+        } absolute bottom-0 py-5 flex justify-center gap-1 md:gap-2 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+      >
         {images.map((img, index) => (
           <div
             onClick={() => setCurrentImage(index)}
-            className={`rounded-full w-3 h-3 cursor-pointer ${
+            className={`rounded-full w-2 h-2 md:w-3 md:h-3 cursor-pointer ${
               index === currentImage ? "bg-red-700" : "bg-stone-400/50"
             }`}
             key={`dot ${index}`}

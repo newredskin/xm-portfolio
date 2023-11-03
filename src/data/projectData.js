@@ -60,11 +60,20 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      imageURL + "covers/" + "lv_cover.webp",
-      "../" + imageURL + "lv/" + "lv_existing_analysis.jpg",
-      imageURL + "lv/" + "lv_water_issue.webp",
-      imageURL + "lv/" + "lv_water_strategy_lg.webp",
-      imageURL + "lv/" + "lv_flipbook.mp4",
+      imageURL + "covers/" + "lv_cover.webp", //0
+      "../" + imageURL + "lv/" + "lv_existing_analysis.jpg", //1
+      imageURL + "lv/" + "lv_water_issue.webp", //2
+      imageURL + "lv/" + "lv_water_strategy_lg.webp", //3
+      imageURL + "lv/" + "lv_flipbook.mp4", //4
+      imageURL + "lv/" + "lv_model_1.webp", //5
+      imageURL + "lv/" + "lv_model_2.webp", //6
+      imageURL + "lv/" + "lv_model_3.webp", //7
+      imageURL + "lv/" + "lv-diagram_confluence.webp", //8
+      imageURL + "lv/" + "lv-diagram_canopy.webp", //9
+      imageURL + "lv/" + "lv_rendering_1.webp", //10
+      imageURL + "lv/" + "lv_rendering_2.webp", //11
+      imageURL + "lv/" + "lv_rendering_3.webp", //12
+      imageURL + "lv/" + "lv_enlarged_design.webp", //13
     ],
     tools: [
       "urban research",

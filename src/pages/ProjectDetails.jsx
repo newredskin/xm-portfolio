@@ -20,7 +20,7 @@ function ProjectDetails() {
           <div className="pb-6 lg:max-w-[1536px] max-w-full">
             <div className="mb-12 pt-28">
               <h1 className="font-bold text-3xl">{project.title}</h1>
-              <div className="flex mt-3 opacity-80">
+              <div className="flex flex-wrap mt-3 opacity-80">
                 {project.tools.map((tool) => (
                   <Tag>{tool}</Tag>
                 ))}
