@@ -1,13 +1,13 @@
-// const awsURL = "https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/";
-const fileURL = "assets/projects/";
+const awsURL = "https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/";
+// const fileURL = "assets/projects/";
 
 // image url settings
 let imageURL;
 /* for publish mode */
-imageURL = fileURL;
+// imageURL = fileURL;
 
 // /* for publish mode */
-// imageURL = awsURL;
+imageURL = awsURL;
 
 const projectData = [
   {
