@@ -11,20 +11,20 @@ let mediaPrefix = "../";
 */
 
 function ProjectDetailLv({ project }) {
-  const imagesForCarouselTop = [project.images[1], project.images[4]];
-  const imagesForCarouselSide = [
-    project.images[5],
-    project.images[6],
-    project.images[7],
-    project.images[8],
-    project.images[9],
-  ];
-  const imagesForCarouselBottom = [
-    project.images[10],
-    project.images[11],
-    project.images[12],
-  ];
-  const invertImagesForCarousel = [project.images[8], project.images[9]];
+  const imagesForCarouselTop = [project.images[0]];
+  // const imagesForCarouselSide = [
+  //   project.images[5],
+  //   project.images[6],
+  //   project.images[7],
+  //   project.images[8],
+  //   project.images[9],
+  // ];
+  // const imagesForCarouselBottom = [
+  //   project.images[10],
+  //   project.images[11],
+  //   project.images[12],
+  // ];
+  // const invertImagesForCarousel = [project.images[8], project.images[9]];
 
   return (
     <>
@@ -59,88 +59,11 @@ function ProjectDetailLv({ project }) {
           </p>
           <div className="lg:w-[60%] mt-3 flex justify-center">
             <img
-              src={mediaPrefix + project.images[2]}
+              src={mediaPrefix + project.images[0]}
               alt=""
               className="object-contain w-[80%] lg:w-[90%] dark:invert justify-self-center"
             />
           </div>
-        </div>
-        <img
-          src={mediaPrefix + project.images[3]}
-          alt=""
-          className="dark:invert w-[80%]"
-        />
-        <div className="flex flex-col gap-8">
-          <p
-            className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full"
-            style={{ ontFamily: "Cutive Mono" }}
-          >
-            Taking advantage of current conditions, regional water strategies
-            are reshaping the landscape with decentralized water treatment
-            networks along flood control channels. Departing from the
-            traditional centralized plant system, this on-site approach
-            efficiently distributes reclaimed water, significantly reducing
-            discharge rates and volumes. Drawing inspiration from innovative
-            techniques by GE Power and successful implementations in British
-            Columbia's Dockside Green Neighborhood, it conserves 60% of
-            household water. By reducing discharges into the Las Vegas Wash,
-            this strategy restores over 300% of the lost wetlands. Recognizing
-            the universal human need for water access, even in arid regions,
-            this reimagined water network presents a unique opportunity for Las
-            Vegas residents. It not only addresses the challenges of the 1990s
-            infrastructure but also shapes the future of the anthropocentric
-            landscape.
-          </p>
-          <div className="flex flex-col justify-center items-center lg:flex-row gap-x-6">
-            <ImageCarousel
-              images={imagesForCarouselSide}
-              height="30"
-              invertImages={invertImagesForCarousel}
-              autoRotate={false}
-            />
-            <p
-              className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full 2xl:self-center 2xl:mb-6"
-              style={{ ontFamily: "Cutive Mono" }}
-            >
-              In this project, a regional water strategy called "River
-              Restoration" that repurposes a channel to redirect water
-              discharged from on-site centers has been implemented. We aim to
-              revitalize the channel as a valuable public asset instead of a
-              remote infrastructure. Recognizing our intrinsic connection to
-              water, even in deserts, Las Vegas residents now have unprecedented
-              water access in their city.
-              <br />
-              <br />
-              Following the 'River Restoration' approach, we've created a
-              network of on-site water centers. This allows us to extend the Las
-              Vegas Wash into the channel, transforming it into a precious
-              public space. This initiative promises significant water-saving
-              benefits, reducing household consumption by 60% and restoring over
-              300% of wetlands while providing new accessible water-based public
-              areas.
-              <br />
-              <br />
-              The design concept focuses on a 'Riverfront Experience.' This is
-              essential in arid cities where the flood control channel serves as
-              the only public waterfront. By exposing the hidden sewer system
-              and creating natural habitats, we offer both functional and
-              recreational benefits to wildlife and residents. In the
-              Anthropocene era, desert communities have embraced their local
-              river environment as part of daily life.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-3">
-          <img
-            src={mediaPrefix + project.images[13]}
-            alt=""
-            className="shadow-md rounded-2xl dark:opacity-90"
-          />
-          <ImageCarousel
-            images={imagesForCarouselBottom}
-            height="30"
-            isHideControl={true}
-          />
         </div>
       </div>
     </>

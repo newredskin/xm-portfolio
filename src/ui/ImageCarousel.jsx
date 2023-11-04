@@ -14,6 +14,7 @@ function ImageCarousel({
   invertImages = [],
   autoRotate = true,
   isHideControl = false,
+  duration = 3000,
 }) {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -37,7 +38,7 @@ function ImageCarousel({
     function () {
       if (!autoRotate) return;
       if (isVideo(images[currentImage])) return;
-      const interval = setInterval(nextImage, 3000);
+      const interval = setInterval(nextImage, duration);
 
       return () => clearInterval(interval);
     },

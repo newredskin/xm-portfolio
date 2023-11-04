@@ -112,8 +112,16 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      imageURL + "covers/" + "nlsd_cover.gif",
-      // awsURL + "nlsd/" + "nlsd_chicago_b.webp",
+      imageURL + "covers/" + "nlsd_cover.gif", // 0
+      imageURL + "nlsd/" + "nlsd_chicago_label.webp", // 1
+      imageURL + "nlsd/" + "nlsd_oak.gif", // 2
+      imageURL + "nlsd/" + "nlsd_oak_1_label.webp", // 3
+      imageURL + "nlsd/" + "nlsd_oak_2_label.webp", // 4
+      imageURL + "nlsd/" + "nlsd_lasalle_drive_label.webp", // 5
+      imageURL + "nlsd/" + "nlsd_addsion_st_label.webp", // 6
+      imageURL + "nlsd/" + "nlsd_news_1.webp", // 7
+      imageURL + "nlsd/" + "nlsd_news_2.webp", // 8
+      imageURL + "nlsd/" + "nlsd_historic_plan_vertical.gif", // 9
     ],
     tools: ["urban design", "sketch", "photoshop"],
   },

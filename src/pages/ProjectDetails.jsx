@@ -3,8 +3,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import projectData from "../data/projectData";
 import Footer from "../ui/Footer";
 import Tag from "../ui/Tag";
+import BackToTopButton from "../ui/BackToTopButton";
+
 import ProjectDetailLv from "../features/projects/ProjectDetailLv";
 import ProjectDetailPhotography from "../features/projects/ProjectDetailPhotography";
+import ProjectDetailNLSD from "../features/projects/ProjectDetailNLSD";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -16,6 +19,7 @@ function ProjectDetails() {
 
   const isLv = project.name === "lv";
   const isPhotography = project.name === "photography";
+  const isNLSD = project.name === "nlsd";
 
   return (
     <>
@@ -33,6 +37,7 @@ function ProjectDetails() {
 
             {isLv && <ProjectDetailLv project={project} />}
             {isPhotography && <ProjectDetailPhotography project={project} />}
+            {isNLSD && <ProjectDetailNLSD project={project} />}
 
             <button
               className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400 dark:hover:text-red-700 mt-12 animate-bounce hover:text-red-700"
@@ -40,6 +45,7 @@ function ProjectDetails() {
             >
               <span className="decoration-0">&#x2190;</span>Back to Projects
             </button>
+            <BackToTopButton />
           </div>
         </div>
       </div>
