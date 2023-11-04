@@ -31,7 +31,6 @@ function CareerPath() {
     const scrollToCenter = refTop + window.scrollY - offset;
 
     window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
-    console.log(ref);
   }
 
   return (

@@ -126,13 +126,42 @@ const projectData = [
     tools: ["urban design", "sketch", "photoshop"],
   },
   {
-    name: "playgrounds",
+    name: "sketches",
     category: ["landscape"],
-    title: "Playgrounds in Glencoe",
+    title: "The Power of Sketch",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "playgrounds_cover.gif"],
-    tools: ["landscape design", "sketch", "photoshop"],
+    images: [
+      imageURL + "covers/" + "sketches_cover.gif", //0
+      [
+        //1
+        imageURL + "sketches/" + "glencoe_central_school_sketch_1.webp",
+        imageURL + "sketches/" + "glencoe_central_school_sketch_2.webp",
+      ],
+      [
+        //2
+        imageURL + "sketches/" + "nlsd_sketch_1.webp",
+        imageURL + "sketches/" + "nlsd_sketch_2.webp",
+      ],
+      [
+        //3
+        imageURL + "sketches/" + "oc_diagram_before.webp",
+        imageURL + "sketches/" + "oc_diagram_after.webp",
+      ],
+      [
+        //4
+        imageURL + "sketches/" + "residential_os_sketch_1.webp",
+        imageURL + "sketches/" + "residential_os_sketch_2.webp",
+        imageURL + "sketches/" + "residential_os_sketch_3.webp",
+      ],
+      [
+        //5
+        imageURL + "sketches/" + "woodlawn_sketch_1.webp",
+        imageURL + "sketches/" + "woodlawn_sketch_2.webp",
+        imageURL + "sketches/" + "woodlawn_sketch_3.webp",
+      ],
+    ],
+    tools: ["landscape design", "pencil sketch", "procreate", "photoshop"],
   },
   {
     name: "residential",
