@@ -5,10 +5,10 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
 
 // for dev only
-let mediaPrefix = "../";
+// let mediaPrefix = "../";
 
 // for publish
-// let mediaPrefix = "";
+let mediaPrefix = "";
 
 /*
 
