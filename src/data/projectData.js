@@ -151,6 +151,16 @@ const projectData = [
         imageURL + "sketches/" + "woodlawn_sketch_2.webp",
         imageURL + "sketches/" + "woodlawn_sketch_3.webp",
       ],
+      [
+        //6
+        imageURL + "sketches/" + "residential_dv_sketch_1.webp",
+        imageURL + "sketches/" + "residential_dv_sketch_2.webp",
+      ],
+      [
+        //7
+        imageURL + "sketches/" + "residential_wb_sketch_1.webp",
+        imageURL + "sketches/" + "residential_wb_sketch_2.webp",
+      ],
     ],
     tools: ["landscape design", "pencil sketch", "procreate", "photoshop"],
   },

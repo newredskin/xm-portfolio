@@ -21,8 +21,7 @@ function CareerPath() {
   const refHGA = useRef(null);
   const refMDH = useRef(null);
 
-  function handleXclick(setter, ref) {
-    setter(false);
+  function centerElement(ref) {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const viewportHeight = window.innerHeight;
@@ -33,15 +32,23 @@ function CareerPath() {
     window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
   }
 
+  function handleXclick(setter, ref) {
+    setter(false);
+    centerElement(ref);
+  }
+
+  function handleExpandClick(setter, ref) {
+    setter((o) => !o);
+    centerElement(ref);
+  }
+
   return (
     <ul className="flex flex-col lg:grid lg:grid-cols-8 gap-y-2 pt-16">
       {/* HS */}
       <li className="col-span-8 lg:col-start-5 lg:col-span-4 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80    shadow-xl">
         <button
           ref={refHS}
-          onClick={() => {
-            setIsHSOpen((o) => !o);
-          }}
+          onClick={() => handleExpandClick(setIsHSOpen, refHS)}
           className="w-full"
         >
           <div className="flex justify-between items-center">
@@ -76,9 +83,7 @@ function CareerPath() {
       <li className="col-span-8 lg:col-start-6 lg:col-span-3 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80 top-1/3 left-1/4 shadow-xl">
         <button
           ref={refFL}
-          onClick={() => {
-            setIsFLOpen((o) => !o);
-          }}
+          onClick={() => handleExpandClick(setIsFLOpen, refFL)}
           className="w-full"
         >
           <div className="flex justify-between items-center">
@@ -118,9 +123,7 @@ function CareerPath() {
       <li className="col-span-8 lg:col-start-3 lg:col-span-2 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80 top-1/3 left-1/4 shadow-xl">
         <button
           ref={refAM}
-          onClick={() => {
-            setIsAMOpen((o) => !o);
-          }}
+          onClick={() => handleExpandClick(setIsAMOpen, refAM)}
           className="w-full"
         >
           <div className="flex justify-between items-center">
@@ -155,9 +158,7 @@ function CareerPath() {
       <li className="col-span-8 lg:col-start-2 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80  top-1/3 left-1/4 shadow-xl">
         <button
           ref={refHGA}
-          onClick={() => {
-            setIsHGAOpen((o) => !o);
-          }}
+          onClick={() => handleExpandClick(setIsHGAOpen, refHGA)}
           className="w-full"
         >
           <div className="flex justify-between items-center">
@@ -192,9 +193,7 @@ function CareerPath() {
       <li className="col-span-8 lg:col-start-1 lg:col-span-1 container rounded-xl py-1 px-3 text-stone-200 bg-teal-950/80 dark:bg-gray-700/80 hover:bg-red-700 dark:hover:bg-red-700/80  top-1/3 left-1/4 shadow-xl">
         <button
           ref={refMDH}
-          onClick={() => {
-            setIsMDHOpen((o) => !o);
-          }}
+          onClick={() => handleExpandClick(setIsMDHOpen, refMDH)}
           className="w-full"
         >
           <div className="flex justify-between items-center">

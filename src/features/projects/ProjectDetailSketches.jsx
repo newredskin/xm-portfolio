@@ -5,13 +5,7 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
 
 function ProjectDetailSketches({ project }) {
-  const images = [
-    project.images[1],
-    project.images[2],
-    project.images[3],
-    project.images[4],
-    project.images[5],
-  ];
+  const images = project.images.filter((img, index) => index !== 0);
   let columns = 1;
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
@@ -27,11 +21,20 @@ function ProjectDetailSketches({ project }) {
         if (windowWidth < 1180 && windowWidth > 640) columns = 2;
         if (windowWidth >= 1180) columns = 3;
 
-        const isStartOfRow = (expandedIndex + 1) % columns === 1;
-        const behavior = isStartOfRow ? "auto" : "smooth";
-        const block = isStartOfRow ? "center" : "start";
-        activeRef.current.scrollIntoView({ behavior, block });
-        console.log(activeRef);
+        if (windowWidth <= 640) {
+          const viewportHeight = window.innerHeight;
+          const refTop = activeRef.current.getBoundingClientRect().top;
+          const offset = (viewportHeight - activeRef.current.clientHeight) / 2;
+          const scrollToCenter = refTop + window.scrollY - offset;
+
+          window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
+        } else {
+          const isStartOfRow = (expandedIndex + 1) % columns === 1;
+          const behavior = isStartOfRow ? "auto" : "smooth";
+          const block = isStartOfRow ? "center" : "start";
+
+          activeRef.current.scrollIntoView({ behavior, block });
+        }
       }
     },
     [activeRef, expandedIndex]
@@ -39,6 +42,7 @@ function ProjectDetailSketches({ project }) {
 
   function handleClick(index) {
     setExpandedIndex(index);
+    setCurrentCarouselImage(0);
   }
 
   function prevImage(e, imageCollection) {
@@ -115,13 +119,13 @@ function ProjectDetailSketches({ project }) {
                       <div className="absolute inset-0 flex items-center justify-between">
                         <div className="absolute left-0 p-2">
                           <ChevronLeftIcon
-                            className={`h-12 w-12 text-teal-900 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-700 dark:hover:text-red-700`}
+                            className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
                             onClick={(e) => prevImage(e, image)}
                           />
                         </div>
                         <div className="absolute right-0 p-2">
                           <ChevronRightIcon
-                            className={`h-12 w-12 text-teal-900 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-700 dark:hover:text-red-700`}
+                            className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
                             onClick={(e) => nextImage(e, image)}
                           />
                         </div>
@@ -157,29 +161,3 @@ function ProjectDetailSketches({ project }) {
 }
 
 export default ProjectDetailSketches;
-
-/*
-
-       <img
-              src={mediaPrefix + project.images[0]}
-              alt=""
-              className="object-contain w-[80%] lg:w-[90%] justify-self-center"
-            />
-
-
-                <p
-            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full lg:w-[40%]"
-            style={{ ontFamily: "Cutive Mono" }}
-          >
-            Las Vegas' distinctive water challenges open doors to reimagine the
-            interplay between aging infrastructures and the human-altered
-            landscape. In particular, the flood control channels, acting as the
-            vital links between the urban hub and the Las Vegas Wash, stand as
-            the intersection between urbanization and nature. To address the
-            issue of Wash degradation, a fresh approach to the spatial and
-            environmental dynamics becomes pivotal.
-          </p>
-
-           <ImageCarousel images={imagesForCarouselTop} height="30" /> 
-
-*/

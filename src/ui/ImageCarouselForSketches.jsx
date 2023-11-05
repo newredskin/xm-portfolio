@@ -34,9 +34,15 @@ function ImageCarouselForSketches({
         }}
       >
         {images.map((image) => {
-          const expandHeight = isExpanded
-            ? "xl:h-[40rem] md:h-[24rem]"
-            : "h-60";
+          const windowWidth = window.innerWidth;
+          let expandHeight;
+
+          if (windowWidth <= 640) {
+            expandHeight = "h-60";
+          } else {
+            expandHeight = isExpanded ? "xl:h-[40rem] md:h-[24rem]" : "h-60";
+          }
+
           return (
             <div
               className={`bg-orange-50/50 flex-shrink-0 w-full ${expandHeight} flex justify-center items-center shadow-xl`}
