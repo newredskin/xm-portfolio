@@ -1,14 +1,4 @@
-const awsURL = "https://xm-portfolio.s3.us-east-2.amazonaws.com/projects/";
-
-// const fileURL = "assets/projects/";
-
-// image url settings
-let imageURL;
-/* for dev mode */
-// imageURL = fileURL;
-
-// /* for publish mode */
-imageURL = awsURL;
+import { imageURL } from "../devSwitch";
 
 const projectData = [
   {

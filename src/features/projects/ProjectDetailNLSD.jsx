@@ -1,14 +1,6 @@
+import { mediaPrefix } from "../../devSwitch";
+
 import ImageCarousel from "../../ui/ImageCarousel";
-
-// for dev only
-// let mediaPrefix = "../";
-
-// for publish
-let mediaPrefix = "";
-
-/*
-
-*/
 
 function ProjectDetailNLSD({ project }) {
   const imagesForCarouselTop = [
@@ -20,19 +12,6 @@ function ProjectDetailNLSD({ project }) {
     project.images[5],
     project.images[6],
   ];
-  // const imagesForCarouselSide = [
-  //   project.images[5],
-  //   project.images[6],
-  //   project.images[7],
-  //   project.images[8],
-  //   project.images[9],
-  // ];
-  // const imagesForCarouselBottom = [
-  //   project.images[10],
-  //   project.images[11],
-  //   project.images[12],
-  // ];
-  // const invertImagesForCarousel = [project.images[8], project.images[9]];
 
   return (
     <>

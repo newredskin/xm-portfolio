@@ -4,16 +4,6 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
 
-// for dev only
-// let mediaPrefix = "../";
-
-// for publish
-let mediaPrefix = "";
-
-/*
-
-*/
-
 function ProjectDetailSketches({ project }) {
   const images = [
     project.images[1],

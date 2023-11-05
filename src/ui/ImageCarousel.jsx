@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
-// for dev only
-// let mediaPrefix = "../";
-
-// for publish
-let mediaPrefix = "";
+import { mediaPrefix } from "../devSwitch";
 
 function ImageCarousel({
   images,

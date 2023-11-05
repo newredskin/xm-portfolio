@@ -1,14 +1,5 @@
+import { mediaPrefix } from "../../devSwitch";
 import ImageCarousel from "../../ui/ImageCarousel";
-
-// for dev only
-// let mediaPrefix = "../";
-
-// for publish
-let mediaPrefix = "";
-
-/*
-
-*/
 
 function ProjectDetailLv({ project }) {
   const imagesForCarouselTop = [project.images[1], project.images[4]];

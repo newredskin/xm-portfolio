@@ -1,31 +1,6 @@
-// import ImageCarousel from "../../ui/ImageCarousel";
-
-// for dev only
-// let mediaPrefix = "../";
-
-// for publish
-let mediaPrefix = "";
-
-/*
-
-*/
+import { mediaPrefix } from "../../devSwitch";
 
 function ProjectDetailPhotography({ project }) {
-  // const imagesForCarouselTop = [project.images[0]];
-  // const imagesForCarouselSide = [
-  //   project.images[5],
-  //   project.images[6],
-  //   project.images[7],
-  //   project.images[8],
-  //   project.images[9],
-  // ];
-  // const imagesForCarouselBottom = [
-  //   project.images[10],
-  //   project.images[11],
-  //   project.images[12],
-  // ];
-  // const invertImagesForCarousel = [project.images[8], project.images[9]];
-
   //Michigan https://player.vimeo.com/video/880903509?h=8eab2114d7&portrait=0&autopause=1&muted=1&byline=0&color=b9261c
 
   //Chicago https://player.vimeo.com/video/880903232?h=270e05fa29&autoplay=1&loop=1&portrait=0&autopause=1&muted=1&color=b9261c
