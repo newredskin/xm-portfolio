@@ -1,19 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { mediaPrefix } from "../devSwitch";
 
 function ImageCarouselForSketches({
   images,
+  currentImage,
   width = "w-full",
-  invertImages = [],
   autoRotate = true,
   duration = 3000,
   isExpanded = false,
-  currentImage,
+  // handleTouchStart,
+  // handleTouchMove,
+  // handleTouchEnd,
 }) {
-  function isInvertInCarousel(img) {
-    return invertImages.includes(img);
-  }
+  const windowWidth = window.innerWidth;
+  const isOnMobile = windowWidth <= 640;
 
   useEffect(
     function () {
@@ -26,11 +27,17 @@ function ImageCarouselForSketches({
   );
 
   return (
-    <div className={`relative group ${width} overflow-hidden`}>
+    <div
+      className={`relative group ${width} overflow-hidden`}
+      // onTouchStart={isOnMobile ? handleTouchStart : null}
+      // onTouchMove={isOnMobile ? (e) => handleTouchMove(e, images) : null}
+      // onTouchEnd={isOnMobile ? handleTouchEnd : null}
+    >
       <div
-        className={`flex transition ease-out duration-500`}
+        className={`flex`}
         style={{
           transform: `translateX(-${currentImage * 100}%)`,
+          transition: `transform 0.5s ease-in-out`,
         }}
       >
         {images.map((image) => {
@@ -51,9 +58,7 @@ function ImageCarouselForSketches({
               <img
                 src={mediaPrefix + image}
                 alt=""
-                className={`object-cover dark:opacity-90 ${
-                  isInvertInCarousel(image) && "dark:invert"
-                } h-full w-full`}
+                className={`object-cover dark:opacity-90 h-full w-full`}
               />
             </div>
           );

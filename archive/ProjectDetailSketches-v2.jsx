@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { XCircleIcon } from "@heroicons/react/24/solid";
 
-import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
+import ImageCarouselForSketches from "../src/ui/ImageCarouselForSketches";
 
 function ProjectDetailSketches({ project }) {
   const images = project.images.filter((img, index) => index !== 0);
@@ -17,7 +17,6 @@ function ProjectDetailSketches({ project }) {
   const windowWidth = window.innerWidth;
   const isOnMobile = windowWidth <= 640;
 
-  //Center active image based on column system
   useEffect(
     function () {
       if (activeRef.current) {
@@ -56,7 +55,7 @@ function ProjectDetailSketches({ project }) {
     console.log("startX", startX);
     console.log("diffX", diffX);
 
-    if (Math.abs(diffX) > 8) {
+    if (Math.abs(diffX) > 10) {
       if (diffX > 0 && currentCarouselImage > 0) {
         prevImage(e, imageCollection);
         console.log("left!");
