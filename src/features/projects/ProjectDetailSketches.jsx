@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { XCircleIcon } from "@heroicons/react/24/solid";
 
+import { mediaPrefix } from "../../devSwitch";
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
 
 function ProjectDetailSketches({ project }) {
-  const images = project.images.filter((img, index) => index !== 0);
+  const images = project.images.filter((img, index) => index > 1);
   let columns = 1;
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
@@ -16,6 +17,7 @@ function ProjectDetailSketches({ project }) {
 
   const windowWidth = window.innerWidth;
   const isOnMobile = windowWidth <= 640;
+  const isOnMiddleSize = windowWidth > 640 && windowWidth < 1024;
 
   //Center active image based on column system
   useEffect(
@@ -46,33 +48,26 @@ function ProjectDetailSketches({ project }) {
   //On mobile
   function handleTouchStart(e) {
     setStartX(e.touches[0].clientX);
-    console.log("start", startX); // 268.18
   }
 
   function handleTouchMove(e, imageCollection) {
     if (startX === null) return;
     const diffX = e.touches[0].clientX - startX;
-    console.log("move"); // 257.37
-    console.log("startX", startX);
-    console.log("diffX", diffX);
 
     if (Math.abs(diffX) > 8) {
       if (diffX > 0 && currentCarouselImage > 0) {
         prevImage(e, imageCollection);
-        console.log("left!");
       } else if (
         diffX < 0 &&
         currentCarouselImage < imageCollection.length - 1
       ) {
         nextImage(e, imageCollection);
-        console.log("right!");
       }
     }
     setStartX(null);
   }
 
   function handleTouchEnd() {
-    console.log("end");
     setStartX(null);
   }
 
@@ -80,7 +75,6 @@ function ProjectDetailSketches({ project }) {
   function handleClick(index) {
     setExpandedIndex(index);
     setCurrentCarouselImage(0);
-    console.log("click!");
   }
 
   function prevImage(e, imageCollection) {
@@ -109,7 +103,34 @@ function ProjectDetailSketches({ project }) {
   return (
     <>
       <div className="flex flex-col gap-y-6 items-center justify-center overflow-hidden">
-        <div className="flex flex-wrap justify-start items-center gap-4">
+        <div className="dark:opacity-90 mb-3">
+          <video
+            className={`object-contain`}
+            autoPlay
+            loop
+            muted
+            disablePictureInPicture
+            playsInline
+          >
+            <source src={mediaPrefix + project.images[1]} type="video/mp4" />
+          </video>
+        </div>
+
+        <div className="flex flex-wrap justify-between items-center gap-4">
+          <p
+            className="self-start text-[10px] lg:text-[12px] dark:text-stone-400 w-full sm:w-[48%] xl:w-[32%]"
+            style={{ ontFamily: "Cutive Mono" }}
+          >
+            Sketching is a powerful tool that can turn the spark of an idea into
+            a vivid reality. Whether I'm using paper and pencil or my iPad,
+            sketching has the unparalleled ability to bridge the gap between
+            imagination and execution. From the early pre-concept stage, where
+            concepts take shape in abstract lines, to the precise details of the
+            construction administration phase, sketches are the universal
+            language of innovation. It enables me to communicate and collaborate
+            seamlessly with others, allow ideas to flow freely, and make the
+            project process an artful journey of creativity and realization.
+          </p>
           {images.map((image, i) => {
             let currentImage;
             if (expandedIndex === i) {
@@ -124,7 +145,7 @@ function ProjectDetailSketches({ project }) {
                   ref={expandedIndex === i ? activeRef : null}
                   key={i}
                   id={`${image} + ${i}`}
-                  className={`relative z-10 hover:opacity-100 hover:grayscale-0 rounded-2xl overflow-hidden transition-all duration-500 w-full sm:w-[48%] xl:w-[32%] cursor-pointer ${
+                  className={`relative touch-none hover:opacity-100 hover:grayscale-0 rounded-2xl overflow-hidden transition-all duration-500 w-full sm:w-[48%] xl:w-[32%] cursor-pointer ${
                     expandedIndex === i
                       ? "sm:w-[90%] xl:w-[90%]"
                       : "grayscale opacity-80 "
@@ -145,7 +166,7 @@ function ProjectDetailSketches({ project }) {
                     <>
                       <div className="absolute inset-0 flex items-end">
                         <p
-                          className="bg-stone-500/80 dark:bg-stone-700/80 text-[10px] lg:text-[12px] py-2 px-4 text-stone-200 dark:text-stone-300 w-full"
+                          className="bg-stone-500/80 dark:bg-stone-700/80 text-[8px] lg:text-[12px] py-2 px-4 text-stone-200 dark:text-stone-300 w-full"
                           style={{ ontFamily: "Cutive Mono" }}
                         >
                           Lorem ipsum dolor sit amet consectetur adipisicing

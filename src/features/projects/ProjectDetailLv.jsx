@@ -23,7 +23,7 @@ function ProjectDetailLv({ project }) {
         <ImageCarousel images={imagesForCarouselTop} height="30" />
         <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <p
-            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full lg:w-[40%]"
+            className="text-[10px] lg:text-[12px] dark:text-stone-400 w-full lg:w-[40%]"
             style={{ ontFamily: "Cutive Mono" }}
           >
             Water scarcity in Las Vegas, a desert environment, has always been a

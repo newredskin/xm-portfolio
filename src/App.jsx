@@ -32,7 +32,7 @@ function App() {
           success: {
             duration: 4000,
             iconTheme: {
-              primary: "rgb(185 28 28)",
+              primary: "rgb(4, 47, 46)",
               secondary: "rgba(231 229 228)",
             },
           },

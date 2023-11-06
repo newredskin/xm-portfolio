@@ -9,9 +9,6 @@ function ImageCarouselForSketches({
   autoRotate = true,
   duration = 3000,
   isExpanded = false,
-  // handleTouchStart,
-  // handleTouchMove,
-  // handleTouchEnd,
 }) {
   const windowWidth = window.innerWidth;
   const isOnMobile = windowWidth <= 640;
@@ -27,12 +24,7 @@ function ImageCarouselForSketches({
   );
 
   return (
-    <div
-      className={`relative group ${width} overflow-hidden`}
-      // onTouchStart={isOnMobile ? handleTouchStart : null}
-      // onTouchMove={isOnMobile ? (e) => handleTouchMove(e, images) : null}
-      // onTouchEnd={isOnMobile ? handleTouchEnd : null}
-    >
+    <div className={`relative group ${width} overflow-hidden`}>
       <div
         className={`flex`}
         style={{
@@ -47,7 +39,9 @@ function ImageCarouselForSketches({
           if (windowWidth <= 640) {
             expandHeight = "h-60";
           } else {
-            expandHeight = isExpanded ? "xl:h-[40rem] md:h-[24rem]" : "h-60";
+            expandHeight = isExpanded
+              ? " md:h-[24rem] xl:h-[40rem] 2xl:h-[50rem]"
+              : "h-60";
           }
 
           return (

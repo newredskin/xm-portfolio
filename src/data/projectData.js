@@ -97,6 +97,84 @@ const projectData = [
     tools: ["sketch", "photoshop", "illustrator"],
   },
   {
+    name: "sketches",
+    category: ["landscape"],
+    title: "The Power of Sketch",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [
+      imageURL + "covers/" + "sketches_cover.gif", //0
+      imageURL + "sketches/" + "residential_rk_procreate.mp4", //1
+      [
+        //2
+        imageURL + "sketches/" + "glencoe_central_school_sketch_1.webp",
+        imageURL + "sketches/" + "glencoe_central_school_sketch_2.webp",
+      ],
+      [
+        //3
+        imageURL + "sketches/" + "nlsd_sketch_1.webp",
+        imageURL + "sketches/" + "nlsd_sketch_2.webp",
+        imageURL + "sketches/" + "nlsd_sketch_3.webp",
+      ],
+      [
+        //4
+        imageURL + "sketches/" + "oc_diagram_before.webp",
+        imageURL + "sketches/" + "oc_diagram_after.webp",
+      ],
+      [
+        //5
+        imageURL + "sketches/" + "residential_os_sketch_1.webp",
+        imageURL + "sketches/" + "residential_os_sketch_2.webp",
+        imageURL + "sketches/" + "residential_os_sketch_3.webp",
+      ],
+      [
+        //6
+        imageURL + "sketches/" + "woodlawn_sketch_1.webp",
+        imageURL + "sketches/" + "woodlawn_sketch_2.webp",
+        imageURL + "sketches/" + "woodlawn_sketch_3.webp",
+      ],
+      [
+        //7
+        imageURL + "sketches/" + "residential_dv_sketch_1.webp",
+        imageURL + "sketches/" + "residential_dv_sketch_2.webp",
+        imageURL + "sketches/" + "residential_dv_sketch_3.webp",
+      ],
+      [
+        //8
+        imageURL + "sketches/" + "residential_wb_sketch_1.webp",
+        imageURL + "sketches/" + "residential_wb_sketch_2.webp",
+      ],
+      [
+        //9
+        imageURL + "sketches/" + "oc_sketch_1_south_park.webp",
+        imageURL + "sketches/" + "oc_sketch_2_1515.webp",
+        imageURL + "sketches/" + "oc_sketch_3_1841.webp",
+        imageURL + "sketches/" + "oc_sketch_4_1901.webp",
+        imageURL + "sketches/" + "oc_sketch_5_14street.webp",
+        imageURL + "sketches/" + "oc_sketch_6_prairie_park.webp",
+      ],
+      [
+        //10
+        imageURL + "sketches/" + "train_plaza_sketch_1.webp",
+        imageURL + "sketches/" + "train_plaza_sketch_2.webp",
+        imageURL + "sketches/" + "train_plaza_sketch_3.webp",
+      ],
+      [
+        //11
+        imageURL + "sketches/" + "lys_terrace_sketch_1.webp",
+        imageURL + "sketches/" + "lys_terrace_sketch_2.webp",
+        imageURL + "sketches/" + "lys_terrace_sketch_3.webp",
+        imageURL + "sketches/" + "lys_terrace_sketch_4.webp",
+      ],
+      [
+        //12
+        imageURL + "sketches/" + "gt_plaza_sketch_1.webp",
+        imageURL + "sketches/" + "gt_plaza_sketch_2.webp",
+      ],
+    ],
+    tools: ["landscape design", "pencil sketch", "procreate", "photoshop"],
+  },
+  {
     name: "nlsd",
     category: ["landscape"],
     title: "North Lake Shore Drive",
@@ -116,62 +194,40 @@ const projectData = [
     ],
     tools: ["urban design", "sketch", "photoshop"],
   },
-  {
-    name: "sketches",
-    category: ["landscape"],
-    title: "The Power of Sketch",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [
-      imageURL + "covers/" + "sketches_cover.gif", //0
-      [
-        //1
-        imageURL + "sketches/" + "glencoe_central_school_sketch_1.webp",
-        imageURL + "sketches/" + "glencoe_central_school_sketch_2.webp",
-      ],
-      [
-        //2
-        imageURL + "sketches/" + "nlsd_sketch_1.webp",
-        imageURL + "sketches/" + "nlsd_sketch_2.webp",
-      ],
-      [
-        //3
-        imageURL + "sketches/" + "oc_diagram_before.webp",
-        imageURL + "sketches/" + "oc_diagram_after.webp",
-      ],
-      [
-        //4
-        imageURL + "sketches/" + "residential_os_sketch_1.webp",
-        imageURL + "sketches/" + "residential_os_sketch_2.webp",
-        imageURL + "sketches/" + "residential_os_sketch_3.webp",
-      ],
-      [
-        //5
-        imageURL + "sketches/" + "woodlawn_sketch_1.webp",
-        imageURL + "sketches/" + "woodlawn_sketch_2.webp",
-        imageURL + "sketches/" + "woodlawn_sketch_3.webp",
-      ],
-      [
-        //6
-        imageURL + "sketches/" + "residential_dv_sketch_1.webp",
-        imageURL + "sketches/" + "residential_dv_sketch_2.webp",
-      ],
-      [
-        //7
-        imageURL + "sketches/" + "residential_wb_sketch_1.webp",
-        imageURL + "sketches/" + "residential_wb_sketch_2.webp",
-      ],
-    ],
-    tools: ["landscape design", "pencil sketch", "procreate", "photoshop"],
-  },
+
   {
     name: "residential",
     category: ["landscape"],
-    title: "High-end Residential in Midwest",
+    title: "High-end Residences in Midwest",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "residential_cover.webp"],
-    tools: ["procreate", "sketchup", "lumion"],
+    images: [
+      imageURL + "covers/" + "residential_cover.webp",
+      [
+        //davis
+        imageURL + "residential/" + "dv_upper_deck_photo_1.webp",
+        imageURL + "residential/" + "dv_upper_deck_photo_2.webp",
+        imageURL + "residential/" + "dv_upper_deck_stair_photo.webp",
+        imageURL + "residential/" + "dv_bluff_stair_photo.webp",
+        imageURL + "residential/" + "dv_lower_deck_photo.webp",
+        imageURL + "residential/" + "dv_upper_deck_sketch.webp", //5
+        imageURL + "residential/" + "dv_upper_deck_cd.webp", //6
+        imageURL + "residential/" + "dv_upper_deck_stair_cd.webp", //7
+        imageURL + "residential/" + "dv_bluff_structure_3d_1.webp", //8
+        imageURL + "residential/" + "dv_bluff_structure_3d_2.webp", //9
+        imageURL + "residential/" + "dv_bluff_structure_photo.webp", //10
+      ],
+      [
+        //rankin
+        imageURL + "residential/" + "rk_meadow_rendering.webp",
+        imageURL + "residential/" + "rk_pool_rendering.webp",
+      ],
+      [
+        //cotton
+        imageURL + "residential/" + "ct_court_yard_photo.webp",
+      ],
+    ],
+    tools: ["procreate", "sketchup", "autoCAD", "lumion"],
   },
   {
     name: "la-built",

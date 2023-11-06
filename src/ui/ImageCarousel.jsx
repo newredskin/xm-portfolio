@@ -5,12 +5,13 @@ import { mediaPrefix } from "../devSwitch";
 
 function ImageCarousel({
   images,
-  height,
+  height = 30,
   width = "w-full",
   invertImages = [],
   autoRotate = true,
   isHideControl = false,
   duration = 3000,
+  dotPadding = "py-5",
 }) {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -100,7 +101,7 @@ function ImageCarousel({
       <div
         className={`${
           isHideControl && "hidden"
-        } absolute bottom-0 py-5 flex justify-center gap-1 md:gap-2 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+        } absolute bottom-0 ${dotPadding} flex justify-center gap-1 md:gap-2 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
       >
         {images.map((img, index) => (
           <div
