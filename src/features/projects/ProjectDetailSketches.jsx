@@ -17,7 +17,6 @@ function ProjectDetailSketches({ project }) {
 
   const windowWidth = window.innerWidth;
   const isOnMobile = windowWidth <= 640;
-  const isOnMiddleSize = windowWidth > 640 && windowWidth < 1024;
 
   //Center active image based on column system
   useEffect(

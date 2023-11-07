@@ -220,11 +220,34 @@ const projectData = [
       [
         //rankin
         imageURL + "residential/" + "rk_meadow_rendering.webp",
+        imageURL + "residential/" + "rk_south_gate_rendering.webp",
+        imageURL + "residential/" + "rk_south_yard_rendering.webp",
         imageURL + "residential/" + "rk_pool_rendering.webp",
+        imageURL + "residential/" + "rk_bbq_rendering.webp",
+        imageURL + "residential/" + "rk_plan_evolve.gif", //5
+        imageURL + "residential/" + "rk_sunken_garden_study_sketch.webp", //6
+        imageURL + "residential/" + "rk_drive_court_section_sketch.webp", //7
+        imageURL + "residential/" + "rk_front_entry_drive.gif", //8
+        imageURL + "residential/" + "rk_front_entry_section_sketch.webp", //9
+        imageURL + "residential/" + "rk_front_entry.gif", //10
+        imageURL + "residential/" + "rk_rear_yard_section_sketch.webp", //11
+        imageURL + "residential/" + "rk_rear_yard.gif", //12
+        imageURL + "residential/" + "rk_pool_section_sketch.webp", //13
+        imageURL + "residential/" + "rk_pool.gif", //14
+        imageURL + "residential/" + "rk_front_entry_drive_spread.gif", //15
+        imageURL + "residential/" + "rk_front_entry_spread.gif", //16
+        imageURL + "residential/" + "rk_rear_yard_spread.gif", //17
+        imageURL + "residential/" + "rk_pool_spread.gif", //18
+        imageURL + "residential/" + "rk_front_entry_drive_vertical.gif", //19
+        imageURL + "residential/" + "rk_front_entry_vertical.gif", //20
+        imageURL + "residential/" + "rk_rear_yard_vertical.gif", //21
+        imageURL + "residential/" + "rk_pool_vertical.gif", //22
       ],
       [
         //cotton
-        imageURL + "residential/" + "ct_court_yard_photo.webp",
+        imageURL + "residential/" + "ct_front_fencing_photo.webp",
+        imageURL + "residential/" + "ct_rear_yard_photo.webp",
+        imageURL + "residential/" + "ct_spa_photo.webp",
       ],
     ],
     tools: ["procreate", "sketchup", "autoCAD", "lumion"],
