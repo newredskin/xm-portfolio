@@ -309,7 +309,7 @@ function ProjectDetailResidential({ project }) {
                 />
               </div>
             </div>
-            <div className="mt-6 dark:bg-stone-400/30 bg-stone-100/50 p-3">
+            <div className="mt-6 dark:bg-stone-400/30 bg-stone-100/50 lg:p-3 p-1">
               <ImageCarousel
                 images={imagesForCarouselSideCT}
                 invertImages={imagesForCarouselSideCT}

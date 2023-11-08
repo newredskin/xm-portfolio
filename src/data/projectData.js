@@ -264,12 +264,39 @@ const projectData = [
     tools: ["procreate", "sketchup", "autoCAD", "lumion"],
   },
   {
-    name: "la-built",
+    name: "commercial",
     category: ["landscape"],
-    title: "Built Landscape Projects",
+    title: "Commercial Space",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "la-built_cover.webp"],
+    images: [
+      imageURL + "covers/" + "la-built_cover.webp",
+      [
+        //IGL
+        imageURL + "commercial/" + "igl_lakefront_east_photo_1.webp",
+        imageURL + "commercial/" + "igl_lakefront_east_photo_4.webp",
+        imageURL + "commercial/" + "igl_lakefront_west_photo_1.webp",
+        imageURL + "commercial/" + "igl_promenade_photo_1.webp",
+        imageURL + "commercial/" + "igl_playground_photo_1.webp",
+        imageURL + "commercial/" + "igl_project_scope.webp", //5
+        imageURL + "commercial/" + "igl_lakefront_site_plan.webp", //6
+        imageURL + "commercial/" + "igl_lakefront_patio_site_plan.webp", //7
+        imageURL + "commercial/" + "igl_lakefront_east_drone_photo_1.webp", //8
+        imageURL + "commercial/" + "igl_lakefront_east_drone_photo_2.webp", //9
+        imageURL + "commercial/" + "igl_lakefront_east_photo_2.webp", //10
+        imageURL + "commercial/" + "igl_lakefront_east_photo_3.webp", //11
+        imageURL + "commercial/" + "igl_firepit_photo.webp", //12
+        imageURL + "commercial/" + "igl_lakefront_west_photo_2.webp", //13
+        imageURL + "commercial/" + "igl_playground_drone_photo_1.webp", //14
+        imageURL + "commercial/" + "igl_mini_queen_elev.webp", //15
+        imageURL + "commercial/" + "igl_playground_queen.webp", //16
+        imageURL + "commercial/" + "igl_playground_queen_ii.webp", //17
+        imageURL + "commercial/" + "igl_playground_photo_6.webp", //18
+        imageURL + "commercial/" + "igl_playground_photo_2.webp", //19
+        imageURL + "commercial/" + "igl_playground_photo_8.webp", //20
+        imageURL + "commercial/" + "igl_playground_photo_4.webp", //21
+      ],
+    ],
     tools: [
       "landscape design",
       "photoshop",
