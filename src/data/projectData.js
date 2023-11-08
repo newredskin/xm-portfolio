@@ -190,7 +190,7 @@ const projectData = [
       imageURL + "nlsd/" + "nlsd_addsion_st_label.webp", // 6
       imageURL + "nlsd/" + "nlsd_news_1.webp", // 7
       imageURL + "nlsd/" + "nlsd_news_2.webp", // 8
-      imageURL + "nlsd/" + "nlsd_historic_plan_vertical.gif", // 9
+      imageURL + "nlsd/" + "nlsd_historic_plan_horizontal.gif", // 9
     ],
     tools: ["urban design", "sketch", "photoshop"],
   },
@@ -248,6 +248,17 @@ const projectData = [
         imageURL + "residential/" + "ct_front_fencing_photo.webp",
         imageURL + "residential/" + "ct_rear_yard_photo.webp",
         imageURL + "residential/" + "ct_spa_photo.webp",
+        imageURL + "residential/" + "ct_initial_fence_study.gif", //3
+        imageURL + "residential/" + "ct_initial_gate_study_cut.gif", //4
+        imageURL + "residential/" + "ct_detail_wall_transition.gif", //5
+        imageURL + "residential/" + "ct_front_gate_study_gate_only.gif", //6
+        imageURL + "residential/" + "ct_site_plan.webp", //7
+        imageURL + "residential/" + "ct_front_gate_final.webp", //8
+        imageURL + "residential/" + "ct_front_entry_photo_2.webp", //9
+        imageURL + "residential/" + "ct_front_wall_sketch.webp", //10
+        imageURL + "residential/" + "ct_fence_gate_detail.webp", //11
+        imageURL + "residential/" + "ct_canopy_detail.webp", //12
+        imageURL + "residential/" + "ct_screening_study.gif", //13
       ],
     ],
     tools: ["procreate", "sketchup", "autoCAD", "lumion"],

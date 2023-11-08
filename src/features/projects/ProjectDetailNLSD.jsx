@@ -21,7 +21,7 @@ function ProjectDetailNLSD({ project }) {
           height="30"
           duration={8300}
         />
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-5">
+        <div className="flex flex-col lg:justify-between lg:items-start gap-5">
           <div className="flex flex-col gap-3 lg:flex-row">
             <p
               className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full"
@@ -70,7 +70,7 @@ function ProjectDetailNLSD({ project }) {
                 className="w-[80%] lg:w-full dark:opacity-80 "
               />
               <p
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 lg:self-start mt-1 lg:mt-2"
+                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 lg:self-end mt-1 lg:mt-2"
                 style={{ ontFamily: "Cutive Mono" }}
               >
                 Chicago Tribune, July 13 2017
@@ -81,7 +81,7 @@ function ProjectDetailNLSD({ project }) {
             <img
               src={mediaPrefix + project.images[9]}
               alt=""
-              className="w-[80%] lg:w-full dark:opacity-80 "
+              className="lg:w-full dark:opacity-80 "
             />
           </div>
         </div>

@@ -45,7 +45,7 @@ function ImageCarousel({
   return (
     <div className={`relative group ${width} overflow-hidden`}>
       <div
-        className={`flex transition ease-out duration-500 mb-2 xl:mb-6`}
+        className={`flex transition ease-out duration-500`}
         style={{
           transform: `translateX(-${currentImage * 100}%)`,
         }}
@@ -58,7 +58,7 @@ function ImageCarousel({
             >
               {isVideo(image) ? (
                 <video
-                  className={`object-contain ${height}`}
+                  className={`object-contain w-full ${height}`}
                   autoPlay
                   loop
                   muted
@@ -71,7 +71,7 @@ function ImageCarousel({
                 <img
                   src={mediaPrefix + image}
                   alt=""
-                  className={`object-contain dark:opacity-90 ${height} ${
+                  className={`object-contain w-full dark:opacity-90 ${height} ${
                     isInvertInCarousel(image) && "dark:invert"
                   }`}
                 />
