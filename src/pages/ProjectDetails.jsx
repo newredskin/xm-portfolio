@@ -11,6 +11,7 @@ import ProjectDetailNLSD from "../features/projects/ProjectDetailNLSD";
 import ProjectDetailSketches from "../features/projects/ProjectDetailSketches";
 import ProjectDetailResidential from "../features/projects/ProjectDetailResidential";
 import ProjectDetailCommercial from "../features/projects/ProjectDetailCommercial";
+import ProjectDetailIdentifiers from "../features/projects/ProjectDetailIdentifiers";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -26,6 +27,7 @@ function ProjectDetails() {
   const isSketches = project.name === "sketches";
   const isResidential = project.name === "residential";
   const isCommercial = project.name === "commercial";
+  const isIdentifiers = project.name === "identifiers";
 
   return (
     <>
@@ -47,6 +49,7 @@ function ProjectDetails() {
             {isSketches && <ProjectDetailSketches project={project} />}
             {isResidential && <ProjectDetailResidential project={project} />}
             {isCommercial && <ProjectDetailCommercial project={project} />}
+            {isIdentifiers && <ProjectDetailIdentifiers project={project} />}
 
             <button
               className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400 dark:hover:text-red-700 mt-12 animate-bounce hover:text-red-700"

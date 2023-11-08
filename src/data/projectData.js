@@ -296,10 +296,30 @@ const projectData = [
         imageURL + "commercial/" + "igl_playground_photo_8.webp", //20
         imageURL + "commercial/" + "igl_playground_photo_4.webp", //21
       ],
+      [
+        //LYS
+        imageURL + "commercial/" + "lys_promenade_venue_entry_rendering.webp",
+        imageURL + "commercial/" + "lys_promenade_d1_entry_rendering.webp",
+        imageURL + "commercial/" + "lys_promenade_tree_plaza_rendering_1.webp",
+        imageURL + "commercial/" + "lys_promenade_tree_plaza_rendering_2.webp",
+        imageURL + "commercial/" + "lys_promenade_dropoff_rendering.webp", // 4
+        imageURL + "commercial/" + "lys_promenade_plan.webp", // 5
+        imageURL + "commercial/" + "lys_open_house_photo_1.webp", // 6
+        imageURL + "commercial/" + "lys_open_house_photo_2.webp", // 7
+        imageURL + "commercial/" + "lys_promenade_diagram.webp", // 8
+        imageURL + "commercial/" + "lys_rooftop_plans.gif", // 9
+        imageURL + "commercial/" + "lys_rooftop_rendering_1.webp", // 10
+        imageURL + "commercial/" + "lys_rooftop_rendering_2.webp", // 11
+        imageURL + "commercial/" + "lys_rooftop_rendering_3.webp", // 12
+        imageURL + "commercial/" + "lys_rooftop_rendering_4.webp", // 13
+        imageURL + "commercial/" + "lys_rooftop_rendering_5.webp", // 14
+        imageURL + "commercial/" + "lys_rooftop_diagram_activities.gif", // 15
+      ],
     ],
     tools: [
       "landscape design",
-      "photoshop",
+      "sketchup",
+      "enscape",
       "indesign",
       "construction documentation",
     ],
