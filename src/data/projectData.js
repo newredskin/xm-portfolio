@@ -78,12 +78,24 @@ const projectData = [
   {
     name: "aavs-workshop",
     category: ["research-visualization"],
-    title: "Growth",
+    title: "Styx",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
       imageURL + "covers/" + "aavs_cover.webp",
-      // awsURL + "aavs-workshop/" + "aavs_photo-1.webp",
+      imageURL + "aavs/" + "aavs_video.mp4",
+      imageURL + "aavs/" + "aavs_obj_settings.webp", //2
+      imageURL + "aavs/" + "aavs_obj_length.webp", //3
+      imageURL + "aavs/" + "aavs_obj_result.webp", //4
+      imageURL + "aavs/" + "aavs_obj_1.webp", //5
+      imageURL + "aavs/" + "aavs_obj_2.webp", //6
+      imageURL + "aavs/" + "aavs_obj_3.webp", //7
+      imageURL + "aavs/" + "aavs_obj_4.webp", //8
+      imageURL + "aavs/" + "aavs_prototype.webp", //9
+      imageURL + "aavs/" + "aavs_model.webp", //10
+      imageURL + "aavs/" + "aavs_built.webp", //11
+      imageURL + "aavs/" + "aavs_photo 1.webp", //12
+      imageURL + "aavs/" + "aavs_timelapse.mp4", //13
     ],
     tools: ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
   },
@@ -93,8 +105,26 @@ const projectData = [
     title: "Graphic Design",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "graphic-product_cover.webp"],
-    tools: ["sketch", "photoshop", "illustrator"],
+    images: [
+      imageURL + "covers/" + "graphic-product_cover.webp",
+      [
+        //HF
+        imageURL + "graphic/" + "graphic_hongfa_logo.webp",
+        imageURL + "graphic/" + "graphic_hf_bag_red.webp", //1
+        imageURL + "graphic/" + "graphic_hf_others_red.webp", //2
+        imageURL + "graphic/" + "graphic_hf_bag_purple.webp", //3
+        imageURL + "graphic/" + "graphic_hf_others_purple.webp", //4
+      ],
+      [
+        //MN_LOGO
+        imageURL + "graphic/" + "graphic_mn_logo.webp",
+        imageURL + "graphic/" + "graphic_mn_poster_1.webp", //1
+        imageURL + "graphic/" + "graphic_mn_poster_2.webp", //2
+        imageURL + "graphic/" + "graphic_mn_poster_3.webp", //3
+        imageURL + "graphic/" + "graphic_mn_products.webp", //4
+      ],
+    ],
+    tools: ["sketch", "illustrator", "photoshop", "dimension"],
   },
   {
     name: "sketches",
@@ -330,25 +360,54 @@ const projectData = [
     title: "Neighborhood Identifiers",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "identifiers_cover.gif"],
+    images: [
+      imageURL + "covers/" + "identifiers_cover.gif",
+      [
+        // michigan
+        imageURL + "identifiers/" + "identifiers_michigan_model.webp",
+        imageURL + "identifiers/" + "identifiers_michigan_photo_1.webp",
+        imageURL + "identifiers/" + "michigan_construction_photo_1.webp",
+        imageURL + "identifiers/" + "identifiers_michigan_day&night.gif", //3
+        imageURL + "identifiers/" + "identifiers_michigan_details_1.webp", //4
+        imageURL + "identifiers/" + "identifiers_michigan_details_2.webp", //5
+        imageURL + "identifiers/" + "identifiers_michigan_details_3.webp", //6
+      ],
+      [
+        // 10th ward
+        imageURL + "identifiers/" + "identifiers_10th_model.webp",
+        imageURL + "identifiers/" + "identifiers_10th_photo_1.webp",
+        imageURL + "identifiers/" + "identifiers_10th_photo_2.webp",
+        imageURL + "identifiers/" + "identifiers_10th_photo_3.webp", //3
+        imageURL + "identifiers/" + "identifiers_10th_details_1.webp", //4
+        imageURL + "identifiers/" + "identifiers_10th_details_2.webp", //5
+      ],
+      [
+        // sauganash
+        imageURL + "identifiers/" + "identifiers_sauganash_model.webp",
+        imageURL + "identifiers/" + "identifiers_sauganash_details_1.webp", //1
+        imageURL + "identifiers/" + "identifiers_sauganash_details_2.webp", //2
+        imageURL + "identifiers/" + "identifiers_sauganash_details_1_bw.webp", //3
+        imageURL + "identifiers/" + "identifiers_sauganash_sample_1.webp", //4
+        imageURL + "identifiers/" + "identifiers_sauganash_sample_2.webp", //5
+        imageURL + "identifiers/" + "identifiers_sauganash_rendering.webp", //6
+        imageURL + "identifiers/" + "identifiers_sauganash_colors.gif", //7
+      ],
+    ],
     tools: ["rhino", "construction documentation"],
-  },
-  {
-    name: "logo-design",
-    category: ["graphic-product"],
-    title: "Logo Design",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "logo-design_cover.webp"],
-    tools: ["graphic design", "sketch", "illustrator"],
   },
   {
     name: "art",
     category: ["graphic-product"],
-    title: "Art Collection",
+    title: "Painting/Sketch",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "art_cover.webp"],
+    images: [
+      imageURL + "covers/" + "art_cover.webp",
+      imageURL + "art/" + "art_sketch_1.webp",
+      imageURL + "art/" + "art_sketch_2_edit.webp",
+      imageURL + "art/" + "art_oil_2.webp",
+      imageURL + "art/" + "art_watercolor_1.webp",
+    ],
     tools: ["oil-painting", "sketch", "watercolor"],
   },
   {

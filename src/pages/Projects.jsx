@@ -80,7 +80,7 @@ function Projects() {
                         />
                       </div>
                     )}
-                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500" />
+                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-600" />
                     <div className="absolute inset-4 md:inset-6 2xl:inset-12 flex flex-col justify-end">
                       <h3 className="text-stone-100 mb-3 text-md sm:text-2xl md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-500 font-bold">
                         {project.title}

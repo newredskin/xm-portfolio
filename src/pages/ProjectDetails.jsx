@@ -12,6 +12,9 @@ import ProjectDetailSketches from "../features/projects/ProjectDetailSketches";
 import ProjectDetailResidential from "../features/projects/ProjectDetailResidential";
 import ProjectDetailCommercial from "../features/projects/ProjectDetailCommercial";
 import ProjectDetailIdentifiers from "../features/projects/ProjectDetailIdentifiers";
+import ProjectDetailGraphic from "../features/projects/ProjectDetailGraphic";
+import ProjectDetailArt from "../features/projects/ProjectDetailArt";
+import ProjectDetailAAVS from "../features/projects/ProjectDetailAAVS";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -28,6 +31,9 @@ function ProjectDetails() {
   const isResidential = project.name === "residential";
   const isCommercial = project.name === "commercial";
   const isIdentifiers = project.name === "identifiers";
+  const isGraphic = project.name === "graphic-design";
+  const isArt = project.name === "art";
+  const isAAVS = project.name === "aavs-workshop";
 
   return (
     <>
@@ -50,6 +56,9 @@ function ProjectDetails() {
             {isResidential && <ProjectDetailResidential project={project} />}
             {isCommercial && <ProjectDetailCommercial project={project} />}
             {isIdentifiers && <ProjectDetailIdentifiers project={project} />}
+            {isGraphic && <ProjectDetailGraphic project={project} />}
+            {isArt && <ProjectDetailArt project={project} />}
+            {isAAVS && <ProjectDetailAAVS project={project} />}
 
             <button
               className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400 dark:hover:text-red-700 mt-12 animate-bounce hover:text-red-700"

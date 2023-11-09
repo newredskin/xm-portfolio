@@ -16,7 +16,7 @@ function SortingMenuIdentifiers({ activeSort, handleSort }) {
               : "bg-opacity-0 text-teal-900 dark:text-stone-300"
           }`}
         >
-          Michigan Ave
+          Motor-Row
         </button>
       </li>
       <li>
