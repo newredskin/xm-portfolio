@@ -1,13 +1,8 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { CodeBracketSquareIcon, MoonIcon } from "@heroicons/react/24/solid";
-import { SunIcon } from "@heroicons/react/24/outline";
+import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
+import DarkModeToggle from "./DarkModeToggle";
 
-function NavBar({
-  isNavExpanded,
-  setIsNavExpanded,
-  toggleDarkMode,
-  isDarkMode,
-}) {
+function NavBar({ isNavExpanded, setIsNavExpanded }) {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -33,16 +28,7 @@ function NavBar({
               <span className="text-stone-200">XIYE MOU</span>
             </div>
             <div className="flex items-center justify-end mr-3">
-              <div
-                onClick={toggleDarkMode}
-                className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300"
-              >
-                {isDarkMode ? (
-                  <SunIcon className="h-6 w-6" />
-                ) : (
-                  <MoonIcon className="h-6 w-6" />
-                )}
-              </div>
+              <DarkModeToggle />
               <button
                 className="relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
                 onClick={toggleNav}
@@ -120,18 +106,3 @@ function NavBar({
 }
 
 export default NavBar;
-
-/*
-{isNavbarExpanded && (<ul className={`md:hidden flex flex-col fixed left-0   w-3/4 h-screen top-[60px] bg-green-300 items-center justify-around transition-all ease-in-out duration-200 ${isNavExpanded ? "translate-x-0 " : "-translate-x-full"}`}>
-        {links.map((item) => (
-          <li key={`link-${item}`} className="nav-link">
-            <a href={`#${item}`} className="">
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul>)}
-
-
-      w-[calc(100%-4.5rem)]
-*/

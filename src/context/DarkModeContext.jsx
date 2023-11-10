@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-const DarkModeContext = React.createContext();
+const DarkModeContext = createContext();
 
 function DarkModeProvider({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -8,11 +8,39 @@ function DarkModeProvider({ children }) {
     return storedDarkMode === "true";
   });
 
+  useEffect(
+    function () {
+      const body = document.getElementById("full-content");
+
+      if (isDarkMode) {
+        document.documentElement.classList.add("dark");
+        body.classList.add("bg-dark");
+        body.classList.remove("bg-light");
+      } else {
+        document.documentElement.classList.remove("dark");
+        body.classList.add("bg-light");
+        body.classList.remove("bg-dark");
+      }
+    },
+    [isDarkMode]
+  );
+
+  useEffect(
+    function () {
+      localStorage.setItem("darkMode", isDarkMode);
+    },
+    [isDarkMode, toggleDarkMode]
+  );
+
+  function toggleDarkMode() {
+    setIsDarkMode((d) => !d);
+  }
+
   return (
     <DarkModeContext.Provider
       value={{
         isDarkMode,
-        setIsDarkMode,
+        toggleDarkMode,
       }}
     >
       {children}

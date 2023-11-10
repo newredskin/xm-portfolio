@@ -1,4 +1,5 @@
 import { PieChart, Pie, ResponsiveContainer } from "recharts";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 /*
 const skillData = [
@@ -61,7 +62,9 @@ const renderCustomizedLabel = ({
 };
 
 export default function SkillChart() {
-  const fillColor = true ? "rgb(4 47 46 / 0.8)" : "rgb(17 24 39 / 0.8)";
+  const { isDarkMode } = useDarkMode();
+
+  const fillColor = isDarkMode ? "rgb(17 24 39 / 0.8)" : "rgb(4 47 46 / 0.8)";
 
   return (
     <ResponsiveContainer
