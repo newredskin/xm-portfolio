@@ -113,7 +113,7 @@ function CareerPath() {
           </div>
           <WorkItemFL />
           <XCircleIcon
-            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
             onClick={() => handleXclick(setIsFLOpen, refFL)}
           />
         </div>
@@ -148,7 +148,7 @@ function CareerPath() {
           <ExternalSiteLink link="https://www.facebook.com/AltamanuInc/" />
           <WorkItemAM />
           <XCircleIcon
-            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
             onClick={() => handleXclick(setIsAMOpen, refAM)}
           />
         </div>
@@ -183,7 +183,7 @@ function CareerPath() {
           <ExternalSiteLink link="https://hga.com/" />
           <WorkItemHGA />
           <XCircleIcon
-            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
             onClick={() => handleXclick(setIsHGAOpen, refHGA)}
           />
         </div>
@@ -218,7 +218,7 @@ function CareerPath() {
           <ExternalSiteLink link="https://www.health.state.mn.us/" />
           <WorkItemMDH />
           <XCircleIcon
-            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer"
+            className="w-6 h-6 self-center md:self-end md:mr-6 mb-4 hover:cursor-pointer hover:text-red-700"
             onClick={() => handleXclick(setIsMDHOpen, refMDH)}
           />
         </div>

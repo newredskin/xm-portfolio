@@ -25,12 +25,18 @@ function EducationList() {
             className="row-start-2 col-start-2 col-span-11 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quod
-            numquam tempora magni obcaecati earum rerum odit explicabo sapiente
-            a fuga provident repellendus, ipsum id autem odio perferendis.
-            Incidunt laborum quae deserunt excepturi esse. Eum minima esse
-            ratione voluptatum dolor. Et expedita adipisci harum iure est
-            nostrum quis! Suscipit, quod!
+            At the University of Minnesota, I pursued a Master of Landscape
+            Architecture, an enriching journey that equipped me to tackle
+            diverse urban complexities through innovative landscape design. The
+            curriculum was comprehensive, including construction technologies
+            and materials, plant materials and ecology, media and representation
+            , alongside deep dives into research and mapping methods. This
+            multifaceted education enabled me to address a variety of urban
+            issues such as water challenge in Las Vegas, waterfront development
+            in Duluth, The highway barrier in north Minneapolis, and combating
+            food deserts in Chicago. These experiences have honed my ability to
+            conceptualize and implement effective landscape solutions in varied
+            urban settings.
           </p>
         </div>
       </li>
@@ -56,12 +62,18 @@ function EducationList() {
             className="row-start-2 col-start-2 col-span-11 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quod
-            numquam tempora magni obcaecati earum rerum odit explicabo sapiente
-            a fuga provident repellendus, ipsum id autem odio perferendis.
-            Incidunt laborum quae deserunt excepturi esse. Eum minima esse
-            ratione voluptatum dolor. Et expedita adipisci harum iure est
-            nostrum quis! Suscipit, quod!
+            My foundational journey in the realm of architecture and landscape
+            engineering began at Tongji University, where I completed my
+            Bachelor of Engineering. The program provided me with a solid
+            grounding in both theoretical and practical aspects of architectural
+            and landscape engineering. I delved into subjects such as design
+            basics, architectural mechanics, computer graphics, architectural
+            structures, and the history of art, architecture, and landscape
+            architecture. The curriculum also included specialized courses in
+            landscape ecology, landscape engineering and technology, as well as
+            an introduction to remote sensing and GIS. This diverse educational
+            tapestry laid the groundwork for my advanced studies and
+            professional pursuits in landscape architecture.
           </p>
         </div>
       </li>

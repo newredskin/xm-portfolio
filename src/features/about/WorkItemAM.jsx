@@ -13,20 +13,21 @@ function WorkItemAM() {
             </p>
           </div>
           <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
-            Design/Visualization/Analysis
+            Design/Research/Visualization
           </p>
           <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
           <p
             className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            At North Lake Shore Drive, Phase 1 in Chicago, I was involved in
-            conceptual urban and landscape design, creating 3D presentation
-            materials for public meetings. I also provided critical analysis and
-            research support, including spatial and vegetation analysis, as well
-            as developing a multi-use trail system. My contributions were
-            instrumental in advancing the project&apos;s urban design goals and
-            enhancing the public meeting experience.
+            In my role within the 'North Lake Shore Drive, Phase 1' project, I
+            spearheaded the conceptual urban and landscape design for key
+            locations along the drive. Additionally, I developed perspective
+            representation materials using innovative, time-efficient methods.
+            This approach was crucial in aligning with the expectations for a
+            series of public meetings. My contributions played a pivotal role in
+            furthering the project's urban design objectives and significantly
+            enriched the experience of the public meetings.
           </p>
         </div>
       </li>
@@ -41,7 +42,7 @@ function WorkItemAM() {
             </p>
           </div>
           <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
-            Research/3D Visualization/CD Docs
+            Design/Research/Visualization/CD Docs
           </p>
           <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
           <p
@@ -49,10 +50,11 @@ function WorkItemAM() {
             style={{ fontFamily: "Cutive Mono" }}
           >
             Worked on a range of community parks and playgrounds in Greater
-            Chicago area, from master planning to construction documentation,
-            from cost estimates to materials research. Provided essential
-            graphic support for public meetings, contributing to the
-            projects&apos; successes.
+            Chicago area. My involvement spanned from initial master planning to
+            the preparation of detailed construction documentation, from cost
+            estimates to materials research. Additionally, I provided essential
+            graphic support for public meetings. All these help contribute to
+            the projects's successes.
           </p>
         </div>
       </li>
@@ -74,11 +76,14 @@ function WorkItemAM() {
             className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            I&apos;ve completed a couple of sculptural identifiers on multiple
-            locations in Chicago&apos;s neighborhood. Helped transform the pure
-            sketch ideas to 3D models, worked closely with the sculpture
-            installation workshop to produce comprehensive construction drawing
-            set.
+            Successfully completed several sculptural identifiers across various
+            neighborhoods in Chicago. My role involved transforming initial
+            design sketches into detailed 3D models. Working closely with the
+            pricinpal in charge and manufacturers, I developed comprehensive
+            construction details, which were crucial in successfully building
+            these identifiers. My contributions in this process not only brought
+            the initial concepts to life but also contributed significantly to
+            the aesthetic enhancement of Chicago's neighborhoods.
           </p>
         </div>
       </li>

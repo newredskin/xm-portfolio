@@ -13,17 +13,21 @@ function WorkItemFL() {
             </p>
           </div>
           <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
-            Design/Research/CD Docs
+            Design/Visualization
           </p>
           <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
           <p
             className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            As a freelancer, I&apos;ve assisted firms in logo design, brand
-            development, and website design. My work has focused on creating
-            compelling visual identities and user-friendly digital experiences
-            to leave a lasting impact on their audience.
+            Assisted firms with their branding and marketing materials. This
+            included designing logos and creating custom designs for a range of
+            company merchandise such as bags, notebooks, cups, and websites.
+            Additionally, I also crafted graphic posters for events from large
+            state-wide conferences to smaller group meetings. My work in these
+            areas has consistently supported clients in enhancing their identity
+            and effectively communicating their messages through visually
+            compelling designs.
           </p>
         </div>
       </li>
@@ -38,18 +42,20 @@ function WorkItemFL() {
             </p>
           </div>
           <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
-            React/JavaScript/MangoDB/etc
+            JavaScript/React/HTML/CSS/MangoDB/etc
           </p>
           <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
           <p
             className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Through self-study, I&apos;ve gained proficiency in web development,
-            mastering key technologies like HTML, CSS, JavaScript and React.
-            This journey has equipped me to create user-friendly and responsive
-            websites and applications, and I&apos;m excited to apply my skills
-            in the field.
+            Through dedicated self-study, I have achieved proficiency in web
+            development, mastering essential technologies such as HTML, CSS,
+            JavaScript, and React. This self-guided journey has empowered me
+            with the skills to develop user-friendly and responsive websites and
+            applications. I am enthusiastic about utilizing my acquired
+            expertise to assist and create value for more people in their
+            digital endeavors.
           </p>
         </div>
       </li>

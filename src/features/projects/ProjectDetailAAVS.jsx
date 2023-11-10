@@ -104,7 +104,7 @@ function ProjectDetailAAVS({ project }) {
             <img
               src={mediaPrefix + project.images[11]}
               alt=""
-              className="h-full"
+              className="object-cover lg:h-full"
             />
             <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
               2019 APR Awards - Pop-ups & Temorpary

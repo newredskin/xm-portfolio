@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import NavBar from "./NavBar";
+import MouseFollow from "./MouseFollow";
 
 function AppLayout() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -53,6 +54,7 @@ function AppLayout() {
           isDarkMode={isDarkMode}
         />
         <main>
+          {isDarkMode && <MouseFollow />}
           <Outlet />
         </main>
       </div>
