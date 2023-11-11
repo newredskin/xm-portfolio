@@ -14,6 +14,7 @@ function ImageCarousel({
   dotPadding = "py-5",
 }) {
   const [currentImage, setCurrentImage] = useState(0);
+  const [startX, setStartX] = useState(null);
 
   function isVideo(img) {
     return img.slice(-3) === ("mp4" || "webm");
@@ -23,6 +24,30 @@ function ImageCarousel({
     return invertImages.includes(img);
   }
 
+  // Touch event
+  function handleTouchStart(e) {
+    setStartX(e.touches[0].clientX);
+  }
+
+  function handleTouchMove(e) {
+    if (startX === null) return;
+    const diffX = e.touches[0].clientX - startX;
+
+    if (Math.abs(diffX) > 8) {
+      if (diffX > 0 && currentImage > 0) {
+        prevImage();
+      } else if (diffX < 0 && currentImage < images.length - 1) {
+        nextImage();
+      }
+    }
+    setStartX(null);
+  }
+
+  function handleTouchEnd() {
+    setStartX(null);
+  }
+
+  // Click event
   function nextImage() {
     setCurrentImage((currentImage + 1) % images.length);
   }
@@ -53,7 +78,7 @@ function ImageCarousel({
         {images.map((image) => {
           return (
             <div
-              className={`flex-shrink-0 w-full flex justify-center items-center`}
+              className={`flex-shrink-0 w-full flex justify-center items-center touch-none`}
               key={image}
             >
               {isVideo(image) ? (
@@ -80,12 +105,17 @@ function ImageCarousel({
           );
         })}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between">
+      <div
+        className="absolute touch-none inset-0 flex items-center justify-between"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="absolute left-0 p-2">
           <ChevronLeftIcon
             className={`${
               isHideControl && "hidden"
-            } h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
+            } w-8 h-8 lg:h-12 lg:w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
             onClick={prevImage}
           />
         </div>
@@ -93,7 +123,7 @@ function ImageCarousel({
           <ChevronRightIcon
             className={`${
               isHideControl && "hidden"
-            } h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
+            } w-8 h-8 lg:h-12 lg:w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700`}
             onClick={nextImage}
           />
         </div>
@@ -118,61 +148,3 @@ function ImageCarousel({
 }
 
 export default ImageCarousel;
-
-/*
-
-  return (
-    <div
-      className={`${height + " " + width} relative group flex justify-center`}
-    >
-      <div className="">
-        {isVideo(images[currentImage]) ? (
-          <video
-            className="object-contain h-full"
-            autoPlay
-            loop
-            muted
-            disablePictureInPicture
-            playsInline
-          >
-            <source src={mediaPrefix + images[currentImage]} type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            src={mediaPrefix + images[currentImage]}
-            alt=""
-            className="object-contain h-full transition-opacity duration-500"
-          />
-        )}
-        <div className="absolute inset-0 flex items-center justify-between">
-          <div className="absolute left-0 p-2">
-            <ChevronLeftIcon
-              className="h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700"
-              onClick={prevImage}
-            />
-          </div>
-          <div className="absolute right-0 p-2">
-            <ChevronRightIcon
-              className="h-12 w-12 text-teal-900 dark:text-stone-300 hover:cursor-pointer opacity-0 transition-opacity duration-500 group-hover:opacity-80 hover:text-red-700 dark:hover:text-red-700"
-              onClick={nextImage}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
-
-
-
-
-  const nextImage = () => {
-    setCurrentImage((currentImage + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
-  };
-
-
-*/

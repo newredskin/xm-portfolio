@@ -67,9 +67,13 @@ function ProjectDetailAAVS({ project }) {
               structure.
               <br />
               <br />
-              Moreover, augmented reality technology played a pivotal role,
-              facilitating the prefabrication of these complex and irregular
-              wooden components in just two days.
+              Furthermore, Karamba3D, an interactive and parametric engineering
+              tool, plays a crucial role in ensuring the structural stability of
+              our designs. Coupled with augmented reality technology, it
+              significantly enhances installation efficiency. This advanced
+              integration facilitates the rapid prefabrication of complex and
+              irregular wooden components, enabling their completion in just two
+              days.
             </p>
             <video
               className={`object-contain dark:opacity-90`}
@@ -83,8 +87,12 @@ function ProjectDetailAAVS({ project }) {
             </video>
           </div>
           <div className="lg:w-[60%] flex flex-col gap-4 dark:opacity-90">
-            <ImageCarousel images={imagesForCarouselSide1} />
-            <ImageCarousel images={imagesForCarouselSide2} autoRotate={false} />
+            <ImageCarousel images={imagesForCarouselSide1} dotPadding="py-4" />
+            <ImageCarousel
+              images={imagesForCarouselSide2}
+              autoRotate={false}
+              dotPadding="py-4"
+            />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-6">
@@ -109,6 +117,12 @@ function ProjectDetailAAVS({ project }) {
             <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
               2019 APR Awards - Pop-ups & Temorpary
             </span>
+            <div
+              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+              style={{ ontFamily: "Cutive Mono" }}
+            >
+              <span>Photo credit: AAVS at the Angewandte Vienna</span>
+            </div>
           </div>
         </div>
       </div>

@@ -38,12 +38,17 @@ function ProjectDetails() {
   return (
     <>
       <div className="w-screen min-h-screen bg-orange-50/90 dark:bg-gray-800">
-        <div className="text-teal-900 dark:text-stone-300 mx-8 sm:mx-14 md:mx-28 2xl:mx-48 p-1 flex flex-col justify-center items-center overflow-hidden">
+        <div className="text-teal-900 dark:text-stone-300 mx-9 sm:mx-14 md:mx-28 2xl:mx-48 p-1 flex flex-col justify-center items-center overflow-hidden">
           <div className="pb-6 lg:max-w-[1536px] max-w-full">
             <div className="mb-12 pt-28">
               <h1 className="font-bold text-3xl">{project.title}</h1>
               <div className="flex flex-wrap mt-3 opacity-80">
-                {project.tools.map((tool) => (
+                {project.tools[0].map((tool) => (
+                  <Tag key={`${project.name} ${tool}`} color="bg-stone-600">
+                    {tool}
+                  </Tag>
+                ))}
+                {project.tools[1].map((tool) => (
                   <Tag key={`${project.name} ${tool}`}>{tool}</Tag>
                 ))}
               </div>
@@ -66,7 +71,9 @@ function ProjectDetails() {
             >
               <span className="decoration-0">&#x2190;</span>Back to Projects
             </button>
-            <BackToTopButton />
+            <div className="mt-8">
+              <BackToTopButton />
+            </div>
           </div>
         </div>
       </div>

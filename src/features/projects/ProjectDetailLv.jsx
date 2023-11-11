@@ -20,10 +20,14 @@ function ProjectDetailLv({ project }) {
   return (
     <>
       <div className="flex flex-col gap-y-6 items-center overflow-hidden">
-        <ImageCarousel images={imagesForCarouselTop} height="30" />
+        <ImageCarousel
+          images={imagesForCarouselTop}
+          height="30"
+          dotPadding="py-2 lg:py-5"
+        />
         <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
           <p
-            className="text-[10px] lg:text-[12px] dark:text-stone-400 w-full lg:w-[40%]"
+            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full lg:w-[40%]"
             style={{ ontFamily: "Cutive Mono" }}
           >
             Water scarcity in Las Vegas, a desert environment, has always been a
@@ -63,7 +67,7 @@ function ProjectDetailLv({ project }) {
         />
         <div className="flex flex-col gap-8">
           <p
-            className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full"
+            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full"
             style={{ ontFamily: "Cutive Mono" }}
           >
             Taking advantage of current conditions, regional water strategies
@@ -88,9 +92,10 @@ function ProjectDetailLv({ project }) {
               height="30"
               invertImages={invertImagesForCarousel}
               autoRotate={false}
+              dotPadding="py-6 lg:py-8"
             />
             <p
-              className="text-[10px] lg:text-[12px] lg:text-stone-500 dark:text-stone-400 w-full 2xl:self-center 2xl:mb-6"
+              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full 2xl:self-center 2xl:mb-6"
               style={{ ontFamily: "Cutive Mono" }}
             >
               In this project, a regional water strategy called "River

@@ -50,6 +50,7 @@ function About() {
   }, []);
 
   function handleProjectClick() {
+    localStorage.setItem("projectActiveSort", "all");
     navigate("/projects");
     window.scrollTo({
       top: 0,
@@ -75,7 +76,7 @@ function About() {
               data-aos="fade-up"
               className="mt-10 grid lg:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
             >
-              <div className="md:col-start-1 lg:col-span-2 flex flex-col justify-center items-center lg:pl-10 dark:text-stone-200">
+              <div className="col-span-5 2xl:col-start-1 2xl:col-span-2 flex flex-col justify-center items-center 2xl:pl-10 dark:text-stone-200">
                 <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
                   Toolset
                 </h2>
@@ -108,7 +109,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="md:col-start-3 md:col-span-3 flex justify-center items-center">
+              <div className="hidden 2xl:col-start-3 2xl:col-span-3 2xl:flex justify-center items-center">
                 <SkillChart />
               </div>
             </div>

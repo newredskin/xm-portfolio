@@ -10,9 +10,6 @@ function ImageCarouselForSketches({
   duration = 3000,
   isExpanded = false,
 }) {
-  const windowWidth = window.innerWidth;
-  const isOnMobile = windowWidth <= 640;
-
   useEffect(
     function () {
       if (!autoRotate) return;
@@ -37,11 +34,11 @@ function ImageCarouselForSketches({
           let expandHeight;
 
           if (windowWidth <= 640) {
-            expandHeight = "h-60";
+            expandHeight = "h-[18rem]";
           } else {
             expandHeight = isExpanded
-              ? " md:h-[24rem] xl:h-[40rem] 2xl:h-[50rem]"
-              : "h-60";
+              ? "sm:h-[24rem] lg:h-[30rem] xl:h-[36rem] 2xl:h-[54rem]"
+              : "h-[18rem]";
           }
 
           return (
@@ -63,3 +60,19 @@ function ImageCarouselForSketches({
 }
 
 export default ImageCarouselForSketches;
+
+/*
+           <div
+              className={`bg-orange-50/50 flex-shrink-0 w-full ${expandHeight} flex justify-center items-center shadow-xl`}
+              key={image}
+            >
+              <img
+                src={mediaPrefix + image}
+                alt=""
+                className={`object-cover dark:opacity-90 h-full`}
+              />
+            </div>
+
+
+
+*/

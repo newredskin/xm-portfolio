@@ -69,6 +69,7 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
                         }`}
                         key={link.name}
                         onClick={() => {
+                          localStorage.setItem("projectActiveSort", "all");
                           navigate(link.path);
                           toggleNav();
                           window.scrollTo({ top: 0, behavior: "smooth" });

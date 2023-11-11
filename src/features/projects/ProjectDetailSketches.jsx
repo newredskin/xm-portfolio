@@ -4,6 +4,21 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 
 import { mediaPrefix } from "../../devSwitch";
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
+import { useScreenWidth } from "../../context/ScreenWidthContext";
+
+const projectDescription = [
+  "Concept of a school project. Restore the historic entry and upgraded the outdoor areas for sports and group activities. Geometric pathways to efficiently direct walking flow.", // 0
+  "Sketches of potential designs at key lakefront locations on expanded land. Dramatic lines focus on bridging green spaces across the redeveloped roadway. The designs integrate a multi-trail system for circulation improvement.", // 1
+  "Diagram presents a conceptual idea that connects the neighborhood to the lakefront through a new commercial development, integrating TOD center. ", // 2
+  "Concept sketches illustrate various design ideas for a spa water feature in a residential project.", // 3
+  "Concept sketches depict diverse design ideas for a playground, featuring diagonal lines and curved boundaries to craft a dynamic play area.", // 4
+  "Sketches overlay the construction site's installation process to effectively communicate the design intent to the contractor.", // 5
+  "Sketches display two pathway applications of transition from the pool terrace to the bluff deck in a residential project.", // 6
+  "Perspective sketches illustrate the positive effects of a commercial development on the surrounding neighborhood. Features like a vertical green wall and a spacious planted rooftop help soften the impact of hardscaped materials.", // 7
+  "Sketches outline initial ideas for a small plaza located at a Metra station, adjacent to a beloved local restaurant's outdoor dining area. The design carefully balances the needs of both, implementing different geometric languages to create a space that adapts to its dual purpose.", // 8
+  "Sketches trace the design's evolution from an initial diagram to a detailed, scaled plan for an office roof terrace.", // 9
+  "Concept sketches present a design for a community space in a rural countryside area, currently lacking functional outdoor areas. The design focuses on incorporating various sports zones, event spaces, and a playground, and aims to cater to all age groups within the community, meeting a diverse range of expectations and needs. ", // 10
+];
 
 function ProjectDetailSketches({ project }) {
   const images = project.images.filter((img, index) => index > 1);
@@ -14,37 +29,91 @@ function ProjectDetailSketches({ project }) {
   const [startX, setStartX] = useState(null);
 
   const activeRef = useRef();
+  const galleryRef = useRef();
 
-  const windowWidth = window.innerWidth;
-  const isOnMobile = windowWidth <= 640;
+  const { isWideScreen, isMobile } = useScreenWidth();
+
+  //Check the window size and calculate columns
+  // useEffect(
+  //   function () {
+  //     if (windowWidth < 1180 && windowWidth > 640) columns = 2;
+  //     if (windowWidth >= 1180) columns = 3;
+  //   },
+  //   [windowWidth]
+  // );
+
+  // useEffect(
+  //   function () {
+  //     if (!isWideScreen && !isMobile) columns = 2;
+  //     if (isWideScreen) columns = 3;
+  //   },
+  //   [isWideScreen, isMobile]
+  // );
 
   //Center active image based on column system
   useEffect(
     function () {
       if (activeRef.current) {
-        if (windowWidth < 1180 && windowWidth > 640) columns = 2;
-        if (windowWidth >= 1180) columns = 3;
+        const imageRect = activeRef.current.getBoundingClientRect();
+        const viewportY = window.scrollY;
+        const refCenterToViewport = imageRect.y + imageRect.height / 2;
+        const position =
+          window.innerHeight / 2 - refCenterToViewport + viewportY;
 
-        if (isOnMobile) {
-          const viewportHeight = window.innerHeight;
-          const refTop = activeRef.current.getBoundingClientRect().top;
-          const offset = (viewportHeight - activeRef.current.clientHeight) / 2;
-          const scrollToCenter = refTop + window.scrollY - offset;
+        console.log("window Y:", window.scrollY);
+        console.log("imageRect Top:", imageRect.top);
+        console.log("imageRect Height:", imageRect.height);
+        console.log("position:", position);
 
-          window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
+        if (expandedIndex === 0) {
+          window.scrollTo({
+            top: position,
+            behavior: "smooth",
+          });
         } else {
-          const isStartOfRow = (expandedIndex + 1) % columns === 1;
-          const behavior = isStartOfRow ? "auto" : "smooth";
-          const block = isStartOfRow ? "center" : "start";
-
-          activeRef.current.scrollIntoView({ behavior, block });
+          window.scrollTo({
+            top: viewportY + window.innerHeight / 2,
+            behavior: "smooth",
+          });
         }
+
+        // if (isOnMobile) {
+        //   const viewportHeight = window.innerHeight;
+        //   const refTop = activeRef.current.getBoundingClientRect().top;
+        //   const offset = (viewportHeight - activeRef.current.clientHeight) / 2;
+        //   const scrollToCenter = refTop + window.scrollY - offset;
+
+        //   window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
+        // } else {
+        //   const isStartOfRow = (expandedIndex + 1) % columns === 1;
+        //   const behavior = isStartOfRow ? "auto" : "smooth";
+        //   const block = isStartOfRow ? "center" : "start";
+
+        //   activeRef.current.scrollIntoView({ behavior, block });
+        // }
       }
     },
-    [activeRef, expandedIndex]
+    [expandedIndex]
   );
 
-  //On mobile
+  // check if click outside the activeRef
+  useEffect(
+    function () {
+      function handleClickOutside(e) {
+        if (isWideScreen) return null;
+        if (activeRef.current && !activeRef.current.contains(e.target)) {
+          setExpandedIndex(-1);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () =>
+        document.removeEventListener("mousedown", handleClickOutside);
+    },
+
+    [activeRef]
+  );
+
+  //On touch screen
   function handleTouchStart(e) {
     setStartX(e.touches[0].clientX);
   }
@@ -82,7 +151,6 @@ function ProjectDetailSketches({ project }) {
       (currentCarouselImage - 1 + imageCollection.length) %
         imageCollection.length
     );
-    console.log("prev!");
   }
 
   function nextImage(e, imageCollection) {
@@ -90,7 +158,6 @@ function ProjectDetailSketches({ project }) {
     setCurrentCarouselImage(
       (currentCarouselImage + 1) % imageCollection.length
     );
-    console.log("next!");
   }
 
   function handleClickX(e) {
@@ -115,9 +182,14 @@ function ProjectDetailSketches({ project }) {
           </video>
         </div>
 
-        <div className="flex flex-wrap justify-between items-center gap-4">
+        <div
+          ref={galleryRef}
+          className={`flex flex-wrap items-center gap-4 ${
+            expandedIndex !== -1 ? "justify-start" : "justify-between"
+          }`}
+        >
           <p
-            className="self-start text-[10px] lg:text-[12px] dark:text-stone-400 w-full sm:w-[48%] xl:w-[32%]"
+            className="self-start text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full sm:w-[48%] xl:w-[32%] "
             style={{ ontFamily: "Cutive Mono" }}
           >
             Sketching is a powerful tool that can turn the spark of an idea into
@@ -139,16 +211,17 @@ function ProjectDetailSketches({ project }) {
             }
 
             return (
-              <>
+              <div
+                className={`flex flex-wrap w-full md:w-[48%] xl:w-[32%]  transition-all duration-500 ${
+                  expandedIndex === i
+                    ? "w-[90%] xl:w-full"
+                    : "grayscale opacity-80"
+                }`}
+                key={`${image} + ${i}`}
+                ref={expandedIndex === i ? activeRef : null}
+              >
                 <div
-                  ref={expandedIndex === i ? activeRef : null}
-                  key={i}
-                  id={`${image} + ${i}`}
-                  className={`relative touch-none hover:opacity-100 hover:grayscale-0 rounded-2xl overflow-hidden transition-all duration-500 w-full sm:w-[48%] xl:w-[32%] cursor-pointer ${
-                    expandedIndex === i
-                      ? "sm:w-[90%] xl:w-[90%]"
-                      : "grayscale opacity-80 "
-                  }`}
+                  className={`relative touch-none hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer rounded-2xl overflow-hidden`}
                   onClick={(e) => handleClick(i, e)}
                   onTouchStart={handleTouchStart}
                   onTouchMove={(e) => handleTouchMove(e, image)}
@@ -168,36 +241,34 @@ function ProjectDetailSketches({ project }) {
                           className="bg-stone-500/80 dark:bg-stone-700/80 text-[8px] lg:text-[12px] py-2 px-4 text-stone-200 dark:text-stone-300 w-full"
                           style={{ ontFamily: "Cutive Mono" }}
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Corporis officia facilis enim suscipit quasi est
-                          deleniti molestias reiciendis fugiat perferendis.
+                          {projectDescription[i]}
                         </p>
                       </div>
-                      {!isOnMobile && (
-                        <>
-                          <div className="absolute inset-3 flex justify-end">
-                            <XCircleIcon
-                              className="h-6 w-6 text-red-700 hover:text-red-600 z-50"
-                              onClick={handleClickX}
+
+                      <>
+                        <div className="absolute inset-3 flex justify-end">
+                          <XCircleIcon
+                            className="h-6 w-6 text-red-700 hover:text-red-600 z-50"
+                            onClick={handleClickX}
+                          />
+                        </div>
+
+                        <div className="absolute inset-0 flex items-center justify-between">
+                          <div className="absolute left-0 p-2">
+                            <ChevronLeftIcon
+                              className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
+                              onClick={(e) => prevImage(e, image)}
                             />
                           </div>
-
-                          <div className="absolute inset-0 flex items-center justify-between">
-                            <div className="absolute left-0 p-2">
-                              <ChevronLeftIcon
-                                className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
-                                onClick={(e) => prevImage(e, image)}
-                              />
-                            </div>
-                            <div className="absolute right-0 p-2">
-                              <ChevronRightIcon
-                                className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
-                                onClick={(e) => nextImage(e, image)}
-                              />
-                            </div>
+                          <div className="absolute right-0 p-2">
+                            <ChevronRightIcon
+                              className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
+                              onClick={(e) => nextImage(e, image)}
+                            />
                           </div>
-                        </>
-                      )}
+                        </div>
+                      </>
+
                       <div
                         className={`absolute top-0 py-5 flex justify-center gap-1 md:gap-2 w-full`}
                       >
@@ -219,7 +290,7 @@ function ProjectDetailSketches({ project }) {
                     </>
                   )}
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

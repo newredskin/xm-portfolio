@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useDarkMode } from "../context/DarkModeContext";
+import { useScreenWidth } from "../context/ScreenWidthContext";
 
 function MouseFollow() {
+  const { isDarkMode } = useDarkMode();
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isWideScreen, setIsWideScreen] = useState(
-    () => window.innerWidth > 1024
-  );
+
+  const { isWideScreen, checkScreenSize } = useScreenWidth();
 
   useEffect(function () {
     function addEventListeners() {
@@ -21,16 +23,12 @@ function MouseFollow() {
       setPosition({ x: e.clientX, y: e.clientY });
     }
 
-    function checkScreenSize() {
-      setIsWideScreen(window.innerWidth > 1024);
-    }
-
     addEventListeners();
     checkScreenSize();
     return () => removeEventListeners();
   }, []);
 
-  if (!isWideScreen) return null;
+  if (!isWideScreen || !isDarkMode) return null;
 
   return (
     <div
@@ -45,33 +43,3 @@ function MouseFollow() {
 }
 
 export default MouseFollow;
-
-/*
-
-function MouseFollow() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  function handleMouseMove(e) {
-    setPosition({ x: e.clientX, y: e.clientY });
-  }
-
-  useEffect(function () {
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
-  return (
-    <div
-      className="bg-teal-400/5 rounded-full w-[30rem] h-[30rem] blur-3xl -z-50"
-      style={{
-        position: "fixed",
-        top: position.y - 240 + "px",
-        left: position.x - 240 + "px",
-      }}
-    ></div>
-  );
-}
-
-
-
-*/

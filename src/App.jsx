@@ -10,25 +10,28 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ProjectDtails from "./pages/ProjectDetails";
+import { ScreenWidthProvider } from "./context/ScreenWidthContext";
 
 function App() {
   return (
     <>
       <DarkModeProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route element={<AppLayout />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route
-                path="/projects/:projectName"
-                element={<ProjectDtails />}
-              />
-              <Route path="/contact" element={<Contact />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <ScreenWidthProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route element={<AppLayout />}>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route
+                  path="/projects/:projectName"
+                  element={<ProjectDtails />}
+                />
+                <Route path="/contact" element={<Contact />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </ScreenWidthProvider>
       </DarkModeProvider>
       <Toaster
         position="top-center"

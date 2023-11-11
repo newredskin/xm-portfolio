@@ -89,7 +89,15 @@ function Projects() {
                         {project.introduction}
                       </p>
                       <div className="flex flex-wrap mt-3 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                        {project.tools.map((tool) => (
+                        {project.tools[0].map((tool) => (
+                          <Tag
+                            key={`${project.name} ${tool}`}
+                            color="bg-stone-600"
+                          >
+                            {tool}
+                          </Tag>
+                        ))}
+                        {project.tools[1].map((tool) => (
                           <Tag key={`${project.name} ${tool}`}>{tool}</Tag>
                         ))}
                       </div>

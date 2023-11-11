@@ -8,7 +8,10 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [imageURL + "covers/" + "designcamp_cover.webp"],
-    tools: ["javascript", "html&css", "express", "mongodb", "cloudinary"],
+    tools: [
+      ["web basics", "responsive design"],
+      ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
+    ],
   },
   {
     name: "spas",
@@ -17,7 +20,7 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [imageURL + "covers/" + "spas_cover.mp4"],
-    tools: ["react-router", "redux", "tailwindcss"],
+    tools: [["react basics"], ["react-router", "redux", "tailwindcss"]],
   },
   {
     name: "stylinglib",
@@ -27,12 +30,8 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [imageURL + "covers/" + "styling-lib_v1_cover.mp4"],
     tools: [
-      "react",
-      "javascript",
-      "html&css",
-      "express",
-      "mongodb",
-      "cloudinary",
+      ["system design", "responsive design"],
+      ["react", "javascript", "html&css", "express", "mongoDB", "AWS"],
     ],
   },
   {
@@ -42,7 +41,10 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [imageURL + "covers/" + "xm-portfolio_cover.webp"],
-    tools: ["react", "javascript", "html", "tailwindcss", "supabase"],
+    tools: [
+      ["web design", "responsive design"],
+      ["react", "javascript", "html", "tailwindcss", "AWS"],
+    ],
   },
   {
     name: "lv",
@@ -67,12 +69,8 @@ const projectData = [
       imageURL + "lv/" + "lv_enlarged_design.webp", //13
     ],
     tools: [
-      "urban research",
-      "landscape design",
-      "sketchup",
-      "photoshop",
-      "illustrator",
-      "indesign",
+      ["urban research", "landscape design"],
+      ["sketchup", "photoshop", "illustrator", "indesign"],
     ],
   },
   {
@@ -97,7 +95,10 @@ const projectData = [
       imageURL + "aavs/" + "aavs_photo 1.webp", //12
       imageURL + "aavs/" + "aavs_timelapse.mp4", //13
     ],
-    tools: ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
+    tools: [
+      ["computational design"],
+      ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
+    ],
   },
   {
     name: "graphic-design",
@@ -124,7 +125,10 @@ const projectData = [
         imageURL + "graphic/" + "graphic_mn_products.webp", //4
       ],
     ],
-    tools: ["sketch", "illustrator", "photoshop", "dimension"],
+    tools: [
+      ["graphic design", "product design"],
+      ["procreate", "illustrator", "photoshop", "dimension"],
+    ],
   },
   {
     name: "sketches",
@@ -202,7 +206,7 @@ const projectData = [
         imageURL + "sketches/" + "gt_plaza_sketch_2.webp",
       ],
     ],
-    tools: ["landscape design", "pencil sketch", "procreate", "photoshop"],
+    tools: [["landscape design"], ["pencil sketch", "procreate", "photoshop"]],
   },
   {
     name: "nlsd",
@@ -222,7 +226,7 @@ const projectData = [
       imageURL + "nlsd/" + "nlsd_news_2.webp", // 8
       imageURL + "nlsd/" + "nlsd_historic_plan_horizontal.gif", // 9
     ],
-    tools: ["urban design", "sketch", "photoshop"],
+    tools: [["urban design"], ["sketch", "photoshop"]],
   },
 
   {
@@ -291,7 +295,10 @@ const projectData = [
         imageURL + "residential/" + "ct_screening_study.gif", //13
       ],
     ],
-    tools: ["procreate", "sketchup", "autoCAD", "lumion"],
+    tools: [
+      ["residential design", "construction detailing"],
+      ["procreate", "sketchup", "lumion", "autoCAD"],
+    ],
   },
   {
     name: "commercial",
@@ -347,11 +354,8 @@ const projectData = [
       ],
     ],
     tools: [
-      "landscape design",
-      "sketchup",
-      "enscape",
-      "indesign",
-      "construction documentation",
+      ["waterfront design", "streetscape design"],
+      ["sketchup", "enscape", "indesign", "construction documentation"],
     ],
   },
   {
@@ -393,7 +397,7 @@ const projectData = [
         imageURL + "identifiers/" + "identifiers_sauganash_colors.gif", //7
       ],
     ],
-    tools: ["rhino", "construction documentation"],
+    tools: [["construction detailing"], ["rhino", "autoCAD"]],
   },
   {
     name: "art",
@@ -408,7 +412,7 @@ const projectData = [
       imageURL + "art/" + "art_oil_2.webp",
       imageURL + "art/" + "art_watercolor_1.webp",
     ],
-    tools: ["oil-painting", "sketch", "watercolor"],
+    tools: [["oil-painting", "sketch", "watercolor"], []],
   },
   {
     name: "photography",
@@ -426,7 +430,10 @@ const projectData = [
       imageURL + "photography/" + "colorado_mountain_1.jpg", //6
       imageURL + "photography/" + "maroon_bell_1.webp", //7
     ],
-    tools: ["iphone", "dji", "gopro", "insta360"],
+    tools: [
+      ["photography", "video editing"],
+      ["camera", "dji", "gopro"],
+    ],
   },
 ];
 
