@@ -63,20 +63,18 @@ function ProjectDetailIdentifiers({ project }) {
                 className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start lg:w-[50%] w-full"
                 style={{ ontFamily: "Cutive Mono" }}
               >
-                Water scarcity in Las Vegas, a desert environment, has always
-                been a pressing issue. Amidst this arid landscape, an unexpected
-                oasis thrives: the Las Vegas Wash, a 12-mile stretch in the
-                southeast of the valley. It serves as the primary outlet for
-                stormwater, urban runoff, shallow groundwater, and treated
-                effluent from the Las Vegas Valley. Originally a dry desert
-                wash, it only saw water during rainstorms. However, as the city
-                expanded, the Wash evolved into a riparian ecosystem, with its
-                wetlands acting as a natural filter for urban runoff before it
-                reaches Lake Mead and the Colorado River. Unfortunately, the
-                Wash is now threatened by the very urbanization that nurtured
-                it. Over the past 50 years, the wetlands have dwindled from
-                2,000 acres to around 200 acres due to increased water discharge
-                and a growing population since the 1970s.
+                In the Motor Row Streetscape project, we reinvigorated Michigan
+                Avenue's historic 'Motor Row District', home to the iconic
+                Chicago Defender building, infusing the area with a contemporary
+                yet respectful nod to its Art Deco heritage and burgeoning new
+                businesses and eateries. A highlight of this revitalization was
+                the creation of two 30-foot tall identifier as welcome gateway,
+                a symbol designed to echo the district's illustrious past. In my
+                role within the project, I transformed the design principal's
+                initial sketch into a refined 3D model, meticulously shaping it
+                to its final form. Following this, I developed detailed
+                engineering plans to ensure that the design could be effectively
+                and feasibly constructed on site.
               </p>
               <img
                 src={mediaPrefix + project.images[1][3]}
@@ -109,21 +107,20 @@ function ProjectDetailIdentifiers({ project }) {
                   className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start "
                   style={{ ontFamily: "Cutive Mono" }}
                 >
-                  Water scarcity in Las Vegas, a desert environment, has always
-                  been a pressing issue. Amidst this arid landscape, an
-                  unexpected oasis thrives: the Las Vegas Wash, a 12-mile
-                  stretch in the southeast of the valley. It serves as the
-                  primary outlet for stormwater, urban runoff, shallow
-                  groundwater, and treated effluent from the Las Vegas Valley.
-                  Originally a dry desert wash, it only saw water during
-                  rainstorms. However, as the city expanded, the Wash evolved
-                  into a riparian ecosystem, with its wetlands acting as a
-                  natural filter for urban runoff before it reaches Lake Mead
-                  and the Colorado River. Unfortunately, the Wash is now
-                  threatened by the very urbanization that nurtured it. Over the
-                  past 50 years, the wetlands have dwindled from 2,000 acres to
-                  around 200 acres due to increased water discharge and a
-                  growing population since the 1970s.
+                  In the City of Chicago's 10th Ward, a district renowned for
+                  its distinctiveness and home to seven unique neighborhoods -
+                  Hegewisch, East Side, South Deering, Altgeld Gardens, Slag
+                  Valley, South Chicago, and The Bush - a distinctive identifier
+                  was conceptualized. The design journey commenced in South
+                  Chicago. As a ward abutting Indiana, with its rich industrial
+                  past inspiring the initial design concepts. The use of corten
+                  steel pays homage to this history, while the incorporation of
+                  spirals with colorful polycarbonate windows symbolizes the
+                  vibrant future of these neighborhoods. My role was crucial in
+                  bringing this vision to life: I was responsible for
+                  transforming the initial sketches into detailed 3D models and
+                  subsequently producing the construction details, ensuring the
+                  feasibility of bringing this design to fruition on the ground.
                 </p>
                 <div>
                   <ImageCarousel
@@ -159,21 +156,19 @@ function ProjectDetailIdentifiers({ project }) {
                   className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start "
                   style={{ ontFamily: "Cutive Mono" }}
                 >
-                  Water scarcity in Las Vegas, a desert environment, has always
-                  been a pressing issue. Amidst this arid landscape, an
-                  unexpected oasis thrives: the Las Vegas Wash, a 12-mile
-                  stretch in the southeast of the valley. It serves as the
-                  primary outlet for stormwater, urban runoff, shallow
-                  groundwater, and treated effluent from the Las Vegas Valley.
-                  Originally a dry desert wash, it only saw water during
-                  rainstorms. However, as the city expanded, the Wash evolved
-                  into a riparian ecosystem, with its wetlands acting as a
-                  natural filter for urban runoff before it reaches Lake Mead
-                  and the Colorado River. Unfortunately, the Wash is now
-                  threatened by the very urbanization that nurtured it. Over the
-                  past 50 years, the wetlands have dwindled from 2,000 acres to
-                  around 200 acres due to increased water discharge and a
-                  growing population since the 1970s.
+                  Sauganash, a community nestled on the northern border of
+                  Chicago, has maintained its distinctive character since its
+                  early 20th-century inception as a suburban retreat from the
+                  bustling city center. Characterized by diagonal streets and
+                  enveloped in spacious lawns and woods, Sauganash's unique
+                  charm inspired our design concept. Central to this is the
+                  ginkgo tree, a symbol of resilience, health, and longevity,
+                  mirroring the qualities of this neighborhood. We abstracted
+                  the ginkgo leaf, complementing it with dynamic LED lights to
+                  create a welcoming visual spectacle for visitors. In this
+                  project, my involvement was multifaceted, encompassing the
+                  development of conceptual designs, detailed 3D modeling, and
+                  the preparation of comprehensive construction documentation.
                 </p>
                 <div>
                   <ImageCarousel

@@ -245,7 +245,7 @@ function ProjectDetailResidential({ project }) {
                   also imbued with a sense of timelessness and durability.{" "}
                   <br />
                   <br />
-                  my role involved working in closely with the project manager,
+                  My role involved working in closely with the project manager,
                   design principal, ensuring that every design element was
                   brought to fruition with the highest standards. My
                   responsibilities encompassed overseeing the design iterations
