@@ -37,7 +37,7 @@ function ImageCarouselForSketches({
             expandHeight = "h-[18rem]";
           } else {
             expandHeight = isExpanded
-              ? "sm:h-[24rem] lg:h-[30rem] xl:h-[36rem] 2xl:h-[54rem]"
+              ? "md:h-[24rem] xl:h-[40rem] 2xl:h-[54rem]"
               : "h-[18rem]";
           }
 

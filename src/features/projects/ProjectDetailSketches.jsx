@@ -4,7 +4,6 @@ import { XCircleIcon } from "@heroicons/react/24/solid";
 
 import { mediaPrefix } from "../../devSwitch";
 import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
-import { useScreenWidth } from "../../context/ScreenWidthContext";
 
 const projectDescription = [
   "Concept of a school project. Restore the historic entry and upgraded the outdoor areas for sports and group activities. Geometric pathways to efficiently direct walking flow.", // 0
@@ -22,7 +21,6 @@ const projectDescription = [
 
 function ProjectDetailSketches({ project }) {
   const images = project.images.filter((img, index) => index > 1);
-  let columns = 1;
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
   const [currentCarouselImage, setCurrentCarouselImage] = useState(0);
@@ -31,67 +29,28 @@ function ProjectDetailSketches({ project }) {
   const activeRef = useRef();
   const galleryRef = useRef();
 
-  const { isWideScreen, isMobile } = useScreenWidth();
-
-  //Check the window size and calculate columns
-  // useEffect(
-  //   function () {
-  //     if (windowWidth < 1180 && windowWidth > 640) columns = 2;
-  //     if (windowWidth >= 1180) columns = 3;
-  //   },
-  //   [windowWidth]
-  // );
-
-  // useEffect(
-  //   function () {
-  //     if (!isWideScreen && !isMobile) columns = 2;
-  //     if (isWideScreen) columns = 3;
-  //   },
-  //   [isWideScreen, isMobile]
-  // );
-
-  //Center active image based on column system
+  //Center active image
   useEffect(
     function () {
-      if (activeRef.current) {
-        const imageRect = activeRef.current.getBoundingClientRect();
-        const viewportY = window.scrollY;
-        const refCenterToViewport = imageRect.y + imageRect.height / 2;
-        const position =
-          window.innerHeight / 2 - refCenterToViewport + viewportY;
-
-        console.log("window Y:", window.scrollY);
-        console.log("imageRect Top:", imageRect.top);
-        console.log("imageRect Height:", imageRect.height);
-        console.log("position:", position);
-
-        if (expandedIndex === 0) {
-          window.scrollTo({
-            top: position,
-            behavior: "smooth",
-          });
-        } else {
-          window.scrollTo({
-            top: viewportY + window.innerHeight / 2,
-            behavior: "smooth",
-          });
+      const observer = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          if (entry.target === activeRef.current) {
+            const rect = entry.target.getBoundingClientRect();
+            const centerPosition =
+              rect.top +
+              window.scrollY -
+              window.innerHeight / 2 +
+              rect.height / 2 -
+              36;
+            window.scrollTo({ top: centerPosition, behavior: "smooth" });
+          }
         }
+      });
 
-        // if (isOnMobile) {
-        //   const viewportHeight = window.innerHeight;
-        //   const refTop = activeRef.current.getBoundingClientRect().top;
-        //   const offset = (viewportHeight - activeRef.current.clientHeight) / 2;
-        //   const scrollToCenter = refTop + window.scrollY - offset;
-
-        //   window.scrollTo({ top: scrollToCenter, behavior: "smooth" });
-        // } else {
-        //   const isStartOfRow = (expandedIndex + 1) % columns === 1;
-        //   const behavior = isStartOfRow ? "auto" : "smooth";
-        //   const block = isStartOfRow ? "center" : "start";
-
-        //   activeRef.current.scrollIntoView({ behavior, block });
-        // }
+      if (activeRef.current) {
+        observer.observe(activeRef.current);
       }
+      return () => observer.disconnect();
     },
     [expandedIndex]
   );
@@ -100,7 +59,6 @@ function ProjectDetailSketches({ project }) {
   useEffect(
     function () {
       function handleClickOutside(e) {
-        if (isWideScreen) return null;
         if (activeRef.current && !activeRef.current.contains(e.target)) {
           setExpandedIndex(-1);
         }
@@ -212,10 +170,10 @@ function ProjectDetailSketches({ project }) {
 
             return (
               <div
-                className={`flex flex-wrap w-full md:w-[48%] xl:w-[32%]  transition-all duration-500 ${
+                className={`flex flex-wrap w-full hover:grayscale-0 transition-all duration-300 ${
                   expandedIndex === i
-                    ? "w-[90%] xl:w-full"
-                    : "grayscale opacity-80"
+                    ? "w-full"
+                    : "grayscale opacity-80 md:w-[48%] xl:w-[32%]"
                 }`}
                 key={`${image} + ${i}`}
                 ref={expandedIndex === i ? activeRef : null}
