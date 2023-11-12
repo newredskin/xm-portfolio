@@ -60,19 +60,3 @@ function ImageCarouselForSketches({
 }
 
 export default ImageCarouselForSketches;
-
-/*
-           <div
-              className={`bg-orange-50/50 flex-shrink-0 w-full ${expandHeight} flex justify-center items-center shadow-xl`}
-              key={image}
-            >
-              <img
-                src={mediaPrefix + image}
-                alt=""
-                className={`object-cover dark:opacity-90 h-full`}
-              />
-            </div>
-
-
-
-*/

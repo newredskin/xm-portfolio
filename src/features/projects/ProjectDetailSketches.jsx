@@ -147,7 +147,7 @@ function ProjectDetailSketches({ project }) {
           }`}
         >
           <p
-            className="self-start text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full sm:w-[48%] xl:w-[32%] "
+            className="self-start text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full md:w-[48%] xl:w-[32%] "
             style={{ ontFamily: "Cutive Mono" }}
           >
             Sketching is a powerful tool that can turn the spark of an idea into

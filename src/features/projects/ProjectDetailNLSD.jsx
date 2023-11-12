@@ -20,6 +20,7 @@ function ProjectDetailNLSD({ project }) {
           images={imagesForCarouselTop}
           height="30"
           duration={8300}
+          dotPadding="py-3 lg:py-8"
         />
         <div className="flex flex-col lg:justify-between lg:items-start gap-5">
           <div className="flex flex-col gap-3 lg:flex-row">

@@ -51,7 +51,7 @@ function ProjectDetailResidential({ project }) {
             <div className="flex flex-col">
               <ImageCarousel
                 images={imagesForCarouselTopDV}
-                dotPadding="py-10"
+                dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
               <div
@@ -67,21 +67,25 @@ function ProjectDetailResidential({ project }) {
                   className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400"
                   style={{ ontFamily: "Cutive Mono" }}
                 >
-                  Water scarcity in Las Vegas, a desert environment, has always
-                  been a pressing issue. Amidst this arid landscape, an
-                  unexpected oasis thrives: the Las Vegas Wash, a 12-mile
-                  stretch in the southeast of the valley. It serves as the
-                  primary outlet for stormwater, urban runoff, shallow
-                  groundwater, and treated effluent from the Las Vegas Valley.
-                  Originally a dry desert wash, it only saw water during
-                  rainstorms. However, as the city expanded, the Wash evolved
-                  into a riparian ecosystem, with its wetlands acting as a
-                  natural filter for urban runoff before it reaches Lake Mead
-                  and the Colorado River. Unfortunately, the Wash is now
-                  threatened by the very urbanization that nurtured it. Over the
-                  past 50 years, the wetlands have dwindled from 2,000 acres to
-                  around 200 acres due to increased water discharge and a
-                  growing population since the 1970s.
+                  Situated atop the Lake Michigan shoreline, this striking home
+                  seamlessly integrates its interior with the surrounding
+                  landscape, offering expansive vistas. The highlight is the
+                  cantilevered deck that extends over the bluff - a testament to
+                  both innovative design and engineering. This deck, embodying
+                  the home's sleek, modern aesthetic, gives the impression of
+                  floating above the bluff, thanks to its visually unobtrusive
+                  design and self-cleaning glass railings that provide clear
+                  views of the lake. <br />
+                  <br />
+                  My role involved close collaboration with the design
+                  principal, from the initial design stages to the construction
+                  administration phase. The biggest challenge among other design
+                  elements was this knife-edge floating deck: numerous hours
+                  were dedicated to meticulously refining its details, ensuring
+                  aesthetic appeal while addressing engineering stability and
+                  drainage concerns. Witnessing the final construction of such
+                  high quality, complete with its stunning view, stands as a
+                  significant accomplishment..
                 </p>
                 <div className="mt-3 flex dark:opacity-90">
                   <img
@@ -112,7 +116,7 @@ function ProjectDetailResidential({ project }) {
                 <ImageCarousel
                   images={imagesForCarouselSideDV2}
                   autoRotate={false}
-                  dotPadding="py-7"
+                  dotPadding="py-3 lg:py-7"
                 />
               </div>
             </div>
@@ -125,7 +129,7 @@ function ProjectDetailResidential({ project }) {
             <div className="mb-3">
               <ImageCarousel
                 images={imagesForCarouselTopRK}
-                dotPadding="py-10"
+                dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
             </div>
@@ -193,7 +197,7 @@ function ProjectDetailResidential({ project }) {
               <div className="mt-6">
                 <ImageCarousel
                   images={imagesForCarouselSideMobileRK}
-                  dotPadding="py-8"
+                  dotPadding="py-4"
                   duration={5600}
                 />
               </div>
@@ -207,7 +211,7 @@ function ProjectDetailResidential({ project }) {
             <div className="relative flex flex-col">
               <ImageCarousel
                 images={imagesForCarouselTopCT}
-                dotPadding="py-8"
+                dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
               <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
@@ -226,21 +230,31 @@ function ProjectDetailResidential({ project }) {
                   className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full self-start"
                   style={{ ontFamily: "Cutive Mono" }}
                 >
-                  Water scarcity in Las Vegas, a desert environment, has always
-                  been a pressing issue. Amidst this arid landscape, an
-                  unexpected oasis thrives: the Las Vegas Wash, a 12-mile
-                  stretch in the southeast of the valley. It serves as the
-                  primary outlet for stormwater, urban runoff, shallow
-                  groundwater, and treated effluent from the Las Vegas Valley.
-                  Originally a dry desert wash, it only saw water during
-                  rainstorms. However, as the city expanded, the Wash evolved
-                  into a riparian ecosystem, with its wetlands acting as a
-                  natural filter for urban runoff before it reaches Lake Mead
-                  and the Colorado River. Unfortunately, the Wash is now
-                  threatened by the very urbanization that nurtured it. Over the
-                  past 50 years, the wetlands have dwindled from 2,000 acres to
-                  around 200 acres due to increased water discharge and a
-                  growing population since the 1970s.
+                  This residential project located in an urban neighborhood with
+                  rich history, designed as a series of garden rooms that
+                  intricately blend historical motifs with contemporary design.
+                  Each element in this project was carefully chosen to reflect
+                  the site's unique material vernacular and to resonate with the
+                  local architectural heritage. The site, divided into two
+                  primary zones by a masonry wall, offers a harmonious balance
+                  between the inviting front yard facing the neighborhood and
+                  the series of private garden rooms at the back. A significant
+                  feature of this landscape is the collaborative effort with
+                  artisans in ironwork and masonry, ensuring that each site
+                  element was not only authentic and crafted with precision but
+                  also imbued with a sense of timelessness and durability.{" "}
+                  <br />
+                  <br />
+                  my role involved working in closely with the project manager,
+                  design principal, ensuring that every design element was
+                  brought to fruition with the highest standards. My
+                  responsibilities encompassed overseeing the design iterations
+                  for each component - from the detailed metalwork and robust
+                  masonry wall to the elegantly designed wood gate and canopy
+                  structures. Meticulous attention to detail was paramount in my
+                  approach, as I spent numerous hours refining each piece,
+                  ensuring that it was not only aesthetically pleasing but also
+                  functionally sound.
                 </p>
                 <img
                   src={mediaPrefix + project.images[3][7]}
@@ -286,21 +300,15 @@ function ProjectDetailResidential({ project }) {
                   className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full"
                   style={{ ontFamily: "Cutive Mono" }}
                 >
-                  Water scarcity in Las Vegas, a desert environment, has always
-                  been a pressing issue. Amidst this arid landscape, an
-                  unexpected oasis thrives: the Las Vegas Wash, a 12-mile
-                  stretch in the southeast of the valley. It serves as the
-                  primary outlet for stormwater, urban runoff, shallow
-                  groundwater, and treated effluent from the Las Vegas Valley.
-                  Originally a dry desert wash, it only saw water during
-                  rainstorms. However, as the city expanded, the Wash evolved
-                  into a riparian ecosystem, with its wetlands acting as a
-                  natural filter for urban runoff before it reaches Lake Mead
-                  and the Colorado River. Unfortunately, the Wash is now
-                  threatened by the very urbanization that nurtured it. Over the
-                  past 50 years, the wetlands have dwindled from 2,000 acres to
-                  around 200 acres due to increased water discharge and a
-                  growing population since the 1970s.
+                  A critical aspect of my role was the coordination with
+                  structural engineers. This collaboration was crucial to
+                  ensuring that our design vision was perfectly aligned with
+                  structural requirements, balancing aesthetic allure with
+                  practical functionality. Seeing the project's final
+                  construction come to life with exceptional quality and
+                  precision, framed by the stunning landscape, stood as a
+                  powerful affirmation of our team's commitment and a personal
+                  highlight of my professional journey.
                 </p>
                 <img
                   src={mediaPrefix + project.images[3][10]}
