@@ -15,6 +15,7 @@ import ProjectDetailIdentifiers from "../features/projects/ProjectDetailIdentifi
 import ProjectDetailGraphic from "../features/projects/ProjectDetailGraphic";
 import ProjectDetailArt from "../features/projects/ProjectDetailArt";
 import ProjectDetailAAVS from "../features/projects/ProjectDetailAAVS";
+import { useEffect } from "react";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -23,6 +24,10 @@ function ProjectDetails() {
   const project = projectData.filter(
     (project) => project.name === projectName,
   )[0];
+
+  useEffect(function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const isLv = project.name === "lv";
   const isPhotography = project.name === "photography";

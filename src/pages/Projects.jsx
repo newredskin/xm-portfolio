@@ -37,7 +37,6 @@ function Projects() {
 
   function handleDirectToDetail(project) {
     navigate(`/projects/${project.name}`);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (

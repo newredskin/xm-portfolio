@@ -17,14 +17,14 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
   }
 
   return (
-    <nav className="fixed z-50 mt-[-10px]">
+    <nav className="fixed z-50 mt-[-14px]">
       <div
         className={`relative z-20 bg-gradient-to-b from-orange-50 to-transparent to-80% ${
           isNavExpanded ? "" : "backdrop-blur-sm "
         } dark:from-gray-950 dark:to-gray-950`}
       >
         <div className="w-screen px-3 md:px-10 lg:w-screen lg:px-6 lg:py-4">
-          <div className="flex items-center justify-between">
+          <div className="my-3 flex items-center justify-between">
             <div className="relative z-20 flex items-center gap-2">
               <NavLink to="/">
                 <CodeBracketSquareIcon className="h-10 w-10 text-red-700" />
