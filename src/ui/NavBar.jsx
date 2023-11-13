@@ -72,7 +72,7 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
                       <li
                         className={`${
                           isNavExpanded
-                            ? "border-stone-100/50 py-2 transition-all duration-500 hover:cursor-pointer  hover:bg-gradient-to-r hover:from-transparent hover:via-red-700/20 hover:to-transparent hover:md:via-transparent"
+                            ? "border-stone-100/50 py-2 transition-all duration-500 hover:cursor-pointer  hover:bg-gradient-to-r hover:from-transparent hover:via-red-700/20 hover:to-transparent dark:hover:via-orange-50/20 hover:md:via-transparent dark:hover:md:via-transparent"
                             : "py-2"
                         }`}
                         key={link.name}
