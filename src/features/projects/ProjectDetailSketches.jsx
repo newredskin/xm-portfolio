@@ -52,7 +52,7 @@ function ProjectDetailSketches({ project }) {
       }
       return () => observer.disconnect();
     },
-    [expandedIndex]
+    [expandedIndex],
   );
 
   // check if click outside the activeRef
@@ -68,7 +68,7 @@ function ProjectDetailSketches({ project }) {
         document.removeEventListener("mousedown", handleClickOutside);
     },
 
-    [activeRef]
+    [activeRef],
   );
 
   //On touch screen
@@ -107,14 +107,14 @@ function ProjectDetailSketches({ project }) {
     e.stopPropagation();
     setCurrentCarouselImage(
       (currentCarouselImage - 1 + imageCollection.length) %
-        imageCollection.length
+        imageCollection.length,
     );
   }
 
   function nextImage(e, imageCollection) {
     e.stopPropagation();
     setCurrentCarouselImage(
-      (currentCarouselImage + 1) % imageCollection.length
+      (currentCarouselImage + 1) % imageCollection.length,
     );
   }
 
@@ -126,8 +126,8 @@ function ProjectDetailSketches({ project }) {
 
   return (
     <>
-      <div className="flex flex-col gap-y-6 items-center justify-center overflow-hidden">
-        <div className="dark:opacity-90 mb-3">
+      <div className="flex flex-col items-center justify-center gap-y-6 overflow-hidden">
+        <div className="mb-2 dark:opacity-90 sm:mb-6">
           <video
             className={`object-contain`}
             autoPlay
@@ -147,8 +147,8 @@ function ProjectDetailSketches({ project }) {
           }`}
         >
           <p
-            className="self-start text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full md:w-[48%] xl:w-[32%] "
-            style={{ ontFamily: "Cutive Mono" }}
+            className="w-full self-start text-xs text-stone-500 dark:text-stone-400 md:w-[48%] lg:text-sm xl:w-[32%] "
+            style={{ fontFamily: "Cutive Mono" }}
           >
             Sketching is a powerful tool that can turn the spark of an idea into
             a vivid reality. Whether I'm using paper and pencil or my iPad,
@@ -170,16 +170,16 @@ function ProjectDetailSketches({ project }) {
 
             return (
               <div
-                className={`flex flex-wrap w-full hover:grayscale-0 transition-all duration-300 ${
+                className={`flex w-full flex-wrap transition-all duration-300 hover:grayscale-0 ${
                   expandedIndex === i
                     ? "w-full"
-                    : "grayscale opacity-80 md:w-[48%] xl:w-[32%]"
+                    : "opacity-80 grayscale md:w-[48%] xl:w-[32%]"
                 }`}
                 key={`${image} + ${i}`}
                 ref={expandedIndex === i ? activeRef : null}
               >
                 <div
-                  className={`relative touch-none hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-pointer rounded-2xl overflow-hidden`}
+                  className={`relative cursor-pointer touch-none overflow-hidden rounded-2xl transition-all duration-500 hover:opacity-100 hover:grayscale-0`}
                   onClick={(e) => handleClick(i, e)}
                   onTouchStart={handleTouchStart}
                   onTouchMove={(e) => handleTouchMove(e, image)}
@@ -196,17 +196,16 @@ function ProjectDetailSketches({ project }) {
                     <>
                       <div className="absolute inset-0 flex items-end">
                         <p
-                          className="bg-stone-500/80 dark:bg-stone-700/80 text-[8px] lg:text-[12px] py-2 px-4 text-stone-200 dark:text-stone-300 w-full"
-                          style={{ ontFamily: "Cutive Mono" }}
+                          className="w-full bg-stone-500/80 px-4 py-2 text-[10px] text-orange-100 dark:bg-gray-900/80 dark:text-stone-300 lg:text-[14px]"
+                          style={{ fontFamily: "Cutive Mono" }}
                         >
                           {projectDescription[i]}
                         </p>
                       </div>
-
                       <>
                         <div className="absolute inset-3 flex justify-end">
                           <XCircleIcon
-                            className="h-6 w-6 text-red-700 hover:text-red-600 z-50"
+                            className="z-50 h-6 w-6 text-red-700 hover:text-red-600"
                             onClick={handleClickX}
                           />
                         </div>
@@ -214,13 +213,13 @@ function ProjectDetailSketches({ project }) {
                         <div className="absolute inset-0 flex items-center justify-between">
                           <div className="absolute left-0 p-2">
                             <ChevronLeftIcon
-                              className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
+                              className={`h-8 w-8 text-red-700 transition-all duration-500 hover:cursor-pointer hover:text-red-600 dark:text-stone-600 dark:hover:text-red-700  lg:h-12 lg:w-12`}
                               onClick={(e) => prevImage(e, image)}
                             />
                           </div>
                           <div className="absolute right-0 p-2">
                             <ChevronRightIcon
-                              className={`h-8 w-8 lg:h-12 lg:w-12 text-red-700 dark:text-stone-600 hover:cursor-pointer transition-all duration-500  hover:text-red-600 dark:hover:text-red-700`}
+                              className={`h-8 w-8 text-red-700 transition-all duration-500 hover:cursor-pointer hover:text-red-600 dark:text-stone-600 dark:hover:text-red-700  lg:h-12 lg:w-12`}
                               onClick={(e) => nextImage(e, image)}
                             />
                           </div>
@@ -228,7 +227,7 @@ function ProjectDetailSketches({ project }) {
                       </>
 
                       <div
-                        className={`absolute top-0 py-5 flex justify-center gap-1 md:gap-2 w-full`}
+                        className={`absolute top-0 flex w-full justify-center gap-1 py-5 md:gap-2`}
                       >
                         {image.map((img, index) => (
                           <div
@@ -236,7 +235,7 @@ function ProjectDetailSketches({ project }) {
                               e.stopPropagation();
                               setCurrentCarouselImage(index);
                             }}
-                            className={`rounded-full w-2 h-2 md:w-3 md:h-3 cursor-pointer ${
+                            className={`h-2 w-2 cursor-pointer rounded-full md:h-3 md:w-3 ${
                               index === currentCarouselImage
                                 ? "bg-red-700"
                                 : "bg-stone-600/50"

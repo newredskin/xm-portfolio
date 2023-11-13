@@ -64,7 +64,7 @@ const renderCustomizedLabel = ({
 export default function SkillChart() {
   const { isDarkMode } = useDarkMode();
 
-  const fillColor = isDarkMode ? "rgb(17 24 39 / 0.8)" : "rgb(4 47 46 / 0.8)";
+  const fillColor = isDarkMode ? "rgb(17 24 39 / 0.8)" : "rgb(56 102 65 / 0.8)";
 
   return (
     <ResponsiveContainer

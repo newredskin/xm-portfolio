@@ -2,22 +2,22 @@ import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 function WorkItemFL() {
   return (
-    <ul className="m-6 md:mx-10 flex flex-col gap-6">
+    <ul className="m-6 flex flex-col gap-6 md:mx-10">
       <li>
-        <div className="grid grid-cols-12 gap-5 items-center">
-          <CheckCircleIcon className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] justify-self-center" />
-          <div className="col-start-2 col-span-8 md:col-span-6 justify-self-start text-start">
-            <h3 className="font-bold">Product Design</h3>
-            <p className="text-sm text-stone-500 dark:text-stone-400">
+        <div className="grid grid-cols-12 items-center gap-5">
+          <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
+          <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
+            <h3 className="font-bold dark:text-orange-50">Product Design</h3>
+            {/* <p className="text-sm text-stone-500 dark:text-stone-400">
               Multiple firms
-            </p>
+            </p> */}
           </div>
-          <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
+          <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
             Design/Visualization
           </p>
-          <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
+          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
           <p
-            className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
+            className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
             Assisted firms with their branding and marketing materials. This
@@ -33,20 +33,20 @@ function WorkItemFL() {
       </li>
 
       <li>
-        <div className="grid grid-cols-12 gap-5 items-center">
-          <CheckCircleIcon className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] justify-self-center" />
-          <div className="col-start-2 col-span-8 md:col-span-6 justify-self-start text-start">
-            <h3 className="font-bold">Web Dev</h3>
-            <p className="text-sm text-stone-500 dark:text-stone-400">
+        <div className="grid grid-cols-12 items-center gap-5">
+          <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
+          <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
+            <h3 className="font-bold dark:text-orange-50">Web Dev</h3>
+            {/* <p className="text-sm text-stone-500 dark:text-stone-400">
               Multiple firms
-            </p>
+            </p> */}
           </div>
-          <p className="col-start-2 col-span-12 md:col-start-9 md:col-span-4 justify-self-end self-start text-xs">
+          <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
             JavaScript/React/HTML/CSS/MangoDB/etc
           </p>
-          <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
+          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
           <p
-            className="row-start-2 col-start-2 col-span-11 text-start text-sm dark:text-stone-400"
+            className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
             Through dedicated self-study, I have achieved proficiency in web

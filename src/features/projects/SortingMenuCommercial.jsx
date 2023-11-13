@@ -12,8 +12,8 @@ function SortingMenuCommercial({ activeSort, handleSort }) {
           onClick={() => handleSort("igl")}
           className={`${buttonStyle} ${
             activeSort === "igl"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Iowa Great Lakes
@@ -24,8 +24,8 @@ function SortingMenuCommercial({ activeSort, handleSort }) {
           onClick={() => handleSort("lys")}
           className={`${buttonStyle} ${
             activeSort === "lys"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Lincoln Yards South

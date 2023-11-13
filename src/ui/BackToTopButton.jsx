@@ -25,7 +25,7 @@ function BackToTopButton() {
   }
 
   return (
-    <div className="flex justify-center items-center text-stone-400/50 hover:text-stone-400">
+    <div className="flex items-center justify-center text-teal-700/50 transition-all duration-300 hover:text-red-700 dark:text-gray-700/50">
       {showButton && (
         <button className="h-10 w-10">
           <ChevronUpIcon onClick={handleClick} />

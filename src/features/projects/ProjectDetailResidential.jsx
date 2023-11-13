@@ -55,8 +55,8 @@ function ProjectDetailResidential({ project }) {
                 autoRotate={false}
               />
               <div
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 my-2 flex justify-end"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Scott Shigley</span>
               </div>
@@ -64,8 +64,8 @@ function ProjectDetailResidential({ project }) {
             <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
               <div className="w-full lg:w-[40%] flex flex-col gap-6">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   Situated atop the Lake Michigan shoreline, this striking home
                   seamlessly integrates its interior with the surrounding
@@ -85,13 +85,13 @@ function ProjectDetailResidential({ project }) {
                   aesthetic appeal while addressing engineering stability and
                   drainage concerns. Witnessing the final construction of such
                   high quality, complete with its stunning view, stands as a
-                  significant accomplishment..
+                  significant accomplishment.
                 </p>
-                <div className="mt-3 flex dark:opacity-90">
+                <div className="mt-3 flex">
                   <img
                     src={mediaPrefix + project.images[1][5]}
                     alt=""
-                    className="object-contain dark:opacity-90 rounded-2xl"
+                    className="object-contain opacity-90 rounded-2xl shadow-md"
                   />
                 </div>
               </div>
@@ -136,8 +136,8 @@ function ProjectDetailResidential({ project }) {
             <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-5">
               <div className="flex flex-col lg:w-[50%] gap-3">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full mt-3"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full mt-3"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   This residential project marries history and modernity. The
                   original house, designed by esteemed architect Herman Lackner,
@@ -180,7 +180,7 @@ function ProjectDetailResidential({ project }) {
                 <img
                   src={mediaPrefix + project.images[2][6]}
                   alt=""
-                  className="object-contain w-full self-start"
+                  className="object-contain w-full self-start opacity-90"
                 />
               </div>
             </div>
@@ -189,7 +189,7 @@ function ProjectDetailResidential({ project }) {
                 <ImageCarousel
                   images={imagesForCarouselSideWideRK}
                   dotPadding="py-8"
-                  duration={5600}
+                  duration={5000}
                 />
               </div>
             )}
@@ -198,7 +198,7 @@ function ProjectDetailResidential({ project }) {
                 <ImageCarousel
                   images={imagesForCarouselSideMobileRK}
                   dotPadding="py-4"
-                  duration={5600}
+                  duration={5000}
                 />
               </div>
             )}
@@ -214,12 +214,12 @@ function ProjectDetailResidential({ project }) {
                 dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
-              <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
+              <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 px-2 lg:px-2 py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[8px] lg:text-[12px]">
                 2023 ICAA Midwest Acanthus Award
               </span>
               <div
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 my-2 flex justify-end"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Scott Shigley</span>
               </div>
@@ -227,8 +227,8 @@ function ProjectDetailResidential({ project }) {
             <div className="flex flex-col lg:flex-row lg:justify-between gap-5">
               <div className="flex flex-col gap-6 justify-between lg:w-[60%]">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full self-start"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full self-start"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   This residential project located in an urban neighborhood with
                   rich history, designed as a series of garden rooms that
@@ -259,7 +259,7 @@ function ProjectDetailResidential({ project }) {
                 <img
                   src={mediaPrefix + project.images[3][7]}
                   alt=""
-                  className="rounded-2xl object-contain w-full self-start dark:opacity-80"
+                  className="rounded-2xl object-contain w-full self-start opacity-90 shadow-md dark:opacity-80"
                 />
               </div>
               <div className="flex flex-col justify-center items-center gap-1 lg:gap-0 lg:w-[40%] ">
@@ -284,7 +284,7 @@ function ProjectDetailResidential({ project }) {
               <img
                 src={mediaPrefix + project.images[3][13]}
                 alt=""
-                className="object-contain lg:w-[40%] dark:opacity-80 rounded-2xl"
+                className="object-contain lg:w-[40%] dark:opacity-80 opacity-90"
               />
             </div>
             <div className="mt-6 flex flex-col lg:flex-row gap-6">
@@ -297,8 +297,8 @@ function ProjectDetailResidential({ project }) {
               </div>
               <div className="flex flex-col gap-6 lg:w-[70%] justify-between">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   A critical aspect of my role was the coordination with
                   structural engineers. This collaboration was crucial to
@@ -313,11 +313,11 @@ function ProjectDetailResidential({ project }) {
                 <img
                   src={mediaPrefix + project.images[3][10]}
                   alt=""
-                  className="object-contain w-full"
+                  className="object-contain w-full opacity-90"
                 />
               </div>
             </div>
-            <div className="mt-6 dark:bg-stone-400/30 bg-stone-100/50 lg:p-3 p-1">
+            <div className="mt-6 dark:bg-stone-400/30 lg:p-3 p-1">
               <ImageCarousel
                 images={imagesForCarouselSideCT}
                 invertImages={imagesForCarouselSideCT}

@@ -17,32 +17,36 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
   }
 
   return (
-    <nav className="fixed z-50">
-      <div className="relative z-20 bg-teal-950 dark:bg-gray-900">
-        <div className="px-3 md:px-10 lg:w-screen lg:px-6 lg:py-4 w-screen">
+    <nav className="fixed z-50 mt-[-10px]">
+      <div
+        className={`relative z-20 bg-gradient-to-b from-orange-50 to-transparent to-80% ${
+          isNavExpanded ? "" : "backdrop-blur-sm "
+        } dark:from-gray-950 dark:to-gray-950`}
+      >
+        <div className="w-screen px-3 md:px-10 lg:w-screen lg:px-6 lg:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex relative z-20 items-center gap-2">
+            <div className="relative z-20 flex items-center gap-2">
               <NavLink to="/">
-                <CodeBracketSquareIcon className="w-10 h-10 text-red-700" />
+                <CodeBracketSquareIcon className="h-10 w-10 text-red-700" />
               </NavLink>
-              <span className="text-stone-200">XIYE MOU</span>
+              <span className="text-red-700">XIYE MOU</span>
             </div>
-            <div className="flex items-center justify-end mr-3">
+            <div className="mr-3 flex items-center justify-end">
               <DarkModeToggle />
               <button
-                className="relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
+                className="group relative z-20 -mr-6 block cursor-pointer p-6 md:hidden"
                 onClick={toggleNav}
               >
                 <div
                   aria-hidden="true"
-                  className={`m-auto h-0.5 w-6 rounded bg-stone-300 transition duration-300 ${
-                    isNavExpanded ? "rotate-45 translate-y-1" : ""
+                  className={`m-auto h-0.5 w-6 rounded bg-teal-700/50 transition duration-300 group-hover:bg-teal-700 dark:bg-orange-50/50 dark:group-hover:bg-orange-50 ${
+                    isNavExpanded ? "translate-y-1 rotate-45" : ""
                   }`}
                 ></div>
                 <div
                   aria-hidden="true"
-                  className={`m-auto mt-2 h-0.5 w-6 rounded bg-stone-300 transition duration-300 ${
-                    isNavExpanded ? "-rotate-45 -translate-y-1.5" : ""
+                  className={`m-auto mt-2 h-0.5 w-6 rounded bg-teal-700/50 transition duration-300 group-hover:bg-teal-700 dark:bg-orange-50/50 dark:group-hover:bg-orange-50 ${
+                    isNavExpanded ? "-translate-y-1.5 -rotate-45" : ""
                   }`}
                 ></div>
               </button>
@@ -51,41 +55,38 @@ function NavBar({ isNavExpanded, setIsNavExpanded }) {
               <div
                 className={`${
                   isNavExpanded
-                    ? "peer-checked:translate-x-0 backdrop-blur-sm"
-                    : "translate-x-[-100%] backdrop-blur-0"
-                } fixed inset-0 w-screen transition duration-300 md:static md:w-auto md:translate-x-0 bg-teal-950/80 dark:bg-gray-900/80`}
+                    ? "bg-teal-700/70 backdrop-blur-sm peer-checked:translate-x-0 sm:bg-transparent"
+                    : "translate-x-[-100%] bg-transparent"
+                } fixed inset-0 w-screen transition duration-300 dark:bg-gray-950/80 md:static md:w-auto  md:translate-x-0`}
               >
                 <div className="flex h-full flex-col justify-between md:flex-row md:items-center">
                   <ul
                     id="menuBar"
-                    className="md:pl-8 pl-14 pr-14 pt-20 text-stone-200 text-xl md:flex md:space-x-8 md:space-y-0 md:pt-0 md:justify-end items-center"
+                    className={`pl-14 pr-14 pt-20 md:pl-8 ${
+                      isNavExpanded
+                        ? "text-orange-100/70 dark:text-orange-100/70 sm:text-teal-700/70"
+                        : "text-teal-700/70 dark:text-orange-100/70"
+                    } items-center text-xl md:flex md:justify-end md:space-x-8 md:space-y-0 md:pt-0`}
                   >
                     {links.map((link) => (
                       <li
                         className={`${
                           isNavExpanded
-                            ? "hover:cursor-pointer py-3 hover:bg-gradient-to-r hover:from-transparent hover:via-orange-50/20  hover:md:via-transparent hover:to-transparent transition-all duration-500 border-stone-100/50"
-                            : "sm:py-5 lg:py-1"
+                            ? "border-stone-100/50 py-2 transition-all duration-500 hover:cursor-pointer  hover:bg-gradient-to-r hover:from-transparent hover:via-red-700/20 hover:to-transparent hover:md:via-transparent"
+                            : "py-2"
                         }`}
                         key={link.name}
                         onClick={() => {
                           localStorage.setItem("projectActiveSort", "all");
                           navigate(link.path);
                           toggleNav();
-                          window.scrollTo({ top: 0, behavior: "smooth" });
+                          setTimeout(() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }, 50);
                         }}
                       >
                         <NavLink
                           to={link.path}
-                          onClick={
-                            isNavExpanded
-                              ? null
-                              : () =>
-                                  window.scrollTo({
-                                    top: 0,
-                                    behavior: "smooth",
-                                  })
-                          }
                           className={`${({ isActive }) =>
                             isActive
                               ? "active"

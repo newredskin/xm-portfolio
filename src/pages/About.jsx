@@ -60,12 +60,12 @@ function About() {
 
   return (
     <>
-      <div className="w-screen min-h-screen bg-orange-50/90 dark:bg-gray-800">
-        <div className="text-teal-900 dark:text-stone-300 mx-8 sm:mx-14 md:mx-28 lg:mx-56 xl:mx-64 flex flex-col justify-center items-center overflow-hidden">
-          <h1 className="font-bold text-4xl mb-10 pt-28">
+      <div className="min-h-screen w-screen bg-gradient-to-b from-orange-50 to-orange-100 to-10% dark:from-gray-950 dark:via-gray-900 dark:via-60% dark:to-gray-800 dark:to-90%">
+        <div className="mx-8 flex flex-col items-center justify-center overflow-hidden text-teal-950 dark:text-orange-50 sm:mx-14 md:mx-28 lg:mx-56 xl:mx-64">
+          <h1 className="mb-10 pt-28 text-4xl font-bold">
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>
-          <div className="pb-6 lg:max-w-[1280px]">
+          <div className="pb-6 text-sm md:text-base lg:max-w-[1280px]">
             <Introduction />
             <div data-aos="fade-right" className="mb-12">
               <CareerPath />
@@ -74,15 +74,15 @@ function About() {
 
             <div
               data-aos="fade-up"
-              className="mt-10 grid lg:grid-cols-5 bg-orange-50/50 shadow-md rounded-3xl"
+              className="mt-10 grid rounded-3xl bg-orange-50/50 shadow-lg shadow-teal-700/20 dark:bg-gray-700/20 dark:shadow-orange-50/5 lg:grid-cols-5"
             >
-              <div className="col-span-5 2xl:col-start-1 2xl:col-span-2 flex flex-col justify-center items-center 2xl:pl-10 dark:text-stone-200">
-                <h2 className="font-bold text-[24px] py-5 underline underline-offset-8 decoration-red-700 decoration-4">
+              <div className="col-span-5 flex flex-col items-center justify-center dark:text-orange-50/90 2xl:col-span-2 2xl:col-start-1 2xl:pl-10">
+                <h2 className="py-5 text-[24px] font-bold underline decoration-red-700 decoration-4 underline-offset-8">
                   Toolset
                 </h2>
-                <div className="flex flex-col mt-3 mb-10 gap-6 lg:mx-10 mx-6">
-                  <div className="text-red-700 flex-cols ml-5">
-                    <div className="flex items-center gap-1 mb-3">
+                <div className="mx-6 mb-10 mt-3 flex flex-col gap-6 lg:mx-10">
+                  <div className="flex-cols ml-5 text-red-700">
+                    <div className="mb-3 flex items-center gap-1">
                       <Cog6ToothIcon className="h-6 w-6" />
                       <h4 className="font-bold">Development</h4>
                     </div>
@@ -95,7 +95,7 @@ function About() {
                     </div>
                   </div>
                   <div className="flex-cols ml-5">
-                    <div className="flex items-center gap-1 mb-3">
+                    <div className="mb-3 flex items-center gap-1">
                       <PencilSquareIcon className="h-6 w-6" />
                       <h4 className="font-bold">Design</h4>
                     </div>
@@ -109,7 +109,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="hidden 2xl:col-start-3 2xl:col-span-3 2xl:flex justify-center items-center">
+              <div className="hidden items-center justify-center 2xl:col-span-3 2xl:col-start-3 2xl:flex">
                 <SkillChart />
               </div>
             </div>
@@ -120,14 +120,14 @@ function About() {
               data-aos="fade-left"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
-              className="flex justify-end items-center px-1"
+              className="flex items-center justify-end px-1"
             >
               {" "}
               <button
-                className="hover:bg-red-700 hover:text-stone-100 text-red-700 dark:text-stone-300 my-12 p-3 animate-bounce outline outline-1 outline-red-700 dark:outline-stone-200 transition-all duration-300 rounded-xl flex items-center justify-center"
+                className="my-12 flex animate-bounce items-center justify-center rounded-xl p-3 text-red-700 outline outline-1 outline-red-700 transition-all duration-300 hover:bg-red-700 hover:text-stone-100 dark:text-orange-50 dark:outline-stone-200"
                 onClick={handleProjectClick}
               >
-                Check Projects <span className="text-2xl ml-1">&#x2192;</span>
+                Check Projects <span className="ml-1 text-2xl">&#x2192;</span>
               </button>
             </div>
             <BackToTopButton />

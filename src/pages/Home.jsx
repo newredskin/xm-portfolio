@@ -9,16 +9,16 @@ function Home() {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
   useEffect(function () {
-    setTimeout(() => setIsButtonVisible(true), 1500);
+    setTimeout(() => setIsButtonVisible(true), 10000);
   }, []);
 
   return (
     <div>
       <TextBackground />
-      <div className="flex flex-col justify-center items-center h-screen gap-8 mx-16">
+      <div className="flex flex-col justify-center items-center h-screen gap-8 mx-20 sm:mx-24 lg:mx-16">
         <DynamicIntroText />
         <div
-          className={`my-6 transition-opacity duration-1000 ${
+          className={`my-6 transition-opacity duration-10000 ${
             isButtonVisible ? "opacity-100" : "opacity-0"
           }`}
         >

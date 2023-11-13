@@ -2,27 +2,29 @@ import { AtSymbolIcon } from "@heroicons/react/24/outline";
 
 function EducationList() {
   return (
-    <ul className="mt-24 md:mx-10 flex flex-col gap-6 mb-16">
+    <ul className="mb-16 mt-24 flex flex-col gap-6 md:mx-10">
       <li>
-        <div className="grid grid-cols-12 gap-5 items-center">
-          <AtSymbolIcon className="w-[24px] h-[24px] md:w-[36px] md:h-[36px]  justify-self-center" />
-          <div className="hidden md:block md:col-start-2 md:col-span-1">
+        <div className="grid grid-cols-12 items-center gap-5">
+          <AtSymbolIcon className="h-[24px] w-[24px] justify-self-center md:h-[36px]  md:w-[36px]" />
+          <div className="hidden md:col-span-1 md:col-start-2 md:block">
             <img
               src="UMN-logo.webp"
               alt="logo of UMN"
-              className="object-cover w-full h-full"
+              className="h-full w-full object-cover"
             />
           </div>
-          <div className="col-start-2 md:col-start-3 col-span-6 justify-self-start text-start">
+          <div className="col-span-6 col-start-2 justify-self-start text-start md:col-start-3">
             <h3 className="font-bold">Master of Landscape Architecture</h3>
-            <p className="text-sm text-stone-500">University of Minnesota</p>
+            <p className="text-sm text-stone-500 dark:text-orange-50/50">
+              University of Minnesota
+            </p>
           </div>
-          <p className="col-start-9 col-span-4 justify-self-end self-start text-sm">
+          <p className="col-span-4 col-start-9 self-start justify-self-end text-sm">
             2-year
           </p>
-          <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
+          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
           <p
-            className="row-start-2 col-start-2 col-span-11 text-start"
+            className="col-span-11 col-start-2 row-start-2 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
             At the University of Minnesota, I pursued a Master of Landscape
@@ -41,25 +43,27 @@ function EducationList() {
         </div>
       </li>
       <li>
-        <div className="grid grid-cols-12 gap-5 items-center">
-          <AtSymbolIcon className="w-[24px] h-[24px] md:w-[36px] md:h-[36px] justify-self-center" />
-          <div className="hidden md:block md:col-start-2 md:col-span-1">
+        <div className="grid grid-cols-12 items-center gap-5">
+          <AtSymbolIcon className="h-[24px] w-[24px] justify-self-center md:h-[36px] md:w-[36px]" />
+          <div className="hidden md:col-span-1 md:col-start-2 md:block">
             <img
               src="Tongji-logo.webp"
               alt="logo of UMN"
-              className="object-cover w-full h-full"
+              className="h-full w-full object-cover"
             />
           </div>
-          <div className="col-start-2 md:col-start-3 col-span-6 justify-self-start text-start">
+          <div className="col-span-6 col-start-2 justify-self-start text-start md:col-start-3">
             <h3 className="font-bold">Bachelor of Engineering</h3>
-            <p className="text-sm text-stone-500">Tongji University</p>
+            <p className="text-sm text-stone-500 dark:text-orange-50/50">
+              Tongji University
+            </p>
           </div>
-          <p className="col-start-9 col-span-4 justify-self-end self-start text-sm">
+          <p className="col-span-4 col-start-9 self-start justify-self-end text-sm">
             4-year
           </p>
-          <div className="row-start-2 border-l border-red-700 h-full w-1/2 justify-self-end" />
+          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
           <p
-            className="row-start-2 col-start-2 col-span-11 text-start"
+            className="col-span-11 col-start-2 row-start-2 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
             My foundational journey in the realm of architecture and landscape

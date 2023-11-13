@@ -35,7 +35,7 @@ function MouseFollow() {
       className="fixed left-0 top-0 z-50 pointer-events-none w-6 h-6 rounded-full shadow-lg transform -translate-x-1/2 -translate-y-1/2"
       style={{
         transform: `translate3d(${position.x - 12}px, ${position.y - 12}px, 0)`,
-        boxShadow: "0 0 150px 150px rgba(255, 255, 255, 0.05)",
+        boxShadow: "0 0 200px 200px rgba(255, 255, 255, 0.05)",
         backgroundColor: "rgba(255, 247, 237, 0.05)",
       }}
     ></div>

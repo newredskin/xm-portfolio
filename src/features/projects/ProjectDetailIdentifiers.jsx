@@ -52,16 +52,16 @@ function ProjectDetailIdentifiers({ project }) {
             <div className="flex flex-col gap-3">
               <ImageCarousel images={imagesForCarouselTopMichigan} />
               <div
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 mb-8 flex justify-end"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 mb-8 flex justify-end"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Duroweld Co., Inc.</span>
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-6">
               <p
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start lg:w-[50%] w-full"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 self-start lg:w-[50%] w-full"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 In the Motor Row Streetscape project, we reinvigorated Michigan
                 Avenue's historic 'Motor Row District', home to the iconic
@@ -104,8 +104,8 @@ function ProjectDetailIdentifiers({ project }) {
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="lg:w-[70%] w-full">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start "
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 self-start "
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   In the City of Chicago's 10th Ward, a district renowned for
                   its distinctiveness and home to seven unique neighborhoods -
@@ -153,8 +153,8 @@ function ProjectDetailIdentifiers({ project }) {
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="lg:w-[60%] w-full flex flex-col justify-between">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start "
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 self-start "
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   Sauganash, a community nestled on the northern border of
                   Chicago, has maintained its distinctive character since its

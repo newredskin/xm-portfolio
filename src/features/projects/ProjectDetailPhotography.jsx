@@ -1,20 +1,14 @@
 import { mediaPrefix } from "../../devSwitch";
 
 function ProjectDetailPhotography({ project }) {
-  //Michigan https://player.vimeo.com/video/880903509?h=8eab2114d7&portrait=0&autopause=1&muted=1&byline=0&color=b9261c
-
-  //Chicago https://player.vimeo.com/video/880903232?h=270e05fa29&autoplay=1&loop=1&portrait=0&autopause=1&muted=1&color=b9261c
-
   return (
     <>
       <div className="flex flex-col gap-y-6 items-center overflow-hidden">
-        {/* <ImageCarousel images={imagesForCarouselTop} height="30" /> */}
         <div
           style={{
             padding: "56.25% 0 0 0",
             position: "relative",
             width: "100%",
-            // backgroundColor: "#B9261C",
           }}
         >
           <iframe
@@ -35,8 +29,8 @@ function ProjectDetailPhotography({ project }) {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 md:gap-x-6 ">
             <div className="lg:col-span-2 flex flex-col items-center justify-between gap-3 md:gap-6">
               <p
-                className=" text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400"
-                style={{ ontFamily: "Cutive Mono" }}
+                className=" text-xs lg:text-sm text-stone-500 dark:text-stone-400"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 Picture this: Me, my camera, and the great outdoors. My idea of
                 a good time is hitting the trails with my husband, backpacking
@@ -70,7 +64,6 @@ function ProjectDetailPhotography({ project }) {
                   padding: "56.25% 0 0 0",
                   position: "relative",
                   width: "100%",
-                  // backgroundColor: "#042F2E",
                 }}
               >
                 <iframe
@@ -106,31 +99,3 @@ function ProjectDetailPhotography({ project }) {
 }
 
 export default ProjectDetailPhotography;
-
-/*
-     <div
-            className="lg:col-start-3 lg:col-span-3"
-            style={{
-              padding: "56.25% 0 0 0",
-              position: "relative",
-              width: "100%",
-              backgroundColor: "#042F2E",
-            }}
-          >
-            <iframe
-              src=""
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={{
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "100%",
-                height: "100%",
-              }}
-              title="2022 Fall - Chicago Lakefront - Part I"
-            ></iframe>
-          </div>
-
-
-*/

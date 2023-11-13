@@ -34,11 +34,11 @@ function ImageCarouselForSketches({
           let expandHeight;
 
           if (windowWidth <= 640) {
-            expandHeight = "h-[18rem]";
+            expandHeight = "h-[14rem]";
           } else {
             expandHeight = isExpanded
               ? "md:h-[24rem] xl:h-[40rem] 2xl:h-[54rem]"
-              : "h-[18rem]";
+              : "h-[14rem]";
           }
 
           return (

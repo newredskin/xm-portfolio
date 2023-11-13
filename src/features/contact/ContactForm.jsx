@@ -36,7 +36,7 @@ function ContactForm() {
       console.error(error);
       toast.error(
         "There was unknow error to send the message. Please try later." ||
-          err?.message
+          err?.message,
       );
     } else {
       toast.success("Message successfully sent! Will get back to you soon.");
@@ -51,9 +51,9 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-6 justify-center items-center"
+      className="flex flex-col items-center justify-center gap-6"
     >
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 dark:bg-gray-300/50 w-full">
+      <div className="w-full rounded-2xl bg-teal-700/50 shadow-sm dark:bg-gray-300/50">
         <input
           placeholder="Name"
           type="text"
@@ -62,10 +62,10 @@ function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300 placeholder:text-stone-300"
+          className="block w-full rounded-xl bg-transparent px-3 py-2 transition-all duration-300 placeholder:text-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:placeholder:text-orange-50/80"
         />
       </div>
-      <div className="rounded-2xl shadow-sm bg-orange-50/70 dark:bg-gray-300/50 w-full">
+      <div className="w-full rounded-2xl bg-teal-700/50 shadow-sm dark:bg-gray-300/50">
         <input
           placeholder="Email"
           type="email"
@@ -74,10 +74,10 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 block rounded-xl transition-all duration-300 placeholder:text-stone-300"
+          className="block w-full rounded-xl bg-transparent px-3 py-2 transition-all duration-300 placeholder:text-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:placeholder:text-orange-50/80"
         />
       </div>
-      <div className="rounded-2xl shadow-sm p-[2px] bg-orange-50/70 dark:bg-gray-300/50 w-full">
+      <div className="w-full rounded-2xl bg-teal-700/50 p-[2px] shadow-sm dark:bg-gray-300/50">
         <textarea
           placeholder="Message"
           id="message"
@@ -86,15 +86,15 @@ function ContactForm() {
           onChange={handleChange}
           required
           rows="8"
-          className="focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none bg-transparent w-full py-2 px-3 resize-y block rounded-xl transition-all duration-300 placeholder:text-stone-300"
+          className="block w-full resize-y rounded-xl bg-transparent px-3 py-2 transition-all duration-300 placeholder:text-orange-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:placeholder:text-orange-50/80"
         />
       </div>
-      <div className="flex flex-col gap-4 justify-between">
-        <button className="hover:bg-red-700 dark:hover:bg-red-700 hover:text-stone-100 text-red-700 p-3 outline outline-1 outline-red-700 transition-all duration-300 bg-orange-50/50 dark:bg-transparent rounded-xl py-3 px-5 focus:ring-2 focus:ring-red-700/70 focus:ring-inset focus:outline-none">
+      <div className="flex flex-col justify-between gap-4">
+        <button className="rounded-xl bg-orange-100/50 p-3 px-5 py-3 text-red-700 outline outline-1 outline-red-700 transition-all duration-300 hover:bg-red-700 hover:text-stone-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:bg-transparent dark:text-orange-50/90 dark:outline-orange-50/80 dark:hover:bg-red-700 lg:mt-12">
           Submit
         </button>
         <button
-          className="underline rounded-xl flex items-center justify-center text-sm dark:text-stone-400"
+          className="flex items-center justify-center rounded-xl text-sm underline dark:text-orange-50/70 lg:mt-6 lg:text-lg"
           onClick={handleBackToHome}
         >
           Back to Home

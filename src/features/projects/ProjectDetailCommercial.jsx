@@ -46,7 +46,7 @@ function ProjectDetailCommercial({ project }) {
 
   return (
     <>
-      <div className="flex flex-col gap-y-6 items-center overflow-hidden">
+      <div className="flex flex-col items-center gap-y-6 overflow-hidden">
         <SortingMenuCommercial
           activeSort={activeSort}
           handleSort={handleSort}
@@ -58,28 +58,28 @@ function ProjectDetailCommercial({ project }) {
             <div className="relative flex flex-col">
               <ImageCarousel
                 images={imagesForCarouselTopIGL}
-                dotPadding="py-10"
+                dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
-              <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
+              <span className="absolute left-1 top-1 mb-3 mt-1 rounded-2xl bg-red-700 px-2 py-1 text-[8px] text-stone-300 lg:left-3 lg:top-3 lg:px-2 lg:text-[12px]">
                 2022 ASLA Central States Merit Award
               </span>
               <div
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 my-2 flex justify-end"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="my-2 flex justify-end text-[10px] text-stone-500 dark:text-stone-400 lg:text-sm"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Scott Shigley</span>
               </div>
             </div>
             <div className="mt-3 flex items-center gap-2">
-              <h2 className="text-2xl font-bold">Lakefront Park</h2>
-              <ChevronDoubleDownIcon className="h-6 w-6" />
+              <h2 className="text-lg font-bold lg:text-2xl">Lakefront Park</h2>
+              <ChevronDoubleDownIcon className="h-5 w-5 lg:h-6 lg:w-6" />
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between gap-5 mt-6">
-              <div className="w-full lg:w-[50%] flex flex-col gap-6 xl:justify-between">
+            <div className="mt-6 flex flex-col gap-5 lg:flex-row lg:justify-between">
+              <div className="flex w-full flex-col gap-6 lg:w-[50%] xl:justify-between">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="self-start text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   The Iowa Great Lakes region in northwestern Iowa has long been
                   cherished by Midwesterners as a vacation destination for over
@@ -118,41 +118,43 @@ function ProjectDetailCommercial({ project }) {
                   />
                 </div>
               </div>
-              <div className="lg:w-[70%] flex flex-col justify-between">
+              <div className="flex flex-col justify-between lg:w-[70%]">
                 <ImageCarousel
                   images={imageForCarouselSideIGL1}
                   dotPadding="py-2"
                 />
-                <div className="grid grid-cols-1 grid-rows-2 xl:grid-rows-1 xl:grid-cols-2 gap-2 mt-2">
+                <div className="mt-2 grid grid-cols-1 grid-rows-2 gap-2 xl:grid-cols-2 xl:grid-rows-1">
                   <img
                     src={mediaPrefix + project.images[1][8]}
                     alt=""
-                    className="object-contain w-full"
+                    className="w-full object-contain"
                   />
                   <img
                     src={mediaPrefix + project.images[1][9]}
                     alt=""
-                    className="object-contain w-full"
+                    className="w-full object-contain"
                   />
                 </div>
               </div>
             </div>
-            <div className="flex justify-end mt-10 mb-6 gap-2 items-center">
-              <ChevronDoubleDownIcon className="h-6 w-6" />
-              <h2 className="text-2xl font-bold self-end">East Lake Park</h2>
+            <div className="mb-6 mt-10 flex items-center justify-end gap-2">
+              <ChevronDoubleDownIcon className="h-5 w-5 lg:h-6 lg:w-6" />
+              <h2 className="self-end text-lg font-bold lg:text-2xl">
+                East Lake Park
+              </h2>
             </div>
             <div className="flex flex-col">
-              <div className="flex flex-col lg:flex-row gap-6">
-                <div className="w-full lg:w-[60%] self-start">
+              <div className="flex flex-col gap-6 lg:flex-row">
+                <div className="w-full self-start lg:w-[60%]">
                   <ImageCarousel
                     images={imageForCarouselSideIGL3}
-                    autoRotate={false}
+                    duration={5000}
                   />
                 </div>
-                <div className="flex flex-col w-full lg:w-[40%] justify-between">
+                <div className="flex w-full flex-col justify-between lg:w-[40%]">
                   <p
-                    className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 mb-3"
-                    style={{ ontFamily: "Cutive Mono" }}
+                    className="mb-3 text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
+                    style={{ fontFamily: "Cutive Mono" }}
                   >
                     A highlight of this project was the 'Minnie Queen' play
                     ship, inspired by the historic tourist ferry 'The Queen', a
@@ -166,11 +168,11 @@ function ProjectDetailCommercial({ project }) {
                   <img
                     src={mediaPrefix + project.images[1][15]}
                     alt=""
-                    className="object-contain w-full dark:opacity-80 rounded-2xl"
+                    className="w-full rounded-2xl object-contain opacity-90 shadow-md dark:opacity-80"
                   />
                   <div
-                    className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 flex justify-end mt-1 mb-3"
-                    style={{ ontFamily: "Cutive Mono" }}
+                    className="mb-3 mt-1 flex justify-end text-[10px] text-stone-500 dark:text-stone-400 lg:text-sm"
+                    style={{ fontFamily: "Cutive Mono" }}
                   >
                     <span>Drawing credit: Richter Spielgeräte GmbH</span>
                   </div>
@@ -178,12 +180,12 @@ function ProjectDetailCommercial({ project }) {
                     <img
                       src={mediaPrefix + project.images[1][16]}
                       alt=""
-                      className="object-cover dark:opacity-80 w-1/2"
+                      className="w-1/2 object-cover dark:opacity-80"
                     />
                     <img
                       src={mediaPrefix + project.images[1][17]}
                       alt=""
-                      className="object-conver dark:opacity-80 w-1/2"
+                      className="object-conver w-1/2 dark:opacity-80"
                     />
                   </div>
                 </div>
@@ -198,19 +200,19 @@ function ProjectDetailCommercial({ project }) {
             <div className="flex flex-col">
               <ImageCarousel
                 images={imagesForCarouselTopLYS}
-                dotPadding="py-10"
+                dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
             </div>
-            <div className="mt-10 flex items-center gap-2 mb-5">
-              <h2 className="text-lg lg:text-2xl font-bold">Promenade</h2>
-              <ChevronDoubleDownIcon className="h-6 w-6" />
+            <div className="mb-5 mt-10 flex items-center gap-2">
+              <h2 className="text-lg font-bold lg:text-2xl">Promenade</h2>
+              <ChevronDoubleDownIcon className="h-5 w-5 lg:h-6 lg:w-6" />
             </div>
-            <div className="flex flex-col lg:flex-row gap-6 justify-between items-start">
+            <div className="flex flex-col items-start justify-between gap-6 lg:flex-row">
               <div className="lg:w-[40%]">
                 <p
-                  className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start mb-6"
-                  style={{ ontFamily: "Cutive Mono" }}
+                  className="mb-6 self-start text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
+                  style={{ fontFamily: "Cutive Mono" }}
                 >
                   Lincoln Yards, an ambitious mixed-use development in Chicago's
                   north branch corridor, is set to redefine urban spaces. One
@@ -253,25 +255,25 @@ function ProjectDetailCommercial({ project }) {
                   <img
                     src={mediaPrefix + project.images[2][6]}
                     alt=""
-                    className="object-contain w-[65%]"
+                    className="w-[65%] object-contain"
                   />
                   <img
                     src={mediaPrefix + project.images[2][7]}
                     alt=""
-                    className="object-cover w-[35%]"
+                    className="w-[35%] object-cover"
                   />
                 </div>
               </div>
-              <div className="lg:w-[65%] rounded-2xl overflow-hidden dark:opacity-90">
+              <div className="overflow-hidden rounded-2xl shadow-md dark:opacity-90 lg:w-[65%]">
                 <ImageCarousel
                   images={imageForCarouselSideLYS1}
                   duration={5000}
                 />
               </div>
             </div>
-            <div className="flex justify-end mt-10 mb-6 gap-2 items-center">
-              <ChevronDoubleDownIcon className="h-6 w-6" />
-              <h2 className="text-lg lg:text-2xl font-bold self-end">
+            <div className="mb-6 mt-10 flex items-center justify-end gap-2">
+              <ChevronDoubleDownIcon className="h-5 w-5 lg:h-6 lg:w-6" />
+              <h2 className="self-end text-lg font-bold lg:text-2xl">
                 Office Terrace
               </h2>
             </div>
@@ -279,13 +281,13 @@ function ProjectDetailCommercial({ project }) {
               <img
                 src={mediaPrefix + project.images[2][9]}
                 alt=""
-                className="object-cover w-full dark:opacity-90 rounded-2xl"
+                className="w-full rounded-2xl object-cover shadow-md dark:opacity-90"
               />
-              <div className="flex flex-col lg:flex-row gap-6">
-                <div className="lg:w-[70%] flex flex-col gap-3 justify-between">
+              <div className="flex flex-col gap-6 lg:flex-row">
+                <div className="flex flex-col justify-between gap-3 lg:w-[70%]">
                   <p
-                    className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 self-start "
-                    style={{ ontFamily: "Cutive Mono" }}
+                    className="self-start text-xs text-stone-500 dark:text-stone-400 lg:text-sm "
+                    style={{ fontFamily: "Cutive Mono" }}
                   >
                     In the C1 terrace project, my responsibility encompassed the
                     entire site design, from sketches to detailed modeling. The
@@ -303,18 +305,18 @@ function ProjectDetailCommercial({ project }) {
                     architectural form, creating a space that is both functional
                     and aesthetically enriching.
                   </p>
-                  <div className="dark:opacity-90">
+                  <div className="opacity-90">
                     <ImageCarousel
                       images={imageForCarouselSideLYS2}
-                      autoRotate={false}
+                      duration={5000}
                     />
                   </div>
                 </div>
-                <div className="lg:w-[30%] md:w-full w-[80%] self-center">
+                <div className="w-[80%] self-center md:w-full lg:w-[30%]">
                   <img
                     src={mediaPrefix + project.images[2][15]}
                     alt=""
-                    className="object-cover dark:opacity-80 lg:block hidden"
+                    className="hidden object-cover opacity-90 dark:opacity-80 lg:block"
                   />
                 </div>
               </div>

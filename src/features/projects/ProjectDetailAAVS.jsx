@@ -17,7 +17,7 @@ function ProjectDetailAAVS({ project }) {
   return (
     <>
       <div className="flex flex-col gap-y-6 items-center overflow-hidden">
-        <div className="dark:opacity-90 mb-3">
+        <div className="opacity-90 mb-3">
           <video
             className={`object-contain dark:opacity-90`}
             autoPlay
@@ -32,8 +32,8 @@ function ProjectDetailAAVS({ project }) {
         <div className="flex flex-col lg:flex-row lg:justify-between gap-5">
           <div className="w-full lg:w-[40%] flex flex-col justify-between gap-4">
             <p
-              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 "
-              style={{ ontFamily: "Cutive Mono" }}
+              className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 "
+              style={{ fontFamily: "Cutive Mono" }}
             >
               Because of my interest in parametric design, and eager to
               facilitating programming in design, I attended the AA Visiting
@@ -86,7 +86,7 @@ function ProjectDetailAAVS({ project }) {
               <source src={mediaPrefix + project.images[13]} type="video/mp4" />
             </video>
           </div>
-          <div className="lg:w-[60%] flex flex-col gap-4 dark:opacity-90">
+          <div className="lg:w-[60%] flex flex-col gap-4">
             <ImageCarousel images={imagesForCarouselSide1} dotPadding="py-4" />
             <ImageCarousel
               images={imagesForCarouselSide2}
@@ -96,7 +96,7 @@ function ProjectDetailAAVS({ project }) {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="flex flex-col gap-4 lg:w-1/2">
+          <div className="flex flex-col gap-4 lg:w-1/2 opacity-90">
             <img
               src={mediaPrefix + project.images[9]}
               alt=""
@@ -114,14 +114,14 @@ function ProjectDetailAAVS({ project }) {
               alt=""
               className="object-cover lg:h-full"
             />
-            <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 p-1 lg:px-2 lg:py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[6px] lg:text-[12px]">
+            <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 px-2 lg:px-2 py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[8px] lg:text-[12px]">
               2019 APR Awards - Pop-ups & Temorpary
             </span>
             <div
-              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 my-2 flex justify-end"
-              style={{ ontFamily: "Cutive Mono" }}
+              className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+              style={{ fontFamily: "Cutive Mono" }}
             >
-              <span>Photo credit: AAVS at the Angewandte Vienna</span>
+              <span>Photo credit: AA Visiting School</span>
             </div>
           </div>
         </div>

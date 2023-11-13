@@ -12,8 +12,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("all")}
           className={`${buttonStyle} ${
             activeSort === "all"
-              ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5 py-4 lg:py-2"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           All
@@ -24,8 +24,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("web-dev")}
           className={`${buttonStyle} ${
             activeSort === "web-dev"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Web Dev
@@ -36,8 +36,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("landscape")}
           className={`${buttonStyle} ${
             activeSort === "landscape"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Landscape Design
@@ -48,8 +48,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("research-visualization")}
           className={`${buttonStyle} ${
             activeSort === "research-visualization"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Research/ Visualization
@@ -60,8 +60,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("graphic-product")}
           className={`${buttonStyle} ${
             activeSort === "graphic-product"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Graphic/Product Design
@@ -72,8 +72,8 @@ function SortingMenu({ activeSort, handleSort }) {
           onClick={() => handleSort("photography")}
           className={`${buttonStyle} ${
             activeSort === "photography"
-              ? "bg-red-700 text-stone-200 px-5 py-4 lg:py-2"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5 py-4 lg:py-2"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Photography

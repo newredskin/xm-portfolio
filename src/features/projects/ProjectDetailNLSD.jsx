@@ -23,10 +23,10 @@ function ProjectDetailNLSD({ project }) {
           dotPadding="py-3 lg:py-8"
         />
         <div className="flex flex-col lg:justify-between lg:items-start gap-5">
-          <div className="flex flex-col gap-3 lg:flex-row">
+          <div className="flex flex-col gap-6 lg:flex-row">
             <p
-              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 w-full"
-              style={{ ontFamily: "Cutive Mono" }}
+              className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full"
+              style={{ fontFamily: "Cutive Mono" }}
             >
               Lake Shore Drive, once conceived by Daniel Burnham as a "boulevard
               through a park" in his 1909 Plan of Chicago, has evolved into a
@@ -63,16 +63,16 @@ function ProjectDetailNLSD({ project }) {
               <img
                 src={mediaPrefix + project.images[7]}
                 alt=""
-                className="w-[80%] lg:w-full dark:opacity-80 "
+                className="w-[80%] lg:w-full opacity-90 dark:opacity-80 "
               />
               <img
                 src={mediaPrefix + project.images[8]}
                 alt=""
-                className="w-[80%] lg:w-full dark:opacity-80 "
+                className="w-[80%] lg:w-full opacity-90 dark:opacity-80 "
               />
               <p
-                className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400 lg:self-end mt-1 lg:mt-2"
-                style={{ ontFamily: "Cutive Mono" }}
+                className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 lg:self-end mt-1 lg:mt-2"
+                style={{ fontFamily: "Cutive Mono" }}
               >
                 Chicago Tribune, July 13 2017
               </p>

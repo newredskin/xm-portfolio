@@ -23,12 +23,12 @@ function Projects() {
         activeSort === "all"
           ? projectData
           : projectData.filter((project) =>
-              project.category.includes(activeSort)
-            )
+              project.category.includes(activeSort),
+            ),
       );
       localStorage.setItem("projectActiveSort", activeSort);
     },
-    [activeSort]
+    [activeSort],
   );
 
   function handleSort(sortOption) {
@@ -42,24 +42,24 @@ function Projects() {
 
   return (
     <>
-      <div className="w-screen min-h-screen bg-orange-50/90 dark:bg-gray-800">
-        <div className="text-teal-900 dark:text-stone-300 mx-8 sm:mx-14 md:mx-28 lg:mx-56 xl:mx-64 p-1 flex flex-col justify-center items-center">
-          <div className="pb-6 lg:max-w-[1280px] max-w-full">
-            <h1 className="font-bold text-4xl mb-10 pt-28">Projects.</h1>
-            <div className="overflow-x-auto mb-5 mt-20">
+      <div className="min-h-screen w-screen bg-gradient-to-b from-orange-50 to-orange-100 to-10% dark:from-gray-950 dark:via-gray-900 dark:via-60% dark:to-gray-800 dark:to-90%">
+        <div className="mx-8 flex flex-col items-center justify-center p-1 text-teal-950 dark:text-orange-50/90 sm:mx-14 md:mx-28 lg:mx-56 xl:mx-64">
+          <div className="max-w-full pb-6 lg:max-w-[1280px]">
+            <h1 className="mb-10 pt-28 text-4xl font-bold">Projects.</h1>
+            <div className="mb-5 mt-20 overflow-x-auto">
               <SortingMenu activeSort={activeSort} handleSort={handleSort} />
             </div>
-            <div className="columns-1 xl:columns-2 space-y-4 mb-6">
+            <div className="mb-6 columns-1 space-y-4 xl:columns-2">
               {activeProjectList.map((project) => {
                 const isVideo = project.images[0].slice(-3) === "mp4";
 
                 return (
                   <div
-                    className="bg-gradient-to-t from-stone-100/70 to-transparent relative group shadow-md rounded-2xl w-full"
+                    className="group relative w-full rounded-2xl bg-gradient-to-t from-stone-100/70 to-transparent shadow-md"
                     key={project.name}
                   >
                     {isVideo ? (
-                      <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
+                      <div className="opacity-80 grayscale group-hover:opacity-100 group-hover:grayscale-0">
                         <video
                           className="rounded-2xl object-cover"
                           autoPlay
@@ -72,7 +72,7 @@ function Projects() {
                         </video>
                       </div>
                     ) : (
-                      <div className="grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0">
+                      <div className="opacity-80 grayscale group-hover:opacity-100 group-hover:grayscale-0">
                         <img
                           src={project.images[0]}
                           alt={`images of ${project.title}`}
@@ -80,31 +80,33 @@ function Projects() {
                         />
                       </div>
                     )}
-                    <div className="absolute rounded-2xl inset-0 bg-gradient-to-t from-stone-950 from-60% to-transparent opacity-0 group-hover:opacity-50 transition-all duration-600" />
-                    <div className="absolute inset-4 md:inset-6 2xl:inset-12 flex flex-col justify-end">
-                      <h3 className="text-stone-100 mb-3 text-md sm:text-2xl md:text-lg opacity-0 group-hover:opacity-100 transition-all duration-500 font-bold">
+                    <div className="duration-600 absolute inset-0 rounded-2xl bg-gradient-to-t from-stone-950 from-50% to-transparent opacity-0 transition-all group-hover:opacity-50" />
+                    <div className="absolute inset-4 flex flex-col justify-end md:inset-6 2xl:inset-12">
+                      <h3 className="text-md ml-1 font-bold text-orange-100 opacity-0 transition-all duration-500 group-hover:opacity-100 dark:text-orange-50/90 sm:text-2xl md:text-lg">
                         {project.title}
                       </h3>
-                      <p className="text-[9px] sm:text-xs text-stone-100 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                        {project.introduction}
-                      </p>
-                      <div className="flex flex-wrap mt-3 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                      <div className="mt-3 flex flex-wrap opacity-0 transition-all duration-500 group-hover:opacity-100">
                         {project.tools[0].map((tool) => (
                           <Tag
                             key={`${project.name} ${tool}`}
-                            color="bg-stone-600"
+                            color="bg-teal-900/80 dark:bg-gray-800/80"
                           >
                             {tool}
                           </Tag>
                         ))}
                         {project.tools[1].map((tool) => (
-                          <Tag key={`${project.name} ${tool}`}>{tool}</Tag>
+                          <Tag
+                            key={`${project.name} ${tool}`}
+                            color="bg-teal-700/90 dark:bg-gray-700/70"
+                          >
+                            {tool}
+                          </Tag>
                         ))}
                       </div>
                     </div>
                     <div className="absolute inset-0 flex justify-end text-stone-200">
                       <ArrowUpRightIcon
-                        className="h-8 w-8 hover:cursor-pointer bg-red-700/90 hover:bg-red-600 rounded-tr-2xl p-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300"
+                        className="h-8 w-8 rounded-tr-2xl bg-red-700/90 p-2 opacity-0 transition-opacity duration-300 hover:cursor-pointer hover:bg-red-600 group-hover:opacity-100"
                         onClick={() => handleDirectToDetail(project)}
                       />
                     </div>

@@ -9,7 +9,7 @@ function DarkModeToggle() {
   return (
     <div
       onClick={toggleDarkMode}
-      className="text-stone-100 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300"
+      className="text-teal-700 dark:text-orange-50 hover:cursor-pointer opacity-50 hover:opacity-100 transition-opacity duration-300"
     >
       {isDarkMode ? (
         <SunIcon className="h-6 w-6" />

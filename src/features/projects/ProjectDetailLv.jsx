@@ -19,16 +19,16 @@ function ProjectDetailLv({ project }) {
 
   return (
     <>
-      <div className="flex flex-col gap-y-6 items-center overflow-hidden">
+      <div className="flex flex-col items-center gap-y-6 overflow-hidden">
         <ImageCarousel
           images={imagesForCarouselTop}
           height="30"
           dotPadding="py-2 lg:py-5"
         />
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
+        <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
           <p
-            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full lg:w-[40%]"
-            style={{ ontFamily: "Cutive Mono" }}
+            className="w-full text-xs text-stone-500 dark:text-stone-400 lg:w-[40%] lg:text-sm"
+            style={{ fontFamily: "Cutive Mono" }}
           >
             Water scarcity in Las Vegas, a desert environment, has always been a
             pressing issue. Amidst this arid landscape, an unexpected oasis
@@ -52,23 +52,23 @@ function ProjectDetailLv({ project }) {
             issue of Wash degradation, a fresh approach to the spatial and
             environmental dynamics becomes pivotal.
           </p>
-          <div className="lg:w-[60%] mt-3 flex justify-center">
+          <div className="mt-3 flex justify-center lg:w-[60%]">
             <img
               src={mediaPrefix + project.images[2]}
               alt=""
-              className="object-contain w-[80%] lg:w-[90%] dark:invert justify-self-center"
+              className="w-[80%] justify-self-center object-contain dark:invert lg:w-[90%]"
             />
           </div>
         </div>
         <img
           src={mediaPrefix + project.images[3]}
           alt=""
-          className="dark:invert w-[80%]"
+          className="w-[80%] dark:invert"
         />
         <div className="flex flex-col gap-8">
           <p
-            className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full"
-            style={{ ontFamily: "Cutive Mono" }}
+            className="w-full text-xs text-stone-500 dark:text-stone-400  lg:text-sm"
+            style={{ fontFamily: "Cutive Mono" }}
           >
             Taking advantage of current conditions, regional water strategies
             are reshaping the landscape with decentralized water treatment
@@ -86,7 +86,7 @@ function ProjectDetailLv({ project }) {
             infrastructure but also shapes the future of the anthropocentric
             landscape.
           </p>
-          <div className="flex flex-col justify-center items-center lg:flex-row gap-x-6">
+          <div className="flex flex-col items-center justify-center gap-x-6 lg:flex-row">
             <ImageCarousel
               images={imagesForCarouselSide}
               height="30"
@@ -95,8 +95,8 @@ function ProjectDetailLv({ project }) {
               dotPadding="py-6 lg:py-8"
             />
             <p
-              className="text-[10px] lg:text-[12px] text-stone-500 dark:text-stone-400  w-full 2xl:self-center 2xl:mb-6"
-              style={{ ontFamily: "Cutive Mono" }}
+              className="w-full text-xs text-stone-500 dark:text-stone-400  lg:text-sm 2xl:mb-6 2xl:self-center"
+              style={{ fontFamily: "Cutive Mono" }}
             >
               In this project, a regional water strategy called "River
               Restoration" that repurposes a channel to redirect water
@@ -130,7 +130,7 @@ function ProjectDetailLv({ project }) {
           <img
             src={mediaPrefix + project.images[13]}
             alt=""
-            className="shadow-md rounded-2xl dark:opacity-90"
+            className="rounded-2xl opacity-90 shadow-md"
           />
           <ImageCarousel
             images={imagesForCarouselBottom}

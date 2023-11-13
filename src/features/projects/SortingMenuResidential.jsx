@@ -12,8 +12,8 @@ function SortingMenuResidential({ activeSort, handleSort }) {
           onClick={() => handleSort("lakeside")}
           className={`${buttonStyle} ${
             activeSort === "lakeside"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Lakeside Residence
@@ -24,8 +24,8 @@ function SortingMenuResidential({ activeSort, handleSort }) {
           onClick={() => handleSort("suburban")}
           className={`${buttonStyle} ${
             activeSort === "suburban"
-              ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              ? "bg-red-700 text-orange-50 px-5"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Suburban Residence
@@ -37,7 +37,7 @@ function SortingMenuResidential({ activeSort, handleSort }) {
           className={`${buttonStyle} ${
             activeSort === "urban"
               ? "bg-red-700 text-stone-200 px-5"
-              : "bg-opacity-0 text-teal-900 dark:text-stone-300"
+              : "bg-opacity-0 text-teal-950 dark:text-stone-300"
           }`}
         >
           Urban Residence
