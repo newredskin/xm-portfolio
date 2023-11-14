@@ -16,6 +16,7 @@ import ProjectDetailGraphic from "../features/projects/ProjectDetailGraphic";
 import ProjectDetailArt from "../features/projects/ProjectDetailArt";
 import ProjectDetailAAVS from "../features/projects/ProjectDetailAAVS";
 import { useEffect } from "react";
+import ProjectDetailDesignCamp from "../features/projects/ProjectDetailDesignCamp";
 
 function ProjectDetails() {
   const { projectName } = useParams();
@@ -39,6 +40,7 @@ function ProjectDetails() {
   const isGraphic = project.name === "graphic-design";
   const isArt = project.name === "art";
   const isAAVS = project.name === "aavs-workshop";
+  const isDesignCamp = project.name === "designcamp";
 
   return (
     <>
@@ -77,6 +79,7 @@ function ProjectDetails() {
             {isGraphic && <ProjectDetailGraphic project={project} />}
             {isArt && <ProjectDetailArt project={project} />}
             {isAAVS && <ProjectDetailAAVS project={project} />}
+            {isDesignCamp && <ProjectDetailDesignCamp project={project} />}
 
             <button
               className="mt-12 flex animate-bounce items-center justify-center rounded-xl text-[0.9rem] text-teal-900 underline hover:text-red-700 dark:text-orange-50/70 dark:hover:text-red-700 lg:text-lg"

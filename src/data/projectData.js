@@ -4,10 +4,14 @@ const projectData = [
   {
     name: "designcamp",
     category: ["web-dev"],
-    title: "Design Camp",
+    title: "Arch Camp",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "designcamp_cover.webp"],
+    images: [
+      imageURL + "covers/" + "designcamp_cover.webp",
+      imageURL + "designcamp/" + "designcamp_video_laptop.mp4",
+      imageURL + "designcamp/" + "designcamp_video_laptop_dark.mp4",
+    ],
     tools: [
       ["web basics", "responsive design"],
       ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
