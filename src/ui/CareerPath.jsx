@@ -45,7 +45,7 @@ function CareerPath() {
   return (
     <ul className="flex flex-col items-center justify-center gap-y-2 pt-16 lg:grid lg:grid-cols-8">
       {/* HS */}
-      <li className="container col-span-8 box-border rounded-2xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 lg:col-span-4 lg:col-start-5">
+      <li className="container col-span-8 box-border rounded-2xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 xl:col-span-4 xl:col-start-5">
         <button
           ref={refHS}
           onClick={() => handleExpandClick(setIsHSOpen, refHS)}
@@ -80,7 +80,7 @@ function CareerPath() {
       </div>
 
       {/* Freelance */}
-      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 lg:col-span-3 lg:col-start-6">
+      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 xl:col-span-3 xl:col-start-6">
         <button
           ref={refFL}
           onClick={() => handleExpandClick(setIsFLOpen, refFL)}
@@ -120,7 +120,7 @@ function CareerPath() {
       </div>
 
       {/* Altamanu */}
-      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 lg:col-span-2 lg:col-start-3">
+      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 xl:col-span-2 xl:col-start-3">
         <button
           ref={refAM}
           onClick={() => handleExpandClick(setIsAMOpen, refAM)}
@@ -155,7 +155,7 @@ function CareerPath() {
       </div>
 
       {/* HGA */}
-      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 lg:col-span-1 lg:col-start-2">
+      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 xl:col-span-1 xl:col-start-2">
         <button
           ref={refHGA}
           onClick={() => handleExpandClick(setIsHGAOpen, refHGA)}
@@ -190,7 +190,7 @@ function CareerPath() {
       </div>
 
       {/* MDH */}
-      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 lg:col-span-1 lg:col-start-1">
+      <li className="container left-1/4 top-1/3 col-span-8 rounded-xl bg-teal-950/80 px-3 py-1 text-stone-200 shadow-xl hover:bg-red-700 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-900 dark:text-orange-50 dark:shadow-orange-50/5 dark:hover:bg-red-700/80 xl:col-span-1 xl:col-start-1">
         <button
           ref={refMDH}
           onClick={() => handleExpandClick(setIsMDHOpen, refMDH)}

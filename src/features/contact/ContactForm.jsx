@@ -90,7 +90,7 @@ function ContactForm() {
         />
       </div>
       <div className="flex flex-col justify-between gap-4">
-        <button className="rounded-xl bg-orange-100/50 p-3 px-5 py-3 text-red-700 outline outline-1 outline-red-700 transition-all duration-300 hover:bg-red-700 hover:text-stone-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:bg-transparent dark:text-orange-50/90 dark:outline-orange-50/80 dark:hover:bg-red-700 lg:mt-12">
+        <button className="rounded-xl border-[1px] border-red-700 bg-orange-100/50 p-3 px-5 py-3 text-red-700 transition-all duration-300 hover:bg-red-700 hover:text-stone-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-700/70 dark:border-orange-50/80 dark:bg-transparent dark:text-orange-50/90 dark:hover:bg-red-700 lg:mt-12">
           Submit
         </button>
         <button

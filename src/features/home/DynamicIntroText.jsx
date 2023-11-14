@@ -26,7 +26,7 @@ function DynamicIntroText() {
 
   return (
     <div
-      className="container rounded-3xl bg-orange-100/30 px-5 py-10 text-center text-sm text-teal-900 shadow-xl shadow-teal-900/10 dark:bg-gray-950/50 dark:text-orange-50/80 dark:shadow-gray-950 dark:outline dark:outline-1 dark:outline-orange-50/50 md:max-w-[66%] lg:max-w-[50%] lg:text-base"
+      className="container rounded-3xl bg-orange-100/30 px-5 py-10 text-center text-sm text-teal-900 shadow-xl shadow-teal-900/10 dark:border-[1px] dark:border-orange-50/50 dark:bg-gray-950/50 dark:text-orange-50/80 dark:shadow-gray-950 md:max-w-[66%] lg:max-w-[50%] lg:text-base"
       style={{ userSelect: "none" }}
     >
       <span ref={el} />
