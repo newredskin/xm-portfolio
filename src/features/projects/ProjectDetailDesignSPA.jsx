@@ -8,8 +8,6 @@ function ProjectDetailSPA({ project }) {
   const { isDarkMode } = useDarkMode();
   const { isMobile } = useScreenWidth();
 
-  let tagColor = isDarkMode ? "" : "bg-teal-700/90";
-
   return (
     <>
       <div className="flex flex-col gap-24 lg:gap-48">

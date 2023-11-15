@@ -55,7 +55,14 @@ const projectData = [
     title: "Xiye's Portfolio Website",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "xm-portfolio_cover.gif"],
+    images: [
+      imageURL + "covers/" + "xm-portfolio_cover.gif",
+      imageURL + "xm-portfolio/" + "xm-portfolio_mobile_view.webp", //1
+      imageURL + "xm-portfolio/" + "xm-portfolio_responsive_1.mp4", //2
+      imageURL + "xm-portfolio/" + "xm-portfolio_responsive_1_dark.mp4", //3
+      imageURL + "xm-portfolio/" + "xm-portfolio_responsive_2.mp4", //4
+      imageURL + "xm-portfolio/" + "xm-portfolio_responsive_2_dark.mp4", //5
+    ],
     tools: [
       ["web design", "responsive design"],
       ["react", "javascript", "html", "tailwindcss", "AWS"],
