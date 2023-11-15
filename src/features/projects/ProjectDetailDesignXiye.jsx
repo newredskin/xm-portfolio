@@ -44,7 +44,7 @@ function ProjectDetailXiye({ project }) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-6">
           <div className="flex w-full flex-col gap-6">
             <p
               className="w-full text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
@@ -61,7 +61,7 @@ function ProjectDetailXiye({ project }) {
           </div>
           <div className="w-full">
             {!isDarkMode && (
-              <div className="flex flex-col items-center justify-center lg:flex-row">
+              <div className="flex flex-col items-center justify-center pb-6 lg:flex-row">
                 <video
                   className={`object-contain lg:w-1/2`}
                   autoPlay
@@ -91,9 +91,9 @@ function ProjectDetailXiye({ project }) {
               </div>
             )}
             {isDarkMode && (
-              <div className="overflow-hidden rounded-2xl bg-gray-900 pb-6 ">
+              <div className="flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-900/50 pb-6 lg:flex-row">
                 <video
-                  className={`object-contain opacity-80`}
+                  className={`object-contain lg:w-1/2`}
                   autoPlay
                   loop
                   muted
@@ -102,6 +102,19 @@ function ProjectDetailXiye({ project }) {
                 >
                   <source
                     src={mediaPrefix + project.images[3]}
+                    type="video/mp4"
+                  />
+                </video>
+                <video
+                  className={`object-contain lg:w-1/2`}
+                  autoPlay
+                  loop
+                  muted
+                  disablePictureInPicture
+                  playsInline
+                >
+                  <source
+                    src={mediaPrefix + project.images[5]}
                     type="video/mp4"
                   />
                 </video>
