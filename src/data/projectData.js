@@ -40,13 +40,17 @@ const projectData = [
   {
     name: "stylinglib",
     category: ["web-dev"],
-    title: "Styling Management App",
+    title: "StylingLab",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "styling-lib_v1_cover.mp4"],
+    images: [
+      imageURL + "covers/" + "styling-lib_v1_cover.mp4",
+      imageURL + "styling-lib/" + "styling-lib_diagram.png",
+      imageURL + "styling-lib/" + "styling-lib_diagram_dark.png",
+    ],
     tools: [
-      ["system design", "responsive design"],
-      ["react", "javascript", "html&css", "express", "mongoDB", "AWS"],
+      ["system design", "prototype development"],
+      ["react", "javascript"],
     ],
   },
   {
