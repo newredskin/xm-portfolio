@@ -13,7 +13,7 @@ const projectData = [
       imageURL + "designcamp/" + "designcamp_video_laptop_dark.mp4",
     ],
     tools: [
-      ["web basics", "responsive design"],
+      ["web full-stack basics"],
       ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
     ],
   },
@@ -23,8 +23,19 @@ const projectData = [
     title: "Practice - SPA (single-page apps)",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "spas_cover.mp4"],
-    tools: [["react basics"], ["react-router", "redux", "tailwindcss"]],
+    images: [
+      imageURL + "covers/" + "spas_cover.webp",
+      imageURL + "spas/" + "spa_wildoasis.mp4", //1
+      imageURL + "spas/" + "spa_wildoasis_dark.mp4", //2
+      imageURL + "spas/" + "spa_pizza.mp4", //3
+      imageURL + "spas/" + "spa_pizza_dark.mp4", //4
+      imageURL + "spas/" + "spa_worldwise.mp4", //5
+      imageURL + "spas/" + "spa_worldwise_dark.mp4", //6
+    ],
+    tools: [
+      ["react basics"],
+      ["react-router", "react-query", "redux", "tailwindcss"],
+    ],
   },
   {
     name: "stylinglib",
@@ -44,7 +55,7 @@ const projectData = [
     title: "Xiye's Portfolio Website",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [imageURL + "covers/" + "xm-portfolio_cover.webp"],
+    images: [imageURL + "covers/" + "xm-portfolio_cover.gif"],
     tools: [
       ["web design", "responsive design"],
       ["react", "javascript", "html", "tailwindcss", "AWS"],
@@ -425,7 +436,7 @@ const projectData = [
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      imageURL + "covers/" + "photography_cover.jpg", //0
+      imageURL + "covers/" + "photography_cover.webp", //0
       imageURL + "photography/" + "bigbend_1.webp", //1
       imageURL + "photography/" + "alaska_kayak_2.webp", //2
       imageURL + "photography/" + "dji_colorado_2.webp", //3
