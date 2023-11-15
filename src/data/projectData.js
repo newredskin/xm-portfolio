@@ -45,8 +45,8 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
       imageURL + "covers/" + "styling-lib_v1_cover.mp4",
-      imageURL + "styling-lib/" + "styling-lib_diagram.png",
-      imageURL + "styling-lib/" + "styling-lib_diagram_dark.png",
+      imageURL + "styling-lib/" + "styling-lib_diagram.webp",
+      imageURL + "styling-lib/" + "styling-lib_diagram_dark.webp",
     ],
     tools: [
       ["system design", "prototype development"],
