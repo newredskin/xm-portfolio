@@ -44,21 +44,21 @@ function ProjectDetailStylingLib({ project }) {
               collages based on landscape design types — imagine instantly
               visualizing an urban plaza or an Italian garden at the touch of a
               button. Adding to its intuitive design, features like 'Find
-              Similar' and 'More Inspiration' link individual elements to
+              Similar' and 'More Inspirations!' link individual elements to
               broader design styles, fostering creativity and discovery.
             </p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-12 lg:flex-row">
           <video
-            className={`object-contain lg:w-1/2`}
+            className={`rounded-md object-contain lg:w-[60%] lg:rounded-2xl`}
             autoPlay
             loop
             muted
             disablePictureInPicture
             playsInline
           >
-            <source src={mediaPrefix + project.images[0]} type="video/mp4" />
+            <source src={mediaPrefix + project.images[3]} type="video/mp4" />
           </video>
           <p
             className="text-xs text-stone-500 dark:text-stone-400 lg:text-sm"

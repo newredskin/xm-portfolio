@@ -40,13 +40,14 @@ const projectData = [
   {
     name: "stylinglib",
     category: ["web-dev"],
-    title: "StylingLab",
+    title: "StylingLib",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
     images: [
-      imageURL + "covers/" + "styling-lib_v1_cover.mp4",
+      imageURL + "covers/" + "styling-lib_cover.mp4",
       imageURL + "styling-lib/" + "styling-lib_diagram.webp",
       imageURL + "styling-lib/" + "styling-lib_diagram_dark.webp",
+      imageURL + "styling-lib/" + "styling-lib_video.mp4",
     ],
     tools: [
       ["system design", "prototype development"],
