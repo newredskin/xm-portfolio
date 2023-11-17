@@ -31,13 +31,14 @@ function ProjectDetailXiye({ project }) {
                 Welcome to my portfolio website, a creative space where I've
                 blended my passion for design and tech. Crafted with React,
                 ContextAPI, TailwindCSS, and Supabase, this website is hosted on
-                Netlify with digital contents supported by Amazon Cloud Service,
-                ensuring a smooth and reliable experience. Here, you'll find a
-                collection of projects showcasing my journey as a landscape
-                architect. From opulent residential gardens to grand urban
-                designs, each project tells a story of my deep-rooted expertise
-                in creating stunning real-world landscapes. These experiences
-                have honed my design skills and problem-solving prowess.
+                Netlify with digital contents delievered by Amazon Cloud
+                Service, ensuring a smooth and reliable experience. Here, you'll
+                find a collection of projects showcasing my journey as a
+                landscape architect. From opulent residential gardens to grand
+                urban designs, each project tells a story of my deep-rooted
+                expertise in creating stunning real-world landscapes. These
+                experiences have honed my design skills and problem-solving
+                prowess.
               </p>
             </div>
           </div>
@@ -65,10 +66,9 @@ function ProjectDetailXiye({ project }) {
                 Furthermore, to enhance site performance without compromising on
                 quality, React's lazy function was utilized for efficient
                 loading, and media files were optimized using the webp and webm
-                formats. These thoughtful implementations ensure that the site
-                not only showcases the projects in their best light but also
-                operates smoothly and responsively, even with heavy media
-                content.
+                formats. These implementations ensure that the site not only
+                showcases the projects in their best light but also operates
+                smoothly and responsively, even with heavy media content.
               </p>
             </div>
           )}

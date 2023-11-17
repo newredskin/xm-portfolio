@@ -65,7 +65,7 @@ function ProjectDetailStylingLib({ project }) {
             style={{ fontFamily: "Cutive Mono" }}
           >
             Currently, the project is in the planning and prototype phase,
-            focusing on structuring and managing the example data set. A
+            focusing on structuring and managing a simpler example data set. A
             significant part of the efforts is also directed towards the
             development of an intuitive, user-friendly interface.
             <br />
@@ -78,10 +78,10 @@ function ProjectDetailStylingLib({ project }) {
             transforming how design inspiration is accessed and utilized.
             <br />
             <br />
-            Though this project still on the stage, the goal remains clear: to
-            revolutionize the management and utilization of digital assets in
-            landscape design, merging technology with creativity to create a
-            tool that not only streamlines processes but also inspires
+            Though this project still on the early stage, the goal remains
+            clear: to revolutionize the management and utilization of digital
+            assets in landscape design, merging technology with creativity to
+            create a tool that not only streamlines processes but also inspires
             innovation in design.
           </p>
         </div>

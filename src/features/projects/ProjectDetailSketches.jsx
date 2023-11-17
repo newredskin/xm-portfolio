@@ -8,7 +8,7 @@ import ImageCarouselForSketches from "../../ui/ImageCarouselForSketches";
 const projectDescription = [
   "Concept of a school project. Restore the historic entry and upgraded the outdoor areas for sports and group activities. Geometric pathways to efficiently direct walking flow.", // 0
   "Sketches of potential designs at key lakefront locations on expanded land. Dramatic lines focus on bridging green spaces across the redeveloped roadway. The designs integrate a multi-trail system for circulation improvement.", // 1
-  "Diagram presents a conceptual idea that connects the neighborhood to the lakefront through a new commercial development, integrating TOD center. ", // 2
+  "Diagram presents a conceptual idea that connects the neighborhood to the lakefront through a new commercial development, integrating a TOD center. ", // 2
   "Concept sketches illustrate various design ideas for a spa water feature in a residential project.", // 3
   "Concept sketches depict diverse design ideas for a playground, featuring diagonal lines and curved boundaries to craft a dynamic play area.", // 4
   "Sketches overlay the construction site's installation process to effectively communicate the design intent to the contractor.", // 5

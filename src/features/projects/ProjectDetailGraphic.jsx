@@ -34,13 +34,13 @@ function ProjectDetailGraphic({ project }) {
               style={{ fontFamily: "Cutive Mono" }}
             >
               I collaborated with the team at the Minnesota Health & Climate
-              Section to develop marketing materials for their program. This
-              project involved a comprehensive branding effort, including the
-              redesign of their logo and the creation of program posters. Our
-              focus was on effectively communicating the various climate-related
-              health issues, which we categorized into six main areas, ensuring
-              that our designs accurately conveyed the program's scope and
-              significance to the public.
+              Section to develop marketing materials for their Health and
+              Climate program. This project involved a comprehensive branding
+              effort, including the redesign of their logo and the creation of
+              program posters. Our focus was on effectively communicating the
+              various climate-related health issues, which we categorized into
+              six main areas, ensuring the designs accurately conveyed the
+              program's scope and significance to the public.
             </p>
             <div className="flex flex-col gap-3 lg:w-[60%]">
               <img

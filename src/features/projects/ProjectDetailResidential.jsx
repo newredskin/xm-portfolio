@@ -39,7 +39,7 @@ function ProjectDetailResidential({ project }) {
 
   return (
     <>
-      <div className="flex flex-col gap-y-6 items-center overflow-hidden">
+      <div className="flex flex-col items-center gap-y-6 overflow-hidden">
         <SortingMenuResidential
           activeSort={activeSort}
           handleSort={handleSort}
@@ -55,16 +55,16 @@ function ProjectDetailResidential({ project }) {
                 autoRotate={false}
               />
               <div
-                className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+                className="my-2 flex justify-end text-[10px] text-stone-500 dark:text-stone-400 lg:text-sm"
                 style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Scott Shigley</span>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
-              <div className="w-full lg:w-[40%] flex flex-col gap-6">
+            <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
+              <div className="flex w-full flex-col gap-6 lg:w-[40%]">
                 <p
-                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400"
+                  className="text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
                   style={{ fontFamily: "Cutive Mono" }}
                 >
                   Situated atop the Lake Michigan shoreline, this striking home
@@ -91,7 +91,7 @@ function ProjectDetailResidential({ project }) {
                   <img
                     src={mediaPrefix + project.images[1][5]}
                     alt=""
-                    className="object-contain opacity-90 rounded-2xl shadow-md"
+                    className="rounded-2xl object-contain opacity-90 shadow-md"
                   />
                 </div>
               </div>
@@ -104,7 +104,7 @@ function ProjectDetailResidential({ project }) {
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row gap-3 dark:opacity-90 items-start">
+            <div className="flex flex-col items-start gap-3 dark:opacity-90 lg:flex-row">
               <div className="w-full lg:w-[40%]">
                 <img
                   src={mediaPrefix + project.images[1][10]}
@@ -112,7 +112,7 @@ function ProjectDetailResidential({ project }) {
                   className="object-contain dark:opacity-90"
                 />
               </div>
-              <div className="w-full lg:w-[60%] flex items-center">
+              <div className="flex w-full items-center lg:w-[60%]">
                 <ImageCarousel
                   images={imagesForCarouselSideDV2}
                   autoRotate={false}
@@ -133,10 +133,10 @@ function ProjectDetailResidential({ project }) {
                 autoRotate={false}
               />
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-5">
-              <div className="flex flex-col lg:w-[50%] gap-3">
+            <div className="flex flex-col items-start gap-5 lg:flex-row lg:justify-between">
+              <div className="flex flex-col gap-3 lg:w-[50%]">
                 <p
-                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full mt-3"
+                  className="mt-3 w-full text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
                   style={{ fontFamily: "Cutive Mono" }}
                 >
                   This residential project marries history and modernity. The
@@ -161,7 +161,7 @@ function ProjectDetailResidential({ project }) {
                   setting for grand gatherings.
                   <br />
                   <br />
-                  As a key member of the design team, I spearheaded a range of
+                  As a key member of the design team, I took a range of
                   responsibilities, from conceptual design study to graphic
                   representation and consultant coordination. Through sketching
                   and 3D modeling, I explored various design options and engaged
@@ -171,16 +171,16 @@ function ProjectDetailResidential({ project }) {
                   and realizing the transformation of this historic property.
                 </p>
               </div>
-              <div className="lg:w-[50%] mt-3 flex flex-col gap-3">
+              <div className="mt-3 flex flex-col gap-3 lg:w-[50%]">
                 <img
                   src={mediaPrefix + project.images[2][5]}
                   alt=""
-                  className="object-contain justify-self-center"
+                  className="justify-self-center object-contain"
                 />
                 <img
                   src={mediaPrefix + project.images[2][6]}
                   alt=""
-                  className="object-contain w-full self-start opacity-90"
+                  className="w-full self-start object-contain opacity-90"
                 />
               </div>
             </div>
@@ -207,27 +207,27 @@ function ProjectDetailResidential({ project }) {
 
         {/* Cotton */}
         {activeSort === "urban" && (
-          <div id="suburban" className="flex flex-col mb-10">
+          <div id="suburban" className="mb-10 flex flex-col">
             <div className="relative flex flex-col">
               <ImageCarousel
                 images={imagesForCarouselTopCT}
                 dotPadding="py-4 lg:py-10"
                 autoRotate={false}
               />
-              <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 px-2 lg:px-2 py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[8px] lg:text-[12px]">
+              <span className="absolute left-1 top-1 mb-3 mt-1 rounded-2xl bg-red-700 px-2 py-1 text-[8px] text-stone-300 lg:left-3 lg:top-3 lg:px-2 lg:text-[12px]">
                 2023 ICAA Midwest Acanthus Award
               </span>
               <div
-                className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+                className="my-2 flex justify-end text-[10px] text-stone-500 dark:text-stone-400 lg:text-sm"
                 style={{ fontFamily: "Cutive Mono" }}
               >
                 <span>Photo credit: Scott Shigley</span>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between gap-5">
-              <div className="flex flex-col gap-6 justify-between lg:w-[60%]">
+            <div className="flex flex-col gap-5 lg:flex-row lg:justify-between">
+              <div className="flex flex-col justify-between gap-6 lg:w-[60%]">
                 <p
-                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full self-start"
+                  className="w-full self-start text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
                   style={{ fontFamily: "Cutive Mono" }}
                 >
                   This residential project located in an urban neighborhood with
@@ -259,35 +259,35 @@ function ProjectDetailResidential({ project }) {
                 <img
                   src={mediaPrefix + project.images[3][7]}
                   alt=""
-                  className="rounded-2xl object-contain w-full self-start opacity-90 shadow-md dark:opacity-80"
+                  className="w-full self-start rounded-2xl object-contain opacity-90 shadow-md dark:opacity-80"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center gap-1 lg:gap-0 lg:w-[40%] ">
+              <div className="flex flex-col items-center justify-center gap-1 lg:w-[40%] lg:gap-0 ">
                 <img
                   src={mediaPrefix + project.images[3][3]}
                   alt=""
-                  className="object-contain w-[60%] lg:w-[80%] opacity-80 dark:invert  self-center"
+                  className="w-[60%] self-center object-contain opacity-80 dark:invert  lg:w-[80%]"
                 />
                 <img
                   src={mediaPrefix + project.images[3][5]}
                   alt=""
-                  className="object-contain w-[80%] lg:w-full self-center dark:invert"
+                  className="w-[80%] self-center object-contain dark:invert lg:w-full"
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:justify-between gap-x-8 gap-y-6 mt-3 lg:mt-5 justify-center items-center p-5">
+            <div className="mt-3 flex flex-col items-center justify-center gap-x-8 gap-y-6 p-5 lg:mt-5 lg:flex-row lg:justify-between">
               <img
                 src={mediaPrefix + project.images[3][4]}
                 alt=""
-                className="object-contain lg:w-[50%] dark:invert opacity-80"
+                className="object-contain opacity-80 dark:invert lg:w-[50%]"
               />
               <img
                 src={mediaPrefix + project.images[3][13]}
                 alt=""
-                className="object-contain lg:w-[40%] dark:opacity-80 opacity-90"
+                className="object-contain opacity-90 dark:opacity-80 lg:w-[40%]"
               />
             </div>
-            <div className="mt-6 flex flex-col lg:flex-row gap-6">
+            <div className="mt-6 flex flex-col gap-6 lg:flex-row">
               <div className="w-full lg:w-[40%]">
                 <img
                   src={mediaPrefix + project.images[3][9]}
@@ -295,9 +295,9 @@ function ProjectDetailResidential({ project }) {
                   className="lg:xl-full"
                 />
               </div>
-              <div className="flex flex-col gap-6 lg:w-[70%] justify-between">
+              <div className="flex flex-col justify-between gap-6 lg:w-[70%]">
                 <p
-                  className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 w-full"
+                  className="w-full text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
                   style={{ fontFamily: "Cutive Mono" }}
                 >
                   A critical aspect of my role was the coordination with
@@ -313,11 +313,11 @@ function ProjectDetailResidential({ project }) {
                 <img
                   src={mediaPrefix + project.images[3][10]}
                   alt=""
-                  className="object-contain w-full opacity-90"
+                  className="w-full object-contain opacity-90"
                 />
               </div>
             </div>
-            <div className="mt-6 dark:bg-stone-400/30 lg:p-3 p-1">
+            <div className="mt-6 p-1 dark:bg-stone-400/30 lg:p-3">
               <ImageCarousel
                 images={imagesForCarouselSideCT}
                 invertImages={imagesForCarouselSideCT}

@@ -156,7 +156,7 @@ function ProjectDetailCommercial({ project }) {
                     className="mb-3 text-xs text-stone-500 dark:text-stone-400 lg:text-sm"
                     style={{ fontFamily: "Cutive Mono" }}
                   >
-                    A highlight of this project was the 'Minnie Queen' play
+                    A highlight of this playground was the 'Minnie Queen' play
                     ship, inspired by the historic tourist ferry 'The Queen', a
                     historic tourist ferry that graced Lake Okoboji for decades.
                     This endeavor, realized in collaboration with ape STUDIO and
@@ -244,7 +244,7 @@ function ProjectDetailCommercial({ project }) {
                   <br />
                   <br />
                   In this project, I initially contributed rendering support
-                  during the competition phase and win the project.
+                  during the competition phase and won the project.
                   Subsequently, I was in charge the research/study for the
                   promenade and the concept design for the C1 building's office
                   terrace. I helped prepared design packages for each board

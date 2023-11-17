@@ -31,18 +31,19 @@ function ProjectDetailLv({ project }) {
             style={{ fontFamily: "Cutive Mono" }}
           >
             Water scarcity in Las Vegas, a desert environment, has always been a
-            pressing issue. Amidst this arid landscape, an unexpected oasis
-            thrives: the Las Vegas Wash, a 12-mile stretch in the southeast of
-            the valley. It serves as the primary outlet for stormwater, urban
-            runoff, shallow groundwater, and treated effluent from the Las Vegas
-            Valley. Originally a dry desert wash, it only saw water during
-            rainstorms. However, as the city expanded, the Wash evolved into a
-            riparian ecosystem, with its wetlands acting as a natural filter for
-            urban runoff before it reaches Lake Mead and the Colorado River.
-            Unfortunately, the Wash is now threatened by the very urbanization
-            that nurtured it. Over the past 50 years, the wetlands have dwindled
-            from 2,000 acres to around 200 acres due to increased water
-            discharge and a growing population since the 1970s. <br />
+            pressing issue, at least for the residents there. Amidst this arid
+            landscape, an unexpected oasis thrives: the Las Vegas Wash, a
+            12-mile stretch in the southeast of the valley. It serves as the
+            primary outlet for stormwater, urban runoff, shallow groundwater,
+            and treated effluent from the Las Vegas Valley. Originally a dry
+            desert wash, it only saw water during rainstorms. However, as the
+            city expanded, the Wash evolved into a riparian ecosystem, with its
+            wetlands acting as a natural filter for urban runoff before it
+            reaches Lake Mead and the Colorado River. Unfortunately, the Wash is
+            now threatened by the very urbanization that nurtured it. Over the
+            past 50 years, the wetlands have dwindled from 2,000 acres to around
+            200 acres due to increased water discharge and a growing population
+            since the 1970s. <br />
             <br />
             Las Vegas' distinctive water challenges open doors to reimagine the
             interplay between aging infrastructures and the human-altered
@@ -82,7 +83,7 @@ function ProjectDetailLv({ project }) {
             this strategy restores over 300% of the lost wetlands. Recognizing
             the universal human need for water access, even in arid regions,
             this reimagined water network presents a unique opportunity for Las
-            Vegas residents. It not only addresses the challenges of the 1990s
+            Vegas residents. It not only addresses the challenges of the 1970s
             infrastructure but also shapes the future of the anthropocentric
             landscape.
           </p>
@@ -98,13 +99,13 @@ function ProjectDetailLv({ project }) {
               className="w-full text-xs text-stone-500 dark:text-stone-400  lg:text-sm 2xl:mb-6 2xl:self-center"
               style={{ fontFamily: "Cutive Mono" }}
             >
-              In this project, a regional water strategy called "River
-              Restoration" that repurposes a channel to redirect water
-              discharged from on-site centers has been implemented. We aim to
-              revitalize the channel as a valuable public asset instead of a
-              remote infrastructure. Recognizing our intrinsic connection to
-              water, even in deserts, Las Vegas residents now have unprecedented
-              water access in their city.
+              In this project, a regional water strategy "River Restoration"
+              that repurposes a channel to redirect water discharged from
+              on-site centers has been implemented. It aims to revitalize the
+              channel as a valuable public asset instead of a remote
+              infrastructure. Recognizing our intrinsic connection to water,
+              even in deserts, Las Vegas residents now have unprecedented water
+              access in their city.
               <br />
               <br />
               Following the 'River Restoration' approach, we've created a
