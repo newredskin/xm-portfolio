@@ -8,10 +8,10 @@ function WorkItemHGA() {
           <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
           <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
             <h3 className="font-bold dark:text-orange-50">
-              Landscape Improvement for buildings
+              Landscape Enhancement for buildings
             </h3>
             <p className="text-sm text-stone-500 dark:text-stone-400">
-              Chicago
+              Multiple Locations
             </p>
           </div>
           <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
@@ -22,7 +22,7 @@ function WorkItemHGA() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            worked on a series of landscape improvement projects for various
+            Worked on a series of landscape improvement projects for various
             building types, ranging from educational institutions and corporate
             offices to museums. My involvement includes site planning, planting
             design, and digital modeling. I supported client reviews with
@@ -55,13 +55,13 @@ function WorkItemHGA() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Developed a conceptual landscape water-use calculator in Excel to
-            assess the water usage conditions of projects based on location at
-            an early design stage. This tool was instrumental in generating
-            preliminary estimates of the required stormwater reuse and guiding
-            whether selection of specific plant species is needed. The primary
-            objective of the calculator is to align with sustainable
-            requirements such as LEED and Sustainable Sites.
+            Developed a conceptual landscape water-use calculator using Excel,
+            enabling the assessment of water usage for projects based on their
+            location, right from the early design stage. This tool was
+            instrumental in generating preliminary estimates of the required
+            stormwater reuse and guiding the selection of specific plant species
+            when necessary. The primary objective of the calculator is to align
+            with sustainable requirements such as LEED and Sustainable Sites.
           </p>
         </div>
       </li>

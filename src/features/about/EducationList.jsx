@@ -5,7 +5,7 @@ function EducationList() {
     <ul className="mb-16 mt-24 flex flex-col gap-6 md:mx-10">
       <li>
         <div className="grid grid-cols-12 items-center gap-5">
-          <AtSymbolIcon className="h-[24px] w-[24px] justify-self-center md:h-[36px]  md:w-[36px]" />
+          <AtSymbolIcon className="h-[20px] w-[20px] justify-self-center md:h-[36px]  md:w-[36px]" />
           <div className="hidden md:col-span-1 md:col-start-2 md:block">
             <img
               src="UMN-logo.webp"
@@ -30,21 +30,21 @@ function EducationList() {
             At the University of Minnesota, I pursued a Master of Landscape
             Architecture, an enriching journey that equipped me to tackle
             diverse urban complexities through innovative landscape design. The
-            curriculum was comprehensive, including construction technologies
-            and materials, plant materials and ecology, media and representation
-            , alongside deep dives into research and mapping methods. This
-            multifaceted education enabled me to address a variety of urban
-            issues such as water challenge in Las Vegas, waterfront development
-            in Duluth, The highway barrier in north Minneapolis, and combating
-            food deserts in Chicago. These experiences have honed my ability to
-            conceptualize and implement effective landscape solutions in varied
-            urban settings.
+            comprehensive curriculum covered construction technologies and
+            materials, plant materials and ecology, media and representation, as
+            well as in-depth research and mapping methods. This multifaceted
+            education enabled me to address a variety of urban issues such as
+            the water challenge in Las Vegas, waterfront development in Duluth,
+            the highway barrier in North Minneapolis, and combating food deserts
+            in Chicago. These experiences have honed my ability to conceptualize
+            and implement sustainable landscape solutions in varied urban
+            settings.
           </p>
         </div>
       </li>
       <li>
         <div className="grid grid-cols-12 items-center gap-5">
-          <AtSymbolIcon className="h-[24px] w-[24px] justify-self-center md:h-[36px] md:w-[36px]" />
+          <AtSymbolIcon className="h-[20px] w-[20px] justify-self-center md:h-[36px] md:w-[36px]" />
           <div className="hidden md:col-span-1 md:col-start-2 md:block">
             <img
               src="Tongji-logo.webp"

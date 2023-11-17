@@ -50,14 +50,14 @@ function WorkItemHS() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm  text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Provided crucial support for permit applications and construction
+            Provided crucial support through permit applications to construction
             documentation. Contributed to project enhancement through 3D
             modeling, rendering, and construction detail development. Actively
-            collaborating with the principal in charge, I tackled challenges in
-            an engaging and effective manner. My involvement in
-            client/consultant meetings was crucial, offering essential support
-            and insights that were instrumental in ensuring the successful
-            realization of each project.
+            collaborating with the principal and project manager in charge, I
+            tackled challenges in an engaging and effective manner. My
+            involvement in both internal external meetings was crucial, offering
+            essential support and insights that were instrumental in ensuring
+            the successful realization of each project.
           </p>
         </div>
       </li>
@@ -79,11 +79,11 @@ function WorkItemHS() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            As a key member of the office standard team, I played an important
-            role in establishing graphic standards through project phases. My
-            contributions included setting up InDesign presentation graphics,
-            developing an Analysis library, and creating Lumion tutorials that
-            integrate with SketchUp and Rhino. These efforts streamlined the
+            As a key member of the office standard team, I help establish
+            graphic standards through project lifecycle. My contributions
+            included setting up InDesign presentation graphics, developing an
+            analysis library, and creating the Lumion tutorial of smooth
+            workflow with SketchUp and Rhino. These efforts streamlined the
             design process, enhancing team efficiency, ensuring design
             consistency, and significantly elevating the visual impact and
             overall quality of the projects.

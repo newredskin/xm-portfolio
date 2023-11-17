@@ -15,7 +15,7 @@ function Introduction() {
         but also nurtured my knack for research, analytical thinking and
         problem-solving. Alongside my landscape architecture work, I&apos;ve
         also delved into the digital world of freelancing, specializing in
-        branding and logo design.
+        graphic design.
       </div>
     </div>
   );

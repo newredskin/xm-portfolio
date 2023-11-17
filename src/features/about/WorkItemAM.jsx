@@ -22,12 +22,13 @@ function WorkItemAM() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            In my role within the 'North Lake Shore Drive, Phase 1' project, I
-            spearheaded the conceptual urban and landscape design for key
-            locations along the drive. Additionally, I developed perspective
-            representation materials using innovative, time-efficient methods.
-            This approach was crucial in aligning with the expectations for a
-            series of public meetings. My contributions played a pivotal role in
+            In 'North Lake Shore Drive, Phase 1' project, I spearheaded the
+            conceptual urban and landscape design for key locations along the
+            lakeshore. Additionally, I developed perspective representation
+            materials using innovative, time-efficient methods. This method
+            established a benchmark for the rendering workflow in this project.
+            It was adopted by my colleagues and continued to be used for an
+            additional two years. My contributions played a pivotal role in
             furthering the project's urban design objectives and significantly
             enriched the experience of the public meetings.
           </p>
@@ -82,14 +83,12 @@ function WorkItemAM() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Successfully completed several sculptural identifiers across various
-            neighborhoods in Chicago. My role involved transforming initial
-            design sketches into detailed 3D models. Working closely with the
-            pricinpal in charge and manufacturers, I developed comprehensive
-            construction details, which were crucial in successfully building
-            these identifiers. My contributions in this process not only brought
-            the initial concepts to life but also contributed significantly to
-            the aesthetic enhancement of Chicago's neighborhoods.
+            Successfully completed several gateway identifiers across various
+            neighborhoods in Chicago, enhancing the aesthetic appeal of these
+            areas. My role involved transforming initial design sketches into
+            detailed 3D models. Working closely with the principal in charge and
+            manufacturers, I developed comprehensive construction details, which
+            were crucial in successfully building these identifiers.
           </p>
         </div>
       </li>

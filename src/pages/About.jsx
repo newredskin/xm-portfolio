@@ -61,7 +61,7 @@ function About() {
   return (
     <>
       <div className="min-h-screen w-screen bg-gradient-to-b from-orange-50 to-orange-100 to-10% dark:from-gray-950 dark:via-gray-900 dark:via-60% dark:to-gray-800 dark:to-90%">
-        <div className="mx-8 flex flex-col items-center justify-center overflow-hidden text-teal-950 dark:text-orange-50 sm:mx-14 md:mx-28 xl:mx-48 2xl:mx-56">
+        <div className="mx-6 flex flex-col items-center justify-center overflow-hidden text-teal-950 dark:text-orange-50 sm:mx-14 md:mx-28 xl:mx-48 2xl:mx-56">
           <h1 className="mb-10 pt-28 text-4xl font-bold">
             I&apos;m <span className="text-red-700">Xiye</span>.
           </h1>

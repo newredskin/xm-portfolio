@@ -2,42 +2,6 @@ import { imageURL } from "../devSwitch";
 
 const projectData = [
   {
-    name: "designcamp",
-    category: ["web-dev"],
-    title: "Arch Camp",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [
-      imageURL + "covers/" + "designcamp_cover.webp",
-      imageURL + "designcamp/" + "designcamp_video_laptop.mp4",
-      imageURL + "designcamp/" + "designcamp_video_laptop_dark.mp4",
-    ],
-    tools: [
-      ["web full-stack basics"],
-      ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
-    ],
-  },
-  {
-    name: "spas",
-    category: ["web-dev"],
-    title: "Practice - SPA (single-page apps)",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [
-      imageURL + "covers/" + "spas_cover.webp",
-      imageURL + "spas/" + "spa_wildoasis.mp4", //1
-      imageURL + "spas/" + "spa_wildoasis_dark.mp4", //2
-      imageURL + "spas/" + "spa_pizza.mp4", //3
-      imageURL + "spas/" + "spa_pizza_dark.mp4", //4
-      imageURL + "spas/" + "spa_worldwise.mp4", //5
-      imageURL + "spas/" + "spa_worldwise_dark.mp4", //6
-    ],
-    tools: [
-      ["react basics"],
-      ["react-router", "react-query", "redux", "tailwindcss"],
-    ],
-  },
-  {
     name: "stylinglib",
     category: ["web-dev"],
     title: "StylingLib",
@@ -74,6 +38,42 @@ const projectData = [
     ],
   },
   {
+    name: "designcamp",
+    category: ["web-dev"],
+    title: "Arch Camp",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [
+      imageURL + "covers/" + "designcamp_cover.webp",
+      imageURL + "designcamp/" + "designcamp_video_laptop.mp4",
+      imageURL + "designcamp/" + "designcamp_video_laptop_dark.mp4",
+    ],
+    tools: [
+      ["web full-stack basics"],
+      ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
+    ],
+  },
+  {
+    name: "spas",
+    category: ["web-dev"],
+    title: "Practice - SPA (single-page apps)",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [
+      imageURL + "covers/" + "spas_cover.webp",
+      imageURL + "spas/" + "spa_wildoasis.mp4", //1
+      imageURL + "spas/" + "spa_wildoasis_dark.mp4", //2
+      imageURL + "spas/" + "spa_pizza.mp4", //3
+      imageURL + "spas/" + "spa_pizza_dark.mp4", //4
+      imageURL + "spas/" + "spa_worldwise.mp4", //5
+      imageURL + "spas/" + "spa_worldwise_dark.mp4", //6
+    ],
+    tools: [
+      ["react basics"],
+      ["react-router", "react-query", "redux", "tailwindcss"],
+    ],
+  },
+  {
     name: "lv",
     category: ["landscape", "research-visualization"],
     title: "Learning from Las Vegas",
@@ -98,33 +98,6 @@ const projectData = [
     tools: [
       ["urban research", "landscape design"],
       ["sketchup", "photoshop", "illustrator", "indesign"],
-    ],
-  },
-  {
-    name: "aavs-workshop",
-    category: ["research-visualization"],
-    title: "Styx",
-    introduction:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
-    images: [
-      imageURL + "covers/" + "aavs_cover.webp",
-      imageURL + "aavs/" + "aavs_video.mp4",
-      imageURL + "aavs/" + "aavs_obj_settings.webp", //2
-      imageURL + "aavs/" + "aavs_obj_length.webp", //3
-      imageURL + "aavs/" + "aavs_obj_result.webp", //4
-      imageURL + "aavs/" + "aavs_obj_1.webp", //5
-      imageURL + "aavs/" + "aavs_obj_2.webp", //6
-      imageURL + "aavs/" + "aavs_obj_3.webp", //7
-      imageURL + "aavs/" + "aavs_obj_4.webp", //8
-      imageURL + "aavs/" + "aavs_prototype.webp", //9
-      imageURL + "aavs/" + "aavs_model.webp", //10
-      imageURL + "aavs/" + "aavs_built.webp", //11
-      imageURL + "aavs/" + "aavs_photo 1.webp", //12
-      imageURL + "aavs/" + "aavs_timelapse.mp4", //13
-    ],
-    tools: [
-      ["computational design"],
-      ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
     ],
   },
   {
@@ -155,6 +128,33 @@ const projectData = [
     tools: [
       ["graphic design", "product design"],
       ["procreate", "illustrator", "photoshop", "dimension"],
+    ],
+  },
+  {
+    name: "aavs-workshop",
+    category: ["research-visualization"],
+    title: "Styx",
+    introduction:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",
+    images: [
+      imageURL + "covers/" + "aavs_cover.webp",
+      imageURL + "aavs/" + "aavs_video.mp4",
+      imageURL + "aavs/" + "aavs_obj_settings.webp", //2
+      imageURL + "aavs/" + "aavs_obj_length.webp", //3
+      imageURL + "aavs/" + "aavs_obj_result.webp", //4
+      imageURL + "aavs/" + "aavs_obj_1.webp", //5
+      imageURL + "aavs/" + "aavs_obj_2.webp", //6
+      imageURL + "aavs/" + "aavs_obj_3.webp", //7
+      imageURL + "aavs/" + "aavs_obj_4.webp", //8
+      imageURL + "aavs/" + "aavs_prototype.webp", //9
+      imageURL + "aavs/" + "aavs_model.webp", //10
+      imageURL + "aavs/" + "aavs_built.webp", //11
+      imageURL + "aavs/" + "aavs_photo 1.webp", //12
+      imageURL + "aavs/" + "aavs_timelapse.mp4", //13
+    ],
+    tools: [
+      ["computational design"],
+      ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
     ],
   },
   {
@@ -428,7 +428,7 @@ const projectData = [
   },
   {
     name: "art",
-    category: ["graphic-product"],
+    category: ["photography"],
     title: "Painting/Sketch",
     introduction:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, maiores!",

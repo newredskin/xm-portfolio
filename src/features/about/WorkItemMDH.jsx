@@ -22,17 +22,17 @@ function WorkItemFL() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            During my internship as graphic designer at the Climate & Health
+            During my internship as a graphic designer at the Climate & Health
             Assessment Section of the Minnesota Department of Health, I was
-            involved in numerous projects, focusing primarily on the creation of
+            involved in numerous projects, with a primary focus on creating
             public graphics and report templates. My work included designing
             compelling infographics on the health impacts of climate change,
-            along with producing informative brochures, handouts on the subject.
-            Moreover, I played a crucial role in developing a comprehensive
-            suite of graphic products for the 2-day MN HIA Coalition Conference
-            hosted in Minneapolis. This suite encompassed everything from logos
-            and brochures to posters and website designs, contributing
-            significantly to the conference's success.
+            along with producing informative brochures and handouts related to
+            the topic. Moreover, I played a crucial role in developing a
+            comprehensive suite of graphic products for the two-day MN HIA
+            Coalition Conference in Minneapolis. The suite included a range of
+            materials, from logos and brochures to posters and website designs,
+            contributing significantly to the conference's success.
           </p>
         </div>
       </li>
