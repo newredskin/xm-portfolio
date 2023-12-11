@@ -29,16 +29,16 @@ function ProjectDetailXiye({ project }) {
                 style={{ fontFamily: "Cutive Mono" }}
               >
                 Welcome to my portfolio website, a creative space where I've
-                blended my passion for design and tech. Crafted with React,
-                ContextAPI, TailwindCSS, and Supabase, this website is hosted on
-                Netlify with digital contents delievered by Amazon Cloud
-                Service, ensuring a smooth and reliable experience. Here, you'll
-                find a collection of projects showcasing my journey as a
-                landscape architect. From opulent residential gardens to grand
-                urban designs, each project tells a story of my deep-rooted
-                expertise in creating stunning real-world landscapes. These
-                experiences have honed my design skills and problem-solving
-                prowess.
+                blended my passion for design and tech. Crafted with React, and
+                Javascript, this website is hosted on Netlify with digital
+                contents delievered by Amazon Cloud Service, ensuring a smooth
+                and reliable experience. Here, you'll find a collection of
+                projects showing an array of projects that represent my
+                evolution from a landscape architect to an aspiring web
+                developer. You'll discover a diverse portfolio ranging from
+                lavish residential gardens to applications for designers. Each
+                project tells a story of my deep-rooted expertise in creating
+                experiences in both physical and digital world.
               </p>
             </div>
           </div>

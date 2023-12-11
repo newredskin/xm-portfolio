@@ -22,16 +22,16 @@ const laSkills = [
 ];
 const codingSkills = [
   { name: "JavaScript", value: 60 },
-  { name: "TypeScript", value: 30 },
-  { name: "Node.js", value: 30 },
+  // { name: "TypeScript", value: 30 },
+  // { name: "Node.js", value: 30 },
   { name: "Java", value: 40 },
   { name: "Python", value: 20 },
-  { name: "HTML&CSS", value: 50 },
-  { name: "React", value: 70 },
-  { name: "Git", value: 20 },
-  { name: "Express", value: 20 },
-  { name: "MongoD", value: 20 },
-  { name: "MySQL", value: 20 },
+  { name: "HTML&CSS", value: 60 },
+  { name: "React", value: 80 },
+  // { name: "Git", value: 20 },
+  // { name: "Express", value: 20 },
+  // { name: "MongoD", value: 20 },
+  // { name: "MySQL", value: 20 },
 ];
 
 const RADIAN = Math.PI / 180;
@@ -70,7 +70,7 @@ export default function SkillChart() {
     <ResponsiveContainer
       aspect={1}
       width="80%"
-      className="lg:flex lg:flex-col items-center justify-center hidden"
+      className="hidden items-center justify-center lg:flex lg:flex-col"
     >
       <PieChart width={400} height={400}>
         <Pie

@@ -54,16 +54,14 @@ function ProjectDetailDesignCamp({ project }) {
             style={{ fontFamily: "Cutive Mono" }}
           >
             This project is a dynamic and interactive website designed for
-            architecture enthusiasts to share and discuss various building and
-            landscape projects from around the world. This platform, developed
-            using a full stack web workflow of JavaScript, Express, and MongoDB,
-            ensuring robust CRUD functionalities along with user authentication.
-            Main third-party libraries include the integration of ejs-mate for
-            templating and Bootstrap for an aesthetically pleasing and
-            responsive design. The website also employs external APIs like
-            Cloudinary for storing imagery data and Mapbox for displaying
-            interactive maps, enriching the user experience with visual and
-            navigational elements. <br />
+            architecture enthusiasts to share and discuss various buildings from
+            around the world. Developed by closely following an online tutorial,
+            the platform utilizes a full stack web workflow incorporating
+            JavaScript, Express, and MongoDB. This ensures robust CRUD
+            functionalities along with user authentication. The website also
+            employs external APIs like Cloudinary for storing imagery data and
+            Mapbox for displaying interactive maps, enriching the user
+            experience with visual and navigational elements. <br />
             <br />
             Currently, the project is in an ongoing development phase with
             version 1.0.0 already live online. Future enhancements aim to

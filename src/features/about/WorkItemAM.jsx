@@ -40,6 +40,37 @@ function WorkItemAM() {
           <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
           <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
             <h3 className="font-bold dark:text-orange-50">
+              Neighborhood Sculptural Identifiers
+            </h3>
+            <p className="text-sm text-stone-500 dark:text-stone-400">
+              Multiple Locations
+            </p>
+          </div>
+          <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
+            3D Modeling/CD Docs
+          </p>
+          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
+          <p
+            className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
+            style={{ fontFamily: "Cutive Mono" }}
+          >
+            Successfully completed several gateway identifiers across various
+            neighborhoods in Chicago, enhancing the aesthetic appeal of these
+            areas. My role involved transforming initial design sketches into
+            detailed 3D models, employing parametric design techniques to
+            greatly improve workflow efficiency. Working closely with the
+            principal in charge and manufacturers, I developed comprehensive
+            construction details, which were crucial in successfully building
+            these identifiers.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div className="grid grid-cols-12 items-center gap-5">
+          <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
+          <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
+            <h3 className="font-bold dark:text-orange-50">
               Community Parks & Playgrounds
             </h3>
             <p className="text-sm text-stone-500 dark:text-stone-400">
@@ -60,35 +91,6 @@ function WorkItemAM() {
             estimates to materials research. Additionally, I provided essential
             graphic support for public meetings. All these help contribute to
             the projects's successes.
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <div className="grid grid-cols-12 items-center gap-5">
-          <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
-          <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
-            <h3 className="font-bold dark:text-orange-50">
-              Neighborhood Sculptural Identifiers
-            </h3>
-            <p className="text-sm text-stone-500 dark:text-stone-400">
-              Multiple Locations
-            </p>
-          </div>
-          <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
-            3D Modeling/CD Docs
-          </p>
-          <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
-          <p
-            className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
-            style={{ fontFamily: "Cutive Mono" }}
-          >
-            Successfully completed several gateway identifiers across various
-            neighborhoods in Chicago, enhancing the aesthetic appeal of these
-            areas. My role involved transforming initial design sketches into
-            detailed 3D models. Working closely with the principal in charge and
-            manufacturers, I developed comprehensive construction details, which
-            were crucial in successfully building these identifiers.
           </p>
         </div>
       </li>

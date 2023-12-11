@@ -51,8 +51,8 @@ function WorkItemHS() {
             style={{ fontFamily: "Cutive Mono" }}
           >
             Provided crucial support through permit applications to construction
-            documentation. Contributed to project enhancement through 3D
-            modeling, rendering, and construction detail development. Actively
+            documentation. Contributed to project enhancement through modeling,
+            rendering, and construction detail development. Actively
             collaborating with the principal and project manager in charge, I
             tackled challenges in an engaging and effective manner. My
             involvement in both internal external meetings was crucial, offering
@@ -66,7 +66,9 @@ function WorkItemHS() {
         <div className="grid grid-cols-12 items-center gap-5">
           <CheckCircleIcon className="h-[24px] w-[24px] justify-self-center md:h-[32px] md:w-[32px]" />
           <div className="col-span-8 col-start-2 justify-self-start text-start md:col-span-6">
-            <h3 className="font-bold dark:text-orange-50">Office Standards</h3>
+            <h3 className="font-bold dark:text-orange-50">
+              Office Standards & Resources
+            </h3>
             <p className="text-sm text-stone-500 dark:text-stone-400">
               Chicago, IL
             </p>
@@ -79,14 +81,14 @@ function WorkItemHS() {
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            As a key member of the office standard team, I help establish
-            graphic standards through project lifecycle. My contributions
-            included setting up InDesign presentation graphics, developing an
-            analysis library, and creating the Lumion tutorial of smooth
-            workflow with SketchUp and Rhino. These efforts streamlined the
-            design process, enhancing team efficiency, ensuring design
-            consistency, and significantly elevating the visual impact and
-            overall quality of the projects.
+            As a key member of the office standard and resource management team,
+            my role involved establishing graphic standards and managing our
+            in-house resource library. My contributions included creating
+            presentation graphic templates, making modeling/rendering tutorials,
+            developing an analysis assets library, and maintain the existing
+            imagery collection. These efforts streamlined the design process,
+            enhancing team efficiency, ensuring design consistency, and greatly
+            improved the visual impact and overall quality of the projects.
           </p>
         </div>
       </li>

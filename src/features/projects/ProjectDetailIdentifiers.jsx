@@ -122,9 +122,11 @@ function ProjectDetailIdentifiers({ project }) {
                   vibrant future of these neighborhoods. <br />
                   <br />
                   My role was crucial in bringing this vision to life: I
-                  transformed the initial sketches into detailed 3D models and
-                  produced the construction details, ensuring the feasibility of
-                  this design's realization on the ground.
+                  transformed the initial sketches into detailed 3D models.
+                  Utilizing Grasshopper as a parametric design tool, I
+                  significantly enhanced the workflow from design to
+                  construction, streamlining the process and ensuring precision
+                  in the final output.
                 </p>
                 <div>
                   <ImageCarousel
@@ -171,10 +173,12 @@ function ProjectDetailIdentifiers({ project }) {
                   the ginkgo leaf, complementing it with dynamic LED lights to
                   create a welcoming visual spectacle for visitors. <br />
                   <br />
-                  In this project, my involvement was multifaceted, encompassing
-                  the development of conceptual designs, detailed 3D modeling,
-                  and the preparation of comprehensive construction
-                  documentation.
+                  In this project, my role was diverse and comprehensive. It
+                  included developing conceptual designs, creating detailed 3D
+                  models, integrating parametric design techniques, and
+                  preparing thorough construction documentation. Each of these
+                  aspects played a critical part in the project's successful
+                  execution.
                 </p>
                 <div>
                   <ImageCarousel

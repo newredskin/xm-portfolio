@@ -44,21 +44,21 @@ function WorkItemFL() {
             </p> */}
           </div>
           <p className="col-span-12 col-start-2 self-start justify-self-end text-xs md:col-span-4 md:col-start-9">
-            JavaScript/React/HTML/CSS/MangoDB/etc
+            JavaScript/HTML/CSS/React
           </p>
           <div className="row-start-2 h-full w-1/2 justify-self-end border-l border-red-700" />
           <p
             className="col-span-11 col-start-2 row-start-2 text-start text-sm text-stone-500/80 dark:text-stone-400"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            Through dedicated self-study, I have achieved proficiency in web
-            development, mastering essential tech stack of HTML&CSS, JavaScript,
-            and React. This self-guided journey has empowered me with the skills
-            to develop user-friendly and responsive websites and applications. I
-            am passionate about applying my gained skills to support and add
-            value to others in their digital pursuits. These tools also empower
-            me to approach challenges with a technological mindset, addressing
-            the inefficiencies prevalent in the traditional design industry.
+            Through dedicated self-study, I've developed a foundational
+            understanding of web development, focusing on essential technologies
+            like JavaScript, HTML&CSS, and React. Such learning experience
+            provided me with the basic skills necessary to create user-centric
+            and responsive websites and applications. As an enthusiastic learner
+            at the entry level, I'm keen to apply my growing skills in web
+            development to meet the needs of others and contribute positively to
+            their digital projects.
           </p>
         </div>
       </li>

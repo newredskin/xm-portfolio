@@ -27,18 +27,19 @@ function EducationList() {
             className="col-span-11 col-start-2 row-start-2 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            At the University of Minnesota, I pursued a Master of Landscape
-            Architecture, an enriching journey that equipped me to tackle
-            diverse urban complexities through innovative landscape design. The
-            comprehensive curriculum covered construction technologies and
-            materials, plant materials and ecology, media and representation, as
-            well as in-depth research and mapping methods. This multifaceted
-            education enabled me to address a variety of urban issues such as
-            the water challenge in Las Vegas, waterfront development in Duluth,
-            the highway barrier in North Minneapolis, and combating food deserts
-            in Chicago. These experiences have honed my ability to conceptualize
-            and implement sustainable landscape solutions in varied urban
-            settings.
+            At the University of Minnesota, I completed my Master's in Landscape
+            Architecture, a STEM journey intertwining science and art, preparing
+            me to address complex urban issues through innovative design. The
+            program's extensive curriculum included in-depth research and
+            mapping methods, computer-aided design technology, construction
+            techniques and materials, plant materials and ecology, as well as
+            media and representation skills. This comprehensive education
+            equipped me to tackle diverse urban challenges such as Las Vegas's
+            water issues, waterfront development in Duluth, overcoming the
+            highway barrier in North Minneapolis, and addressing food deserts in
+            Chicago. These experiences refined my skills in conceptualizing and
+            executing sustainable landscape solutions across various outdoor
+            space.
           </p>
         </div>
       </li>
@@ -66,18 +67,21 @@ function EducationList() {
             className="col-span-11 col-start-2 row-start-2 text-start"
             style={{ fontFamily: "Cutive Mono" }}
           >
-            My foundational journey in the realm of architecture and landscape
-            engineering began at Tongji University, where I completed my
-            Bachelor of Engineering. The program provided me with a solid
-            grounding in both theoretical and practical aspects of architectural
-            and landscape engineering. I delved into subjects such as design
-            basics, architectural mechanics, computer graphics, architectural
-            structures, and the history of art, architecture, and landscape
-            architecture. The curriculum also included specialized courses in
-            landscape ecology, landscape engineering and technology, as well as
-            an introduction to remote sensing and GIS. This diverse educational
-            tapestry laid the groundwork for my advanced studies and
-            professional pursuits in landscape architecture.
+            My educational journey in architecture and landscape engineering
+            began at Tongji University, where I earned a Bachelor of
+            Engineering, building a robust STEM foundation. The Higher
+            Mathematics course, encompassing topics like limits, calculus, and
+            the basics of determinants and matrices, provided me with a solid
+            grounding in mathematics. Additional courses such as Fundamentals of
+            Computers, Visual Basic, Computer Graphics, Computer-Aided Design,
+            and an Introduction to Remote Sensing and GIS, laid the groundwork
+            for my understanding of computer science fundamentals and the
+            efficient use of computer programming in design. The curriculum
+            further included specialized courses in architecture and landscape
+            design and engineering, equipping me with a well-rounded educational
+            background. This diversity in my education laid the groundwork for
+            my advanced studies in landscape architecture and expanded my
+            expertise into other STEM-related fields.
           </p>
         </div>
       </li>

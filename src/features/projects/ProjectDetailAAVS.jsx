@@ -16,8 +16,8 @@ function ProjectDetailAAVS({ project }) {
 
   return (
     <>
-      <div className="flex flex-col gap-y-6 items-center overflow-hidden">
-        <div className="opacity-90 mb-3">
+      <div className="flex flex-col items-center gap-y-6 overflow-hidden">
+        <div className="mb-3 opacity-90">
           <video
             className={`object-contain dark:opacity-90`}
             autoPlay
@@ -29,10 +29,10 @@ function ProjectDetailAAVS({ project }) {
             <source src={mediaPrefix + project.images[1]} type="video/mp4" />
           </video>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-5">
-          <div className="w-full lg:w-[40%] flex flex-col justify-between gap-4">
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col justify-between gap-4 lg:w-[40%]">
             <p
-              className="text-xs lg:text-sm text-stone-500 dark:text-stone-400 "
+              className="text-xs text-stone-500 dark:text-stone-400 lg:text-sm "
               style={{ fontFamily: "Cutive Mono" }}
             >
               Because of my interest in parametric design, and eager to
@@ -86,7 +86,7 @@ function ProjectDetailAAVS({ project }) {
               <source src={mediaPrefix + project.images[13]} type="video/mp4" />
             </video>
           </div>
-          <div className="lg:w-[60%] flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:w-[60%]">
             <ImageCarousel images={imagesForCarouselSide1} dotPadding="py-4" />
             <ImageCarousel
               images={imagesForCarouselSide2}
@@ -95,8 +95,8 @@ function ProjectDetailAAVS({ project }) {
             />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6">
-          <div className="flex flex-col gap-4 lg:w-1/2 opacity-90">
+        <div className="flex flex-col gap-6 lg:flex-row">
+          <div className="flex flex-col gap-4 opacity-90 lg:w-1/2">
             <img
               src={mediaPrefix + project.images[9]}
               alt=""
@@ -114,11 +114,11 @@ function ProjectDetailAAVS({ project }) {
               alt=""
               className="object-cover lg:h-full"
             />
-            <span className="absolute top-1 left-1 lg:top-3 lg:left-3 bg-red-700 px-2 lg:px-2 py-1 rounded-2xl text-stone-300 mb-3 mt-1 text-[8px] lg:text-[12px]">
-              2019 APR Awards - Pop-ups & Temorpary
+            <span className="absolute left-1 top-1 mb-3 mt-1 rounded-2xl bg-red-700 px-2 py-1 text-[8px] text-stone-300 lg:left-3 lg:top-3 lg:px-2 lg:text-[12px]">
+              2019 APR Awards - Pop-ups & Temporary
             </span>
             <div
-              className="text-[10px] lg:text-sm text-stone-500 dark:text-stone-400 my-2 flex justify-end"
+              className="my-2 flex justify-end text-[10px] text-stone-500 dark:text-stone-400 lg:text-sm"
               style={{ fontFamily: "Cutive Mono" }}
             >
               <span>Photo credit: AA Visiting School</span>

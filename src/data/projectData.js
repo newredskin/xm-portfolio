@@ -34,7 +34,7 @@ const projectData = [
     ],
     tools: [
       ["web design", "responsive design"],
-      ["react", "javascript", "html", "tailwindcss", "AWS"],
+      ["react", "javascript", "html", "tailwindcss"],
     ],
   },
   {
@@ -154,7 +154,7 @@ const projectData = [
     ],
     tools: [
       ["computational design"],
-      ["processing", "keyshot", "rhino", "grasshopper", "VR/AR"],
+      ["rhino", "grasshopper", "processing", "keyshot", "VR/AR"],
     ],
   },
   {
@@ -424,7 +424,7 @@ const projectData = [
         imageURL + "identifiers/" + "identifiers_sauganash_colors.gif", //7
       ],
     ],
-    tools: [["construction detailing"], ["rhino", "autoCAD"]],
+    tools: [["construction detailing"], ["rhino", "grasshopper", "autoCAD"]],
   },
   {
     name: "art",

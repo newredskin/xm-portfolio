@@ -7,13 +7,13 @@ function Paragraph() {
         problem-solving
       </span>
       {". "}
-      This transition marks a phase where I aim to enrich my skillset with the
-      latest innovative technology and efficient tools. My aspiration is to
-      merge traditional design principles with advanced technologies like web
-      development, machine learning, and artificial intelligence. By doing so,
-      my goal is to develop applications that not only resonate with designers
-      but also appeal to a broader user base, effectively combining timeless
-      design aesthetics with the power of modern technology.
+      This transition marks a phase where I aim to enrich my skillset with
+      innovative knowledge. My aspiration is to act as a catalyst, merging
+      technology with design. My goal is to craft tools that not only simplify
+      the daily tasks of designers but also resonate with a broader spectrum of
+      users. It's about creating applications that marry the elegance of design
+      with the dynamic capabilities of modern technology, thereby shaping a
+      future where design and tech meld seamlessly.
     </div>
   );
 }

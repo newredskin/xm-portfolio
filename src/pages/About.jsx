@@ -15,29 +15,30 @@ import { useNavigate } from "react-router-dom";
 
 const codingSkills = [
   { name: "JavaScript", color: "bg-red-700" },
-  { name: "TypeScript", color: "bg-red-700" },
-  { name: "Node.js", color: "bg-red-700" },
+  // { name: "TypeScript", color: "bg-red-700" },
+  // { name: "Node.js", color: "bg-red-700" },
   { name: "Java", color: "bg-red-700" },
   { name: "Python", color: "bg-red-700" },
   { name: "HTML&CSS", color: "bg-red-700" },
   { name: "React", color: "bg-red-700" },
-  { name: "Git", color: "bg-red-700" },
-  { name: "Express", color: "bg-red-700" },
-  { name: "MangoDB", color: "bg-red-700" },
-  { name: "MySQL", color: "bg-red-700" },
+  // { name: "Git", color: "bg-red-700" },
+  // { name: "Express", color: "bg-red-700" },
+  // { name: "MangoDB", color: "bg-red-700" },
+  // { name: "MySQL", color: "bg-red-700" },
 ];
 
 const laSkills = [
-  { name: "Photoshop", color: "bg-teal-950/80 dark:bg-gray-900/80" },
-  { name: "Illustrator", color: "bg-teal-950/80 dark:bg-gray-900/80" },
-  { name: "InDesign", color: "bg-teal-950/80 dark:bg-gray-900/80" },
-  { name: "Premiere Pro", color: "bg-teal-950/80 dark:bg-gray-900/80" },
-  { name: "After Effects", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  // { name: "Photoshop", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  // { name: "Illustrator", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  // { name: "InDesign", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  // { name: "Premiere Pro", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  // { name: "After Effects", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Adobe Suite", color: "bg-teal-950/80 dark:bg-gray-900/80" },
   { name: "AutoCAD", color: "bg-teal-950/80 dark:bg-gray-900/80" },
   { name: "SketchUp", color: "bg-teal-950/80 dark:bg-gray-900/80" },
   { name: "Rhino", color: "bg-teal-950/80 dark:bg-gray-900/80" },
+  { name: "Grasshopper", color: "bg-teal-950/80 dark:bg-gray-900/80" },
   { name: "Processing", color: "bg-teal-950/80 dark:bg-gray-900/80" },
-  { name: "Figma", color: "bg-teal-950/80 dark:bg-gray-900/80" },
   { name: "Procreate", color: "bg-teal-950/80 dark:bg-gray-900/80" },
 ];
 
@@ -76,11 +77,11 @@ function About() {
               data-aos="fade-up"
               className="mt-10 grid rounded-3xl bg-orange-50/50 shadow-lg shadow-teal-700/20 dark:bg-gray-700/20 dark:shadow-orange-50/5 lg:grid-cols-5"
             >
-              <div className="col-span-5 flex flex-col items-center justify-center dark:text-orange-50/90 2xl:col-span-2 2xl:col-start-1 2xl:pl-10">
-                <h2 className="py-5 text-[24px] font-bold underline decoration-red-700 decoration-4 underline-offset-8">
+              <div className="col-span-5 flex flex-col items-center justify-center dark:text-orange-50/90">
+                <h2 className="mt-3 py-5 text-[24px] font-bold underline decoration-red-700 decoration-4 underline-offset-8 lg:mb-6">
                   Toolset
                 </h2>
-                <div className="mx-6 mb-10 mt-3 flex flex-col gap-6 lg:mx-10">
+                <div className="mx-6 mb-8 mt-3 flex flex-col gap-6 lg:flex-row 2xl:mx-0">
                   <div className="flex-cols ml-5 text-red-700">
                     <div className="mb-3 flex items-center gap-1">
                       <Cog6ToothIcon className="h-6 w-6" />
@@ -109,9 +110,9 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="hidden items-center justify-center 2xl:col-span-3 2xl:col-start-3 2xl:flex">
+              {/* <div className="hidden items-center justify-center 2xl:col-span-3 2xl:col-start-3 2xl:flex">
                 <SkillChart />
-              </div>
+              </div> */}
             </div>
             <div data-aos="fade-left" className="px-1">
               <EducationList />
