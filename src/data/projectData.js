@@ -15,7 +15,7 @@ const projectData = [
     ],
     tools: [
       ["system design", "prototype development"],
-      ["react", "javascript"],
+      ["javascript", "react"],
     ],
   },
   {
@@ -34,7 +34,7 @@ const projectData = [
     ],
     tools: [
       ["web design", "responsive design"],
-      ["react", "javascript", "html", "tailwindcss"],
+      ["javascript", "html", "tailwindcss", "react", "supabase", "AWS"],
     ],
   },
   {
@@ -50,7 +50,7 @@ const projectData = [
     ],
     tools: [
       ["web full-stack basics"],
-      ["javascript", "html&css", "express", "mongoDB", "cloudinary"],
+      ["javascript", "html&css", "express", "mongoDB", "cloudinary", "mapbox"],
     ],
   },
   {
@@ -70,7 +70,14 @@ const projectData = [
     ],
     tools: [
       ["react basics"],
-      ["react-router", "react-query", "redux", "tailwindcss"],
+      [
+        "react-router",
+        "react-query",
+        "redux",
+        "react router",
+        "context API",
+        "tailwindcss",
+      ],
     ],
   },
   {

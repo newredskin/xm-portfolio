@@ -16,14 +16,14 @@ import { useNavigate } from "react-router-dom";
 const codingSkills = [
   { name: "JavaScript", color: "bg-red-700" },
   // { name: "TypeScript", color: "bg-red-700" },
-  // { name: "Node.js", color: "bg-red-700" },
+  { name: "Node.js", color: "bg-red-700" },
   { name: "Java", color: "bg-red-700" },
   { name: "Python", color: "bg-red-700" },
   { name: "HTML&CSS", color: "bg-red-700" },
   { name: "React", color: "bg-red-700" },
-  // { name: "Git", color: "bg-red-700" },
-  // { name: "Express", color: "bg-red-700" },
-  // { name: "MangoDB", color: "bg-red-700" },
+  { name: "Git", color: "bg-red-700" },
+  { name: "Express", color: "bg-red-700" },
+  { name: "MangoDB", color: "bg-red-700" },
   // { name: "MySQL", color: "bg-red-700" },
 ];
 
